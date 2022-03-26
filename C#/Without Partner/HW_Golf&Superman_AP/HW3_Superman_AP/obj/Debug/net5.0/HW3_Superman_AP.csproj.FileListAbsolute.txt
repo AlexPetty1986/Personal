@@ -1,0 +1,16 @@
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\Homework 3 - Golf & Superman\HW3_Superman_AP\bin\Debug\net5.0\HW3_Superman_AP.exe
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\Homework 3 - Golf & Superman\HW3_Superman_AP\bin\Debug\net5.0\HW3_Superman_AP.deps.json
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\Homework 3 - Golf & Superman\HW3_Superman_AP\bin\Debug\net5.0\HW3_Superman_AP.runtimeconfig.json
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\Homework 3 - Golf & Superman\HW3_Superman_AP\bin\Debug\net5.0\HW3_Superman_AP.runtimeconfig.dev.json
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\Homework 3 - Golf & Superman\HW3_Superman_AP\bin\Debug\net5.0\HW3_Superman_AP.dll
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\Homework 3 - Golf & Superman\HW3_Superman_AP\bin\Debug\net5.0\ref\HW3_Superman_AP.dll
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\Homework 3 - Golf & Superman\HW3_Superman_AP\bin\Debug\net5.0\HW3_Superman_AP.pdb
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\Homework 3 - Golf & Superman\HW3_Superman_AP\obj\Debug\net5.0\HW3_Superman_AP.csproj.AssemblyReference.cache
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\Homework 3 - Golf & Superman\HW3_Superman_AP\obj\Debug\net5.0\HW3_Superman_AP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\Homework 3 - Golf & Superman\HW3_Superman_AP\obj\Debug\net5.0\HW3_Superman_AP.AssemblyInfoInputs.cache
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\Homework 3 - Golf & Superman\HW3_Superman_AP\obj\Debug\net5.0\HW3_Superman_AP.AssemblyInfo.cs
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\Homework 3 - Golf & Superman\HW3_Superman_AP\obj\Debug\net5.0\HW3_Superman_AP.csproj.CoreCompileInputs.cache
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\Homework 3 - Golf & Superman\HW3_Superman_AP\obj\Debug\net5.0\HW3_Superman_AP.dll
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\Homework 3 - Golf & Superman\HW3_Superman_AP\obj\Debug\net5.0\ref\HW3_Superman_AP.dll
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\Homework 3 - Golf & Superman\HW3_Superman_AP\obj\Debug\net5.0\HW3_Superman_AP.pdb
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\Homework 3 - Golf & Superman\HW3_Superman_AP\obj\Debug\net5.0\HW3_Superman_AP.genruntimeconfig.cache

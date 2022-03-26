@@ -1,0 +1,16 @@
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\Homework 3 - Golf & Superman\HW3_ESM_Golf\bin\Debug\net5.0\HW3_ESM_Golf.exe
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\Homework 3 - Golf & Superman\HW3_ESM_Golf\bin\Debug\net5.0\HW3_ESM_Golf.deps.json
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\Homework 3 - Golf & Superman\HW3_ESM_Golf\bin\Debug\net5.0\HW3_ESM_Golf.runtimeconfig.json
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\Homework 3 - Golf & Superman\HW3_ESM_Golf\bin\Debug\net5.0\HW3_ESM_Golf.runtimeconfig.dev.json
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\Homework 3 - Golf & Superman\HW3_ESM_Golf\bin\Debug\net5.0\HW3_ESM_Golf.dll
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\Homework 3 - Golf & Superman\HW3_ESM_Golf\bin\Debug\net5.0\ref\HW3_ESM_Golf.dll
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\Homework 3 - Golf & Superman\HW3_ESM_Golf\bin\Debug\net5.0\HW3_ESM_Golf.pdb
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\Homework 3 - Golf & Superman\HW3_ESM_Golf\obj\Debug\net5.0\HW3_ESM_Golf.csproj.AssemblyReference.cache
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\Homework 3 - Golf & Superman\HW3_ESM_Golf\obj\Debug\net5.0\HW3_ESM_Golf.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\Homework 3 - Golf & Superman\HW3_ESM_Golf\obj\Debug\net5.0\HW3_ESM_Golf.AssemblyInfoInputs.cache
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\Homework 3 - Golf & Superman\HW3_ESM_Golf\obj\Debug\net5.0\HW3_ESM_Golf.AssemblyInfo.cs
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\Homework 3 - Golf & Superman\HW3_ESM_Golf\obj\Debug\net5.0\HW3_ESM_Golf.csproj.CoreCompileInputs.cache
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\Homework 3 - Golf & Superman\HW3_ESM_Golf\obj\Debug\net5.0\HW3_ESM_Golf.dll
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\Homework 3 - Golf & Superman\HW3_ESM_Golf\obj\Debug\net5.0\ref\HW3_ESM_Golf.dll
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\Homework 3 - Golf & Superman\HW3_ESM_Golf\obj\Debug\net5.0\HW3_ESM_Golf.pdb
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\Homework 3 - Golf & Superman\HW3_ESM_Golf\obj\Debug\net5.0\HW3_ESM_Golf.genruntimeconfig.cache
