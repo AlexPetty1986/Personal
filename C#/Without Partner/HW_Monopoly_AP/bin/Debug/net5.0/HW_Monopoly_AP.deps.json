@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "HW_Monopoly_AP/1.0.0": {
+        "runtime": {
+          "HW_Monopoly_AP.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HW_Monopoly_AP/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
