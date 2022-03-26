@@ -1,0 +1,16 @@
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\HW_PlayerChoice_AP\obj\Debug\net5.0\HW_PlayerChoice_AP.csproj.AssemblyReference.cache
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\HW_PlayerChoice_AP\obj\Debug\net5.0\HW_PlayerChoice_AP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\HW_PlayerChoice_AP\obj\Debug\net5.0\HW_PlayerChoice_AP.AssemblyInfoInputs.cache
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\HW_PlayerChoice_AP\obj\Debug\net5.0\HW_PlayerChoice_AP.AssemblyInfo.cs
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\HW_PlayerChoice_AP\obj\Debug\net5.0\HW_PlayerChoice_AP.csproj.CoreCompileInputs.cache
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\HW_PlayerChoice_AP\bin\Debug\net5.0\HW_PlayerChoice_AP.exe
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\HW_PlayerChoice_AP\bin\Debug\net5.0\HW_PlayerChoice_AP.deps.json
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\HW_PlayerChoice_AP\bin\Debug\net5.0\HW_PlayerChoice_AP.runtimeconfig.json
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\HW_PlayerChoice_AP\bin\Debug\net5.0\HW_PlayerChoice_AP.runtimeconfig.dev.json
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\HW_PlayerChoice_AP\bin\Debug\net5.0\HW_PlayerChoice_AP.dll
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\HW_PlayerChoice_AP\bin\Debug\net5.0\ref\HW_PlayerChoice_AP.dll
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\HW_PlayerChoice_AP\bin\Debug\net5.0\HW_PlayerChoice_AP.pdb
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\HW_PlayerChoice_AP\obj\Debug\net5.0\HW_PlayerChoice_AP.dll
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\HW_PlayerChoice_AP\obj\Debug\net5.0\ref\HW_PlayerChoice_AP.dll
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\HW_PlayerChoice_AP\obj\Debug\net5.0\HW_PlayerChoice_AP.pdb
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\HW_PlayerChoice_AP\obj\Debug\net5.0\HW_PlayerChoice_AP.genruntimeconfig.cache
