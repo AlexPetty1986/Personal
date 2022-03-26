@@ -1,0 +1,14 @@
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\HW8_BattleDamage\bin\Debug\netcoreapp3.1\HW8_BattleDamage.exe
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\HW8_BattleDamage\bin\Debug\netcoreapp3.1\HW8_BattleDamage.deps.json
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\HW8_BattleDamage\bin\Debug\netcoreapp3.1\HW8_BattleDamage.runtimeconfig.json
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\HW8_BattleDamage\bin\Debug\netcoreapp3.1\HW8_BattleDamage.runtimeconfig.dev.json
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\HW8_BattleDamage\bin\Debug\netcoreapp3.1\HW8_BattleDamage.dll
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\HW8_BattleDamage\bin\Debug\netcoreapp3.1\HW8_BattleDamage.pdb
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\HW8_BattleDamage\obj\Debug\netcoreapp3.1\HW8_BattleDamage.csproj.AssemblyReference.cache
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\HW8_BattleDamage\obj\Debug\netcoreapp3.1\HW8_BattleDamage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\HW8_BattleDamage\obj\Debug\netcoreapp3.1\HW8_BattleDamage.AssemblyInfoInputs.cache
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\HW8_BattleDamage\obj\Debug\netcoreapp3.1\HW8_BattleDamage.AssemblyInfo.cs
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\HW8_BattleDamage\obj\Debug\netcoreapp3.1\HW8_BattleDamage.csproj.CoreCompileInputs.cache
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\HW8_BattleDamage\obj\Debug\netcoreapp3.1\HW8_BattleDamage.dll
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\HW8_BattleDamage\obj\Debug\netcoreapp3.1\HW8_BattleDamage.pdb
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\Homeworks\HW8_BattleDamage\obj\Debug\netcoreapp3.1\HW8_BattleDamage.genruntimeconfig.cache
