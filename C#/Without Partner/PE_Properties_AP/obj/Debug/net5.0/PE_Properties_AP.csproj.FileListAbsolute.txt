@@ -1,0 +1,16 @@
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\PEs\PE_Properties_AP\bin\Debug\net5.0\PE_Properties_AP.exe
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\PEs\PE_Properties_AP\bin\Debug\net5.0\PE_Properties_AP.deps.json
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\PEs\PE_Properties_AP\bin\Debug\net5.0\PE_Properties_AP.runtimeconfig.json
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\PEs\PE_Properties_AP\bin\Debug\net5.0\PE_Properties_AP.runtimeconfig.dev.json
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\PEs\PE_Properties_AP\bin\Debug\net5.0\PE_Properties_AP.dll
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\PEs\PE_Properties_AP\bin\Debug\net5.0\ref\PE_Properties_AP.dll
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\PEs\PE_Properties_AP\bin\Debug\net5.0\PE_Properties_AP.pdb
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\PEs\PE_Properties_AP\obj\Debug\net5.0\PE_Properties_AP.csproj.AssemblyReference.cache
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\PEs\PE_Properties_AP\obj\Debug\net5.0\PE_Properties_AP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\PEs\PE_Properties_AP\obj\Debug\net5.0\PE_Properties_AP.AssemblyInfoInputs.cache
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\PEs\PE_Properties_AP\obj\Debug\net5.0\PE_Properties_AP.AssemblyInfo.cs
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\PEs\PE_Properties_AP\obj\Debug\net5.0\PE_Properties_AP.csproj.CoreCompileInputs.cache
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\PEs\PE_Properties_AP\obj\Debug\net5.0\PE_Properties_AP.dll
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\PEs\PE_Properties_AP\obj\Debug\net5.0\ref\PE_Properties_AP.dll
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\PEs\PE_Properties_AP\obj\Debug\net5.0\PE_Properties_AP.pdb
+C:\Users\awpet\source\repos\gdaps1-ind-AlexPetty1986\PEs\PE_Properties_AP\obj\Debug\net5.0\PE_Properties_AP.genruntimeconfig.cache
