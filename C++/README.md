@@ -1,1 +1,1 @@
-Currently empty at the moment, will add them in once upload them on my other computer
+This contains all of the C++ assignments I have worked on, all of these were for homework.
