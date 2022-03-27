@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1601556856 source:c:\users\pc01\desktop\c++\salesrecords\main.cpp
+	"RecordsFunctions.h"
+
+1601579912 c:\users\pc01\desktop\c++\salesrecords\recordsfunctions.h
+	<iomanip>
+
+1601579575 source:c:\users\pc01\desktop\c++\salesrecords\recordsfunctions.cpp
+	<iostream>
+	<iomanip>
+	<string>
+	"RecordsFunctions.h"
+

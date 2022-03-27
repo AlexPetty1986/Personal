@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1607628866 source:c:\users\pc01\desktop\c++\testscores2\negativescore.cpp
+	"NegativeScore.h"
+
+1607628764 c:\users\pc01\desktop\c++\testscores2\negativescore.h
+	<string>
+
+1607628866 source:c:\users\pc01\desktop\c++\testscores2\toolargescore.cpp
+	"TooLargeScore.h"
+
+1607628764 c:\users\pc01\desktop\c++\testscores2\toolargescore.h
+	<string>
+
+1607633994 source:c:\users\pc01\desktop\c++\testscores2\testscores.cpp
+	"TestScores.h"
+
+1607633994 c:\users\pc01\desktop\c++\testscores2\testscores.h
+	"NegativeScore.h"
+	"TooLargeScore.h"
+	<iomanip>
+	<iostream>
+
+1607633837 source:c:\users\pc01\desktop\c++\testscores2\main.cpp
+	<iostream>
+	"TestScores.cpp"
+
+1607633994 c:\users\pc01\desktop\c++\testscores2\testscores.cpp
+	"TestScores.h"
+

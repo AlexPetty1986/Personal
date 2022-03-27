@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1603388683 source:c:\users\pc01\desktop\c++\soccerscores\main.cpp
+	"ScoreFunctions.h"
+
+1603387543 c:\users\pc01\desktop\c++\soccerscores\scorefunctions.h
+	<string>
+	<iostream>
+	<iomanip>
+	<cmath>
+
+1603387473 source:c:\users\pc01\desktop\c++\soccerscores\scorefunctions.cpp
+	"ScoreFunctions.h"
+

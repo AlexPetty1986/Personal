@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1602196352 source:c:\users\pc01\desktop\c++\testscores\main.cpp
+	"TestFunctions.h"
+
+1602172913 c:\users\pc01\desktop\c++\testscores\testfunctions.h
+	<iostream>
+	<cmath>
+	<iomanip>
+
+1602196070 source:c:\users\pc01\desktop\c++\testscores\testfunctions.cpp
+	"TestFunctions.h"
+
