@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1606855225 source:c:\users\pc01\desktop\c++\customerdata\main.cpp
+	<iostream>
+	"CustomerData.h"
+
+1606844840 source:c:\users\pc01\desktop\c++\customerdata\persondata.cpp
+	"PersonData.h"
+
+1606846350 c:\users\pc01\desktop\c++\customerdata\persondata.h
+	<string>
+
+1606846386 c:\users\pc01\desktop\c++\customerdata\customerdata.h
+	"PersonData.h"
+	<string>
+
+1606846432 source:c:\users\pc01\desktop\c++\customerdata\customerdata.cpp
+	"CustomerData.h"
+

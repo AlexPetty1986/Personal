@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1604437212 source:c:\users\pc01\desktop\c++\employee\employeefunctions.cpp
+	"EmployeeFunctions.h"
+
+1604437212 c:\users\pc01\desktop\c++\employee\employeefunctions.h
+	<iostream>
+
+1604437212 source:c:\users\pc01\desktop\c++\employee\main.cpp
+	"EmployeeFunctions.h"
+

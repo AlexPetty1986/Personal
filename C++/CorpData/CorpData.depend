@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1602796922 source:c:\users\pc01\desktop\c++\corpdata\corpfunctions.cpp
+	"CorpFunctions.h"
+
+1602626440 c:\users\pc01\desktop\c++\corpdata\corpfunctions.h
+	<string>
+	<iostream>
+	<iomanip>
+
+1602796552 source:c:\users\pc01\desktop\c++\corpdata\main.cpp
+	"CorpFunctions.h"
+

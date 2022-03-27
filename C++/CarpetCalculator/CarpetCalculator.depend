@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1606256408 source:c:\users\pc01\desktop\c++\carpetcalculator\feetinches.cpp
+	<cstdlib>
+	"FeetInches.h"
+
+1606228965 c:\users\pc01\desktop\c++\carpetcalculator\feetinches.h
+	<iostream>
+
+1606261643 source:c:\users\pc01\desktop\c++\carpetcalculator\main.cpp
+	<iostream>
+	"RoomCarpet.h"
+
+1606227931 source:c:\users\pc01\desktop\c++\carpetcalculator\roomdimension.cpp
+	"RoomCarpet.h"
+
+1606261080 c:\users\pc01\desktop\c++\carpetcalculator\roomcarpet.h
+	<iomanip>
+	"RoomDimension.h"
+
+1606262041 c:\users\pc01\desktop\c++\carpetcalculator\roomdimension.h
+	"FeetInches.h"
+
+1606261933 source:c:\users\pc01\desktop\c++\carpetcalculator\roomcarpet.cpp
+	"RoomCarpet.h"
+

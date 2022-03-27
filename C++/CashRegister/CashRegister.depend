@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1605187980 source:c:\users\pc01\desktop\c++\cashregister\cashregister.cpp
+	"CashRegister.h"
+	<iomanip>
+	<iostream>
+
+1605188133 source:c:\users\pc01\desktop\c++\cashregister\main.cpp
+	"CashRegister.h"
+	"InventoryItem.h"
+	<iostream>
+
+1605186958 source:c:\users\pc01\desktop\c++\cashregister\inventoryitem.cpp
+	"InventoryItem.h"
+	"CashRegister.h"
+
+1605099526 c:\users\pc01\desktop\c++\cashregister\inventoryitem.h
+	<string>
+
+1605187336 c:\users\pc01\desktop\c++\cashregister\cashregister.h
+	"InventoryItem.h"
+	<iostream>
+	<iomanip>
+	<string>
+

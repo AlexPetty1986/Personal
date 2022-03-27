@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1602021701 source:c:\users\pc01\desktop\c++\arrayexpander\arrayfunctions.cpp
+	"ArrayFunctions.h"
+
+1602020240 c:\users\pc01\desktop\c++\arrayexpander\arrayfunctions.h
+	<iostream>
+	<ctime>
+	<cstdlib>
+	<cmath>
+
+1602021716 source:c:\users\pc01\desktop\c++\arrayexpander\main.cpp
+	<iostream>
+	"ArrayFunctions.h"
+

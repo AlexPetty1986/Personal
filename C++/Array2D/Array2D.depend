@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1602003812 source:c:\users\pc01\desktop\c++\array2d\functions.cpp
+	"header.h"
+
+1602003961 c:\users\pc01\desktop\c++\array2d\header.h
+	<iostream>
+
