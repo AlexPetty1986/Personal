@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1601520394 source:c:\users\pc01\desktop\c++\payroll\main.cpp
+	"PayrollFunction.h"
+
+1600816200 c:\users\pc01\desktop\c++\payroll\payrollfunction.h
+	<iostream>
+	<iomanip>
+

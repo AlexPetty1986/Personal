@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1603226786 source:c:\users\pc01\desktop\c++\filedisplay\filefunctions.cpp
+	"FileFunctions.h"
+
+1603226851 c:\users\pc01\desktop\c++\filedisplay\filefunctions.h
+	<string>
+	<iostream>
+	<iomanip>
+
+1603226847 source:c:\users\pc01\desktop\c++\filedisplay\main.cpp
+	"FileFunctions.h"
+

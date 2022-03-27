@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1603991366 source:c:\users\pc01\desktop\c++\inventoryrecords\main.cpp
+	"RecordsFunction.h"
+
+1603991133 c:\users\pc01\desktop\c++\inventoryrecords\recordsfunction.h
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+
+1604000319 source:c:\users\pc01\desktop\c++\inventoryrecords\recordsfunction.cpp
+	"RecordsFunction.h"
+

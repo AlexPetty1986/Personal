@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1602814944 source:c:\users\pc01\desktop\c++\phonebook\phonefunctions.cpp
+	"PhoneFunctions.h"
+
+1602814944 c:\users\pc01\desktop\c++\phonebook\phonefunctions.h
+	<iostream>
+	<string>
+	<iomanip>
+
+1602815486 source:c:\users\pc01\desktop\c++\phonebook\main.cpp
+	"PhoneFunctions.h"
+
+1602781290 source:c:\users\pc01\desktop\gfh.cpp
+	<iostream>
+	<cstring>
+
+1602798308 source:e:\phonebook\phonefunctions.cpp
+	"PhoneFunctions.h"
+
+1602798708 e:\phonebook\phonefunctions.h
+	<iostream>
+	<cstring>
+	<string>
+
+1602798710 source:e:\phonebook\main.cpp
+	"PhoneFunctions.h"
+
