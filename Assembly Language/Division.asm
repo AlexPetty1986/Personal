@@ -51,7 +51,6 @@ main:
 	#calculate the average rounded to the nearest integer
 	div $t3, $t0, 3
 	mflo $t3
-
 	
 	#display the sum and average to the console
 	#display sum
