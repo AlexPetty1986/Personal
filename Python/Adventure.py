@@ -39,7 +39,7 @@ room_list.append(room)
 while done == False:
     print(room_list[current_room][0])
     print(current_room)
-    direction = input("Which way? ")
+    direction = raw_input("Which way? ")
     direction = direction.upper()
     if direction == "N":
         next_room = room_list[current_room][1]
