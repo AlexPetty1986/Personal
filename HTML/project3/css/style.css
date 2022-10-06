@@ -1,0 +1,53 @@
+html{
+    background-image: url(../images/backgroundSpace.jpg);
+    background-repeat: no-repeat;
+    width: auto;
+    height: auto;
+}
+
+body{
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 35%;
+    height: auto;
+    margin-left: 30%;
+    margin-top: 5%;
+    border: 5px solid rgb(68, 44, 123);
+}
+
+#content{
+    background-color:black;
+    padding: 1em;
+}
+
+h1,h2,h3{
+    font-family: 'Press Start 2P', cursive;
+    font-size: medium;
+    margin-bottom:0;
+    padding-bottom:0;
+    color: white;
+}
+
+footer{
+    margin-top: -5%;
+}
+
+h3{
+    color: rgb(191, 24, 24);
+}
+
+h2 p, h3 p{
+    margin:1em;
+}
+
+li, p{
+    margin: 1em;
+    color: rgb(0, 0, 0);
+}
+
+section{
+    border-bottom: solid 1px rgb(21, 0, 255);
+}

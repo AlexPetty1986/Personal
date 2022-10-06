@@ -1,0 +1,163 @@
+*{
+    font-family:verdana,tahoma,sans-serif;
+    scroll-behavior: smooth;
+}
+
+ header{
+     background: url(../images/dogs.jpg);
+     height:200px;
+     width: auto;
+     margin: 0;
+ }
+ 
+ header h1{
+     margin:0;
+     text-align:center;
+     font-size:100px;
+     color: transparent;
+     animation: effect 8s linear infinite;
+ }
+
+ @keyframes effect
+ {
+     0%{
+        background: linear-gradient(red, rgb(130, 35, 35));
+        -webkit-background-clip: text;
+     }
+
+     33%{
+        background: linear-gradient(orange, rgb(184, 127, 21));
+        -webkit-background-clip: text;
+     }
+
+     66%{
+        background: linear-gradient(blue, rgb(53, 53, 116));
+        -webkit-background-clip: text;
+     }
+
+     99%{
+        background: linear-gradient(purple, rgb(210, 88, 210));
+        -webkit-background-clip: text;
+     }
+ }
+ 
+ #status{
+     font-style: italic;
+     height: 60px;
+     margin-bottom: -1.5em;
+     display: flex;
+     justify-content: center;
+ }
+ 
+ #content{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 50px 10px;
+ }
+
+.result img{
+    width: 100%;
+    box-shadow: 0 15px 17px -8px rgba(0,0,0,.4);
+    transition: .5s;
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+}
+
+.result img:hover{
+    transform: scale(1.5);
+    filter: brightness(100%);
+    image-rendering: crisp-edges;
+}
+
+.result span{
+    order: -1;
+}
+
+.result span{
+    font-size:12px;
+    font-weight:bold;
+    display:block;
+}
+
+.result audio{
+    width: 130px;
+}
+
+button{
+  display : inline-block;
+  cursor : pointer;
+  border-style : solid;
+  border-width : 1px;
+  border-radius : 50px;
+  padding : 10px 18px;
+  box-shadow : 0 1px 4px rgba(0,0,0,.6);
+  font-size : 9pt;
+  font-weight : bold;
+  color : #fff;
+  text-shadow : 0 1px 3px rgba(0,0,0,.4);
+  font-family : 'Courier New', Courier, monospace;
+  text-decoration : none;
+}
+
+button.red{
+    border-color: red;
+      background: rgb(152, 32, 32);
+      background: linear-gradient(to top, red 0%, rgb(152, 32, 32) 100%);
+    height: 30px;
+    margin-bottom: 1em;
+}
+
+button:hover{
+    background: red;
+}
+
+button:active{
+    background: rgb(152, 32, 32);
+    box-shadow : 0 0 6px rgba(0,0,0,.6);
+}
+
+button:focus{
+    outline:0;
+}
+
+#widgets{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom:1em;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+#widgets button{
+    margin: 1em;
+    font-size: small;
+    height: 4em;
+}
+
+#widgets p{
+    font-size: large;
+}
+
+#pages{
+    margin: 1em;
+}
+
+@media (max-width: 700px){
+    header h1{
+        font-size: 80px;
+    }
+
+    #widgets p{
+        font-size: xx-large;
+    }
+    
+}

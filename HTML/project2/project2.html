@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+ 	<title id="siteName">Gif Locator</title>
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <script src="./js/main.js"></script>
+	
+</head>
+<body>
+	<header>
+		<h1>Gif Locator</h1>
+	</header>
+
+	<div id="widgets">
+		<p><b>Search For Gif: </b></p>
+		<input id="searchTerm" type="text" size="50" maxlength="20" placeholder="searchTerm.value"/>
+		<button type="button" id="search" class="red" onclick="resetPage()">Locate GIFS</button>
+		<ul id="history"></ul>
+		<p><b>How Many Gifs: </b></p>
+		<select id="limit">
+			<option value="1">1</option>
+			<option value="5">5</option>
+			<option value="10" selected>10</option>
+			<option value="25">25</option>
+			<option value="50">50</option>
+		</select>
+	</div>
+
+	<div id="status">We Are Ready to Search!</div>
+
+	<h2>Search Results:</h2>
+	<hr>
+	<div id="content">
+		<p>Sorry, nothing found yet!</p>
+	</div>
+	<div id="pages">
+		<button class="red" onclick="loadLess()">Less</button>
+		<button class="red" onclick="loadMore()">More</button>
+	</div>
+	<hr>
+	<div id="documentation">
+		<a href="./about.html">Documentation</a>
+	</div>
+</body>
+</html>

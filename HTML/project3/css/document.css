@@ -1,0 +1,10 @@
+*{
+    font-family:verdana,tahoma,sans-serif;
+    scroll-behavior: smooth;
+}
+ 
+ header h1{
+     margin:0;
+     text-align:center;
+     font-size:100px;
+ }
