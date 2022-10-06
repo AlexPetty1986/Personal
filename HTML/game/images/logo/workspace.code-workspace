@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\..\\demo"
+		},
+		{
+			"path": "..\\..\\..\\hw1"
+		},
+		{
+			"path": "..\\.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.CustomBrowser": "chrome",
+		"liveServer.settings.multiRootWorkspaceName": "game"
+	}
+}
