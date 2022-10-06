@@ -1,0 +1,28 @@
+/* Do everything in this file */
+h1, h2{
+    border-bottom: 1px solid red;
+}
+
+h2{
+    clear: both;
+}
+
+figure{
+    float: right;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+figure img{
+    width: 40vw;
+}
+
+div{
+    float:left;
+    box-sizing: border-box 1px solid black;
+    border-style: solid;
+}
+
+footer{
+    clear: both;
+}

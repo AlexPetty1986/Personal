@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/web" href="./media/gex2.webp" sizes="32x32" />
+    <link rel="icon" type="image/webp" href="./media/gex2.webp" sizes="16x16" />
+<title>Gex's Knowledge</title>
+</head>
+
+<body onload="phrase()">
+    <p class = "name">What Would Gex Do?*</p>
+    <p class = "funnyPhrase"></p>
+
+	<footer>
+		<p class = "button">WWGD*</p>
+        <p>Copyright&copy; Alex Petty 2022 IGME 235</p>
+    </footer>
+</body>
+
+<script>
+    let inspire = document.body.querySelector("p.funnyPhrase");
+    let button = document.body.querySelector("p.button");
+    button.addEventListener("click", displayQuote);
+    
+    const quotes = ["THAT'S NOT IN THE SCRIPT!", "This place is bigger than Drew Carey's bar tab.", "Note to self: Don't drink tap water at Jerry Garcia's.", "Note to self: Don't buy rocket sled made by ACME.", "This is like a luau at Mel Blanc's house!", "This is like an all-nighter at Richard Simmons' house.", "THAT'S NOT IN THE SCRIPT!", "Um, that's not in the script...", "Are you after that old sandwich in my pocket?", "Is it just me or am I ENGULFED IN FLAMES?!", "Uh, someone yell cut!", "You mean I'm not 99.9% clean?", "This is for Mr. Sinatra.", "Ah to see the world as Keith Richards does.", "Reminds me of Halloween at Rip Taylor's."];
+
+    function phrase()
+    {
+        var choice = Math.random()*quotes.length;
+        choice = Math.floor(choice);
+        inspire.innerHTML = quotes[choice];
+    }
+
+    function displayQuote()
+    {
+        var choice = Math.random()*quotes.length;
+        choice = Math.floor(choice);
+        inspire.innerHTML = quotes[choice];
+    }
+</script>
+</html>
