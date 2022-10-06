@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)https://people.rit.edu/ap8180/235/webApps/web-apps-lab-3.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>Web Apps-3-HW</title>
+	<style>
+		body{border:1px solid gray;}
+	</style>
+</head>
+<body>
+<h1>My Favorites</h1>
+<h2>My Favorite Colors</h2>
+
+<ol id="colorsList">
+	
+<li>red</li><li>green</li><li>blue</li><li>purple</li><li>pink</li></ol>
+
+<h2>My Favorite Foods</h2>
+
+<ol id="foodsList">
+	
+<li>pizza</li><li>burger</li><li>apple</li><li>pretzels</li><li>chocolate</li></ol>
+
+<h2>My Favorite Links</h2>
+
+<ol id="linksList">
+	
+</ol>
+
+<script>
+"use strict";
+let colors = ["red","green","blue","purple","pink"];
+let foods = ["pizza","burger","apple","pretzels","chocolate"]; // add some foods
+
+for(let i = 0; i < colors.length; i++)
+{   
+    let color = document.createElement("li");
+    color.innerHTML = colors[i];
+    let colorsList = document.querySelector("#colorsList");
+    colorsList.appendChild(color);
+}
+
+for(const element of foods)
+{
+    let food = document.createElement("li");
+    food.innerHTML = element;
+    let foodsList = document.querySelector("#foodsList");
+    foodsList.appendChild(food);
+}
+
+// Optional - can you figure out how to pull both the key AND the value
+// from the `links` object literal?
+let links = {
+		"RIT": "http://www.rit.edu",
+		"RWAG" : "https://www.facebook.com/RWAGclub",
+		"New Media Club" : "http://newmediaclub.cias.rit.edu"
+	}
+</script>
+
+</body></html>

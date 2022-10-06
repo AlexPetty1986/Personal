@@ -1,0 +1,52 @@
+body{
+    background-color: #35363D;
+}
+
+
+
+h1{
+    margin-left: 3rem;
+}
+
+header, div.tree{
+    background-color: #686868;
+}
+
+h1,h2,h3,p{
+    color: #FFFFFF;
+}
+
+div.tree{
+    width: 500px;
+    height: auto;
+    word-wrap: break-word;
+}
+
+p{
+    position: relative;
+    bottom: 10px;
+}
+
+img{
+    box-sizing: border-box 2px #E8FDF5;
+}
+
+img.valley{
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+
+html{
+    flex-direction: row;
+    display: flex;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+img.tree{
+    display: inline;
+    float: right;
+    vertical-align: 200px top;
+}
