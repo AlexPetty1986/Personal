@@ -123,7 +123,7 @@ a{
 }
 
 a:link{
-    color: rgb(165, 46, 46);
+    color: rgb(0, 0, 0);
 }
 
 a:visited{
@@ -135,7 +135,7 @@ a:focus{
 }
 
 a:hover{
-    color: rgb(211, 100, 100);
+    color: rgb(205, 71, 22);
 }
 
 a:active{
