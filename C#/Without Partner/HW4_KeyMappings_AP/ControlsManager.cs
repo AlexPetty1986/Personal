@@ -1,0 +1,189 @@
+﻿using System;
+using System.Collections.Generic;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
+using System.IO;
+
+/// <summary>
+/// ONLY MODIFY WHERE MARKED WITH "TODO"
+/// Use View -> Task List to get a summary of all TODOs in the project
+/// </summary>
+namespace HW4_KeyMappings
+{
+    /// <summary>
+    /// The possible directions that keys will map to
+    /// </summary>
+    public enum Direction
+    {
+        Up, Down, Left, Right
+    }
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // TODO: Define a public delegate "ControlsUpdateDelegate" that matches the signature for the Snake's SetControls method
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    //Create a delegate that matches up with the SetControls method in the Snake class
+    public delegate void ControlsUpdateDelegate(Dictionary<Keys, Direction> controls);
+
+    /// <summary>
+    /// Loads and stores possible directional control mappings for a game.
+    /// Tracks the current control scheme and allows it to be changed based on custom buttons.
+    /// </summary>
+    class ControlsManager
+    {
+        // The available control schemes
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // TODO: Define a Dictionary "schemes" that maps scheme names to Dictionaries of Keys -> Direction
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        //control scheme dictionary - holds the controls of the game
+        Dictionary<string, Dictionary<Keys, Direction>> schemes;
+
+        // Rectangles to use as buttons to pick a control scheme
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // TODO: Define a Dictionary, "buttons", that maps Rectangles to scheme names
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        //buttons dictionary - holds the buttons with the controls schemes of the game
+        Dictionary<Rectangle, string> buttons;
+
+        // The previous mouse state for detecting clicks while updating
+        private MouseState prevMState;
+
+        // The event to trigger when the control scheme changes
+        public ControlsUpdateDelegate OnControlsUpdate;
+
+        // The current control scheme
+        public string CurrentScheme { get; private set; }
+
+        /// <summary>
+        /// Create a new controls manager with available schemes loaded from the 
+        /// ControlSchemes.txt file in the Content folder
+        /// </summary>
+        public ControlsManager()
+        {
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            // TODO: Initialize the schemes and buttons data structures
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            schemes = new Dictionary<string, Dictionary<Keys, Direction>>();
+            buttons = new Dictionary<Rectangle, string>();
+
+            // Load the control schemes
+            StreamReader input = null;
+            try
+            {
+                input = new StreamReader("Content/ControlSchemes.txt");
+
+                string line = null;
+                while ((line = input.ReadLine()) != null)
+                {
+                    string[] segments = line.Split(',');
+                    string scheme = segments[0];
+                    Direction dir = (Direction)Enum.Parse(typeof(Direction), segments[1]);
+                    Keys keyType = (Keys)Enum.Parse(typeof(Keys), segments[2]);
+
+                    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    // TODO: If this is a new scheme, add new entry into the schemes dictionary
+                    // TODO: Add a mapping from key type -> dir for the scheme for this line
+                    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    //if the scheme is currently not in the dictionary
+                    if (!schemes.ContainsKey(scheme))
+                    {
+                        schemes.Add(scheme, new Dictionary<Keys, Direction>());
+                    }
+
+                    //add the control types to the dictionary
+                    schemes[scheme].Add(keyType, dir);
+                }
+            }
+            catch (Exception e)
+            {
+                System.Diagnostics.Debug.WriteLine("Uh oh: " + e.Message);
+            }
+
+            // Build buttons for displaying them
+            int x = 40;
+            int y = 70;
+            int buttonSize = 100;
+            foreach (string scheme in schemes.Keys)
+            {
+                Rectangle button = new Rectangle(x, y, buttonSize, buttonSize);
+                buttons[button] = scheme;
+                x += (int)(buttonSize * 1.1);
+            }
+        }
+
+        /// <summary>
+        /// Draw buttons for each possible control scheme
+        /// </summary>
+        public void DrawButtons()
+        {
+            foreach (Rectangle buttonBox in buttons.Keys)
+            {
+                Color color = Color.White;
+                if (buttons[buttonBox] == CurrentScheme)
+                {
+                    color = Color.PaleGreen;
+                }
+                ShapeBatch.Box(buttonBox, color);
+            }
+        }
+
+        /// <summary>
+        /// Overlay text to match each button 
+        /// (assumes that DrawButtons was already called)
+        /// </summary>
+        public void DrawButtonText(SpriteBatch spriteBatch, SpriteFont font)
+        {
+            foreach (Rectangle buttonBox in buttons.Keys)
+            {
+                spriteBatch.DrawString(font, SchemeInfo(buttons[buttonBox]), new Vector2(buttonBox.X + 5, buttonBox.Y + 5), Color.Black);
+            }
+        }
+
+        /// <summary>
+        /// Check if there was a mouse click in one of the scheme buttons and update
+        /// the current scheme accordingly
+        /// </summary>
+        public void Update()
+        {
+            MouseState mState = Mouse.GetState();
+            if (mState.LeftButton == ButtonState.Released && prevMState.LeftButton == ButtonState.Pressed)
+            {
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // TODO: Check each button rectangle in the buttons dictionary to see if it was the one clicked
+                // TODO: If the button was clicked, look up the associated scheme name, update CurrentScheme, ...
+                // and trigger the OnControlsUpdate event with the associated controls dictionary.
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                //for each rectangle in the buttons dictionary
+                foreach(Rectangle button in buttons.Keys)
+                {
+                    //if the button currently contains the position of the mouse
+                    if(button.Contains(mState.Position))
+                    {
+                        //change the current control scheme
+                        CurrentScheme = buttons[button];
+                        OnControlsUpdate(schemes[buttons[button]]);
+                    }
+                }
+            }
+            prevMState = mState;
+        }
+
+        /// <summary>
+        /// Helper method to get a string with info about a specific control scheme
+        /// </summary>
+        private string SchemeInfo(string scheme)
+        {
+            string result = scheme;
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            // TODO: Add the key to direction mappings to the result string for display on the buttons
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            //for each pair in the dictionary
+            foreach(KeyValuePair<Keys, Direction> controls in schemes[scheme])
+            {
+                result += String.Format("\n- {0}: {1}", controls.Key.ToString(), controls.Value.ToString());
+            }
+            return result;
+        }
+
+    }
+}
