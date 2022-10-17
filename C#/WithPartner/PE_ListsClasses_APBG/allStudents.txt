@@ -1,8 +1,0 @@
-Jim, Art,1
-Hank,art,4
-Dale,Rock,3
-Aang, Avatar,1
-Harry, Magic,3
-Frank,gdd,1
-jeb,gd,4
-Gary,GDD,1
