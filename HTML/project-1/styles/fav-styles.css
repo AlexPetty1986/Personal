@@ -1,0 +1,21 @@
+h2.subtitle{
+    font-family:'Underdog',sans-serif;
+}
+
+#element-card-holder-fav{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    grid-gap: 0.5em;
+    margin-top: .5rem;
+}
+
+button{
+    margin: .1rem;
+}
+
+main{
+    padding: 0;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    margin-bottom: -.3rem;
+}

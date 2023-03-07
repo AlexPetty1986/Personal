@@ -1,0 +1,201 @@
+html{
+    background-color: rgba(129,113,222,255);
+}
+
+main {
+    font-family: tahoma, verdana, sans serif;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#canDraw{
+    margin-top: .5rem;
+    margin-right: 4.5rem;
+    width: auto;
+    height: auto;
+}
+  
+.navbar{
+    width: 90%;
+}
+  
+canvas{
+    margin-bottom: 1rem;
+    object-fit: contain;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+    background: #fafafa;
+    width: 1180px;
+    height: 760px;
+}
+  
+#controls{
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+  
+#trackSelect{
+    width: 9rem;
+    margin-right: -1.5rem;
+    margin-top: 10px;
+}
+  
+#music{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 1rem;
+}
+  
+#volume{
+    margin-top: 1px;
+}
+  
+#volumeLabel{
+    margin-left: .1rem;
+}
+
+#volumeSlider{
+    height: 10%;
+}
+
+#playButton{
+    font-size: 1.2rem;
+    width: auto;
+}
+
+#playVideo{
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    width: auto;
+}
+  
+#effects{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: -3.5rem;
+}
+  
+#effects span{
+    display: flex;
+}
+  
+#gradientValues input{
+    width: 80%;
+}
+  
+#gradientValues span{
+    margin-top: -.5rem;
+}
+  
+select{
+    margin-bottom: 1rem;
+}
+  
+button[data-playing="yes"]:after{
+    content: "Pause Song";
+}
+  
+button[data-playing="no"]:after{
+    content: "Play Song";
+}
+  
+button[data-isplaying="yes"]:after{
+    content: "Stop Background";
+}
+  
+button[data-isplaying="no"]:after{
+    content: "Play Background";
+}
+
+@media screen and (max-width: 1608px){
+
+    canvas{
+        width: 775px;
+        height:  499.5px;
+    }
+}
+
+@media screen and (max-width: 1205px){
+
+    canvas{
+        width: 575px;
+        height:  370px;
+    }
+}
+
+@media screen and (max-width: 996px){
+    canvas{
+        width: 475px;
+        height:  305.5px;
+    }
+}
+
+@media screen and (max-width: 899px){
+    #controls{
+        display: flex;
+        flex-direction: column;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #music{
+        width: 600px;
+        margin-top: 2rem;
+        margin-left: .8rem;
+    }
+
+    #canDraw{
+        margin-top: -1rem;
+        margin-right: .1rem;
+    }
+
+    canvas{
+        width: 600px;
+        height:  386.5px;
+    }
+
+    #effects{
+        width: 600px;
+        margin-top: -1rem;
+        margin-left: .1rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #controls{
+        display: flex;
+        flex-direction: column;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #music{
+        width: 450px;
+        margin-top: 2rem;
+        margin-left: .8rem;
+    }
+
+    #canDraw{
+        margin-top: -1rem;
+        margin-right: .1rem;
+    }
+
+    canvas{
+        width: 450px;
+        height: 290px;
+    }
+
+    #effects{
+        width: 450px;
+        margin-top: -1rem;
+        margin-left: .1rem;
+    }
+}

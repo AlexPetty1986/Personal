@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PokéFinder Documentation</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script type="module" src="./src/loader.js"></script>
+  <style>
+    main{
+      padding: 0;
+      margin-left: -1rem;
+      margin-right: -1rem;
+      margin-bottom: -.3rem;
+    }
+    li{
+      margin-left: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <poke-header></poke-header>
+  <poke-navbar current-page="documentation"></poke-navbar>
+
+  <!-- Main Page -->
+  <main class="px-1 py-1">
+    <div class="has-background-danger-dark mr-1 p-1"> 
+      <div class="is-large p-4">
+        <!-- Row #1 -->
+        <div class="title has-text-light">Pokefinder Documentation</div>  
+        <!-- Row #2  -->
+        <div class="box mt-2">
+          <h2 class="subtitle has-text-weight-bold mb-0">PROPOSAL</h2>
+          <img src="./images/app-page-idea.png" alt="App Page Idea">
+          <ul>
+            <li>Type in the name or a part of the name of the Pokémon</li>
+            <li>After you hit search the Pokémon will appear in the results based on what you typed</li>
+            <li>You can favorite the pokemon you look up and view them in the favorites section of the site</li>
+          </ul>
+          <br>
+          <h2 class="subtitle has-text-weight-bold mb-0">PROJECT REQUIREMENTS</h2>
+          <ul>
+            <li><a href="https://github.com/tonethar/IGME-330-Fall-2022/blob/main/projects/p1-final.md">https://github.com/tonethar/IGME-330-Fall-2022/blob/main/projects/p1-final.md</a></li>
+          </ul>
+          <br>
+          <h2 class="subtitle has-text-weight-bold mb-0">RESOURCES UTILIZE</h2>
+          <ul>
+            <li><a href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">BULMA</a></li>
+            <li><a href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">Font Awesome</a></li>
+            <li><a href="https://bulma.io/documentation/components/navbar/">Bulma Navbar</a></li>
+            <li>Pokémon Go Image: <a href="https://commons.wikimedia.org/wiki/File:Pokémon-go-1569794_1920.jpg">"https://commons.wikimedia.org/wiki/File:Pokémon-go-1569794_1920.jpg"</a></li>
+            <li>Pokécard Image: <a href="https://cdn.pixilart.com/photos/large/a672c7ce2caaf4f.png">"https://cdn.pixilart.com/photos/large/a672c7ce2caaf4f.png"</a></li>
+            <li><a href="https://stackoverflow.com/questions/56872529/javascript-localstorage-to-display-in-reverse-order">Reverse order for user favorites</a></li>
+            <li><a href="https://blog.logrocket.com/storing-retrieving-javascript-objects-localstorage/">Storing Objects in localStorage</a></li>
+            </ul>
+          <br>
+          <h2 class="subtitle has-text-weight-bold mb-0">API</h2>
+          <ul>
+            <li>API Home: <a href="https://rapidapi.com/chewett/api/pokemon-go1">https://rapidapi.com/chewett/api/pokemon-go1</a></li>
+            <li>API Endpoint: <a href="https://pokemon-go1.p.rapidapi.com/pokemon_names.json">https://pokemon-go1.p.rapidapi.com/pokemon_names.json</a></li>
+            <li>API Documentation: <a href="https://rapidapi.com/chewett/api/pokemon-go1/details">https://rapidapi.com/chewett/api/pokemon-go1/details</a></li>
+            <li>API Key: a88e05f782msh9a3a1257e276400p1bb2e0jsn95babed53bcc</li>
+            <li>API Host: <a href="pokemon-go1.p.rapidapi.com">pokemon-go1.p.rapidapi.com</a></li>
+          </ul>
+          <br>
+          <h2 class="subtitle has-text-weight-bold mb-0">NOTEWORTHY</h2>
+          <ul>
+            <li>When the user clicks the search button the .is-loading class is used, letting the user know something is happening</li>
+            <li>When you favorite a Pokémon, the button will change so that the user cannot click it again</li>
+            <li>Users are able to view their favorites in reverse order, allowing them to see their most recent favorites</li>
+            <li>User can view all Pokémon currently present on the list if they select number of results to all</li>
+            <li>They can also view all Pokémon that match with your search by setting number of results to all</li>
+            <li>Users are able to remove individual cards from their favorites</li>
+            <li>When a user favorites a Pokémon and it gets added to the community tab, a like counter is present to show users how many people liked this specific Pokémon</li>
+          </ul>
+          <br>
+          <h2 class="subtitle has-text-weight-bold mb-0">GRADING</h2>
+            <h3 class="has-text-weight-bold">Requirements Met</h3>
+            <ol>
+              <li>When you favorite a Pokémon it gets saved to local storage and firebase</li>
+              <li>After favoriting the Pokémon, the button prevents the user from favoriting it again unless they search for it once more</li>
+              <li>Favorited cards are stored in local storage and firebase</li>
+              <li>Cards containing info pulled from the JSON are created in the App, Favorites and Community pages</li>
+              <li>Ajax via fetch() is currently being used on the App page</li>
+              <li>User is able to remove individual favorites from the Favorites page</li>
+              <li>When you remove a card from the Favorites page the card is removed from the innerHTML as well as the local storage</li>
+              <li>Firebase is used to store the values and then post them to a community tab for people to see what Pokémon people have liked</li>
+              <li>App page lets the player know if nothng has come up based on their search</li>
+              <li>Easy to understand layout for people new to the site</li>
+              <li>Web Components - (Header, Footer, Result/Favorite/Community Cards, Navbar).</li>
+            </ol>
+            <p>At the moment I believe I have something around an 85 or higher, I do feel like I could make more improvements on the website</p>
+          <br>
+          <h2 class="subtitle has-text-weight-bold mb-0">TO DO</h2>
+          <ul>
+            <li>Find images for all of the Pokémon in the JSON (The sprites meant for each one instead of the default card one</li>
+            <li>Add more functionality to the favorites page (Sorting)</li>
+          </ul>
+          <br>
+        </div>
+      </div>
+    </div>
+  </main>
+  <poke-footer></poke-footer>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Retro Audio Visualizer</title>
+    <link href="styles/default-styles.css" type="text/css" rel="stylesheet">
+    <link href="styles/app-styles.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"> 
+    <link rel="shortcut icon" href="#">
+    <script src="./src/loader.js" type="module"></script>
+    <script src="./src/component.js" type="module"></script>
+    <script>
+
+    </script>
+</head>
+<body class="p-1" style="background-color: rgba(129,113,222,255);">
+    <div class="hero is-large p-2">
+        <retro-header class="box" style="background-color: rgba(108,190,113,255);"></retro-header>
+        <retro-nav current-page="app" style="margin-left: -11.5px; margin-right: -11.5px;"></retro-nav>
+    </div>
+    <main>
+        <div id="controls">
+            <div id="music" class="box has-background-warning">
+                <h2>Music</h2>
+                <button class="button is-danger" id="playButton" data-playing="no"></button>
+                <label>Track:
+                    <select id="trackSelect">
+                        <option value="media/tetris_typea.mp3" selected>Type A</option>
+                        <option value="media/soysauceforgeese.mp3">Soy Sauce For Geese</option>
+                        <option value="media/icecapzone.mp3">Ice Cap Zone</option>
+                        <option value="media/athletic_theme.mp3">Athletic Theme</option>
+                        <option value="media/spark_mandrill.mp3">Spark Mandrill</option>
+                    </select>
+                </label>
+                <div id="volume" style="display: inline;">
+                    Volume: <input type="range" id="volumeSlider" min="0" max="2" value="1" step="0.01">
+                    <br>
+                    <span id="volumeLabel">???</span>
+                    <br>
+                    <span><input type="checkbox" id="highShelf"><label for="highShelf">Treble</label></span>
+                    <br>
+                    <span><input type="checkbox" id="lowShelf"><label for="lowShelf">Bass</label></span>
+                    <br>
+                    <div id="distortion" style="display: inline;">
+                        <span><input type="checkbox" id="distort"><label for="distort">Distortion: </label></span>
+                        <select id="distortionType" style="display: inline;">
+                            <option value="">???</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="button is-success" id="playVideo" data-isplaying="no"></button>
+            </div>
+
+            <div id="canDraw">
+                <video id="videoSource" preload="auto" loop style="display: none;"></video>
+                <canvas width="1180" height="760"></canvas>
+            </div>
+
+            <div id="effects" class="box has-background-warning">
+                <h2>Effects</h2>
+                <span><input type="checkbox" id="filterCB"><label for="filterCB">Show Filter</label></span>
+                <select id="filterType" style="display: inline;">
+                    <option id="filtValue" value="">???</option>
+                </select>
+                <br>
+                <div id="gradientValues" style="display: inline;">
+                    <label for="blueGradient">Blue</label>
+                    <br>
+                    <input type="range" id="blueGradient" min="0" max="1" value="0.2" step="0.01">
+                    <span id="blueLabel">???</span>
+                    <label for="greenGradient">Green</label>
+                    <br>
+                    <input type="range" id="greenGradient" min="0" max="1" value="0.4" step="0.01">
+                    <span id="greenLabel">???</span>
+                    <label for="yellowGradient">Yellow</label>
+                    <br>
+                    <input type="range" id="yellowGradient" min="0" max="1" value="0.6" step="0.01">
+                    <span id="yellowLabel">???</span>
+                    <label for="redGradient">Red</label>
+                    <br>
+                    <input type="range" id="redGradient" min="0" max="1" value="0.8" step="0.01">
+                    <span id="redLabel">???</span>
+                    <label for="magentaGradient">Magenta</label>
+                    <br>
+                    <input type="range" id="magentaGradient" min="0" max="1" value="1" step="0.01">
+                    <span id="magentaLabel">???</span>
+                </div>
+                <span><input type="checkbox" id="barsCB"><label for="barsCB">Show Bars</label></span>
+                <div id="barOptions">
+                    <span><input type="checkbox" id="solidBars"><label for="solidBars">Solid Bars</label></span>
+                </div>
+                <span><input type="checkbox" id="circlesCB"><label for="circlesCB">Show Circles</label></span>
+                <div id="circleOptions">
+                    <span><input type="checkbox" id="solidCircles"><label for="solidCircles">Solid Circles</label></span>
+                    <span><input type="checkbox" id="moveCircles"><label for="moveCircles">Move Circles</label></span>
+                    <div id="circleMadness" style="display: none;">
+                        <span><input type="checkbox" id="circleMayhem"><label for="circleMayhem">Circle Mayhem</label></span>
+                    </div>
+                </div>
+                <span><input type="checkbox" id="noiseCB"><label for="noiseCB">Show Noise</label></span>
+                <span><input type="checkbox" id="invertCB"><label for="invertCB">Show Invert</label></span>
+                <span><input type="checkbox" id="embossCB"><label for="embossCB">Show Emboss</label></span>
+            </div>
+        </div>
+    </main>
+    <retro-footer class="box" style="background-color: rgba(45,145,143,255);"></retro-footer>
+</body>
+</html>

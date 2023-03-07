@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PokéFinder Home</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">  
+  <link rel="stylesheet" type="text/css" href="styles/home-styles.css">
+  <link rel="stylesheet" type="text/html" href="styles/default-style.css">
+  <script type="module" src="./src/loader.js"></script>
+</head>
+<body>
+  <poke-header></poke-header>
+  <poke-navbar current-page="home"></poke-navbar>
+
+  <!-- product info -->
+      <div class="columns is-vcentered">
+        <div class="column">  
+          <div class="hero is-large has-background-danger-dark p-2">
+            <div class="hero-head">
+              <p class="title has-text-light">
+                PokéFinder Home
+              </p>
+              <p class="subtitle has-text-light">
+                Your first stop for finding Pokémon!
+              </p>
+              <p class="has-text-light">The PokéFinder allows you to search up any known Pokémon.<br>You can also favorite the Pokémon that you found, allowing you to view them whenever you want.</p>
+              <img class="p-3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Pokemon-go-1569794_1920.jpg/1599px-Pokemon-go-1569794_1920.jpg?20210320185934" alt="Pokemon Go">
+            </div>
+          </div>
+        </div>
+      </div>
+      <poke-footer></poke-footer>
+</body>
+</html>

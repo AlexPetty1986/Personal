@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retro Audio Visualizer Documentation</title>
+  <link href="styles/default-styles.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script src="./src/component.js" type="module"></script>
+  <style>
+    html{
+      background-color: rgba(252,253,208,255);
+    }
+
+    #element-card-holder{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+        grid-gap: 0.5em;
+      }
+  </style>
+</head>
+<body>
+  <!-- Main Page -->
+  <main>
+    <retro-header class="box" style="background-color: rgba(108,190,113,255); margin: 10px;"></retro-header>
+    <retro-nav current-page="documentation" style="margin-bottom: 20px; margin-left: -8.5px; margin-right: -7.5px;"></retro-nav>
+    <div class="p-1">
+      <div class="is-large p-4">
+        <!-- Row #1 -->
+        <h3 class="title has-text-dark">Retro Audio Visualizer Documentation</h3>
+        
+        <!-- Row #2  -->
+        <div class="box mt-2">
+          <h2 class="subtitle has-text-weight-bold mb-0">PROPOSAL</h2>
+          <ul>
+            <li>Experience the wonders of the arcade by listening to these retro game tunes</li>
+            <li>Select what song you want to listen to and then hit play to listen to it</li>
+            <li>Mess with the settings on the side to give the screen a whole new look</li>
+          </ul>
+          <br>
+          <h2 class="subtitle has-text-weight-bold mb-0">PROJECT REQUIREMENTS</h2>
+          <ul>
+            <li><a href="https://github.com/tonethar/IGME-330-Spring-2022/blob/main/projects/p2.md">https://github.com/tonethar/IGME-330-Spring-2022/blob/main/projects/p2.md</a></li>
+          </ul>
+          <br>
+          <h2 class="subtitle has-text-weight-bold mb-0">RESOURCES UTILIZE</h2>
+          <ul>
+            <li>Getting Video to run through Canvas while video element is not visible: <a href="https://stackoverflow.com/questions/69819307/playing-video-on-html-canvas">https://stackoverflow.com/questions/69819307/playing-video-on-html-canvas</a></li>
+            <li><a href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">BULMA</a></li>
+            <li><a href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">Font Awesome</a></li>
+            <li>Font Used:<a href="https://fonts.google.com/specimen/Press+Start+2P">https://fonts.google.com/specimen/Press+Start+2P</a></li>
+            <li>NES Controller: <a href="https://www.sciencefocus.com/buyers-guides/best-retro-gaming-consoles/">https://www.sciencefocus.com/buyers-guides/best-retro-gaming-consoles/</a></li>
+            <li>Tetris Gameplay: <a href="https://www.youtube.com/watch?v=VNbo1AGqKrI&t=395s">https://www.youtube.com/watch?v=VNbo1AGqKrI&t=395s</a></li>
+            <li>T-Block & Z-Block: <a href="https://www.spriters-resource.com/search/?q=tetris&g=1">https://www.spriters-resource.com/search/?q=tetris&g=1</a></li>
+            <li>Tetris Type-A: <a href="https://www.youtube.com/watch?v=fvZ4N_u98xg">https://www.youtube.com/watch?v=fvZ4N_u98xg</a></li>
+            <li>Terry Bogard vs Geese Howard: <a href="https://www.youtube.com/watch?v=GJgwYFfhvsQ">https://www.youtube.com/watch?v=GJgwYFfhvsQ</a></li>
+            <li>Terry Bogard & Geese Howard Icons: <a href="https://www.emugifs.net/real-bout-fatal-fury-2-the-newcomers-neo-geo/">https://www.emugifs.net/real-bout-fatal-fury-2-the-newcomers-neo-geo/</a></li>
+            <li>Soy Sauce for Geese: <a href="https://www.youtube.com/watch?v=jBW2qetB6S0">https://www.youtube.com/watch?v=jBW2qetB6S0</a></li>
+            <li>Ice Cap Zone Act 1 Gameplay: <a href="https://www.youtube.com/watch?v=NnueYgRxRfw">https://www.youtube.com/watch?v=NnueYgRxRfw</a></li>
+            <li>Sonic Life Icon: <a href="https://cdn2.steamgriddb.com/file/sgdb-cdn/icon/b282d1735283e8eea45bce393cefe265.ico">https://cdn2.steamgriddb.com/file/sgdb-cdn/icon/b282d1735283e8eea45bce393cefe265.ico</a></li>
+            <li>Knuckles Life Icon: <a href="https://www.steamgriddb.com/icon/14583">https://www.steamgriddb.com/icon/14583</a></li>
+            <li>Ice Cap Zone Act 1: <a href="https://www.youtube.com/watch?v=hYxlqTpZ-24">https://www.youtube.com/watch?v=hYxlqTpZ-24</a></li>
+            <li>Level 1-2 Gameplay: <a href="https://www.youtube.com/watch?v=xGucxlnnlD4">https://www.youtube.com/watch?v=xGucxlnnlD4</a></li>
+            <li>Mario Sprite: <a href="https://www.pngitem.com/middle/TTbhJxi_super-mario-bros-3-mario-jump-sprite-hd/">https://www.pngitem.com/middle/TTbhJxi_super-mario-bros-3-mario-jump-sprite-hd/</a></li>
+            <li>Bowser Sprite: <a href="https://www.pngitem.com/middle/hxJTiTm_super-mario-bros-3-bowser-sprite-hd-png/">https://www.pngitem.com/middle/hxJTiTm_super-mario-bros-3-bowser-sprite-hd-png/</a></li>
+            <li>Athletic Theme: <a href="https://www.youtube.com/watch?v=sPYUNRyVWt4">https://www.youtube.com/watch?v=sPYUNRyVWt4</a></li>
+            <li>Spark Mandrill Stage Gameplay: <a href="https://www.youtube.com/watch?v=3FvYvjYjxGs">https://www.youtube.com/watch?v=3FvYvjYjxGs</a></li>
+            <li>X & Zero: <a href="https://www.spriters-resource.com/snes/mmx/">https://www.spriters-resource.com/snes/mmx/</a></li>
+            <li>Spark Mandrill: <a href="https://www.youtube.com/watch?v=-7Fvalk31Kk">https://www.youtube.com/watch?v=-7Fvalk31Kk</a></li>
+            <li>Site used for MP3 files: </li>
+            <li><a href="https://downloads.khinsider.com/">https://downloads.khinsider.com/</a></li>
+          </ul>
+          <br>
+          <h2 class="subtitle has-text-weight-bold mb-0">NOTEWORTHY</h2>
+          <ul>
+            <li>Web Components - (Header, Footer, Navbar)</li>
+            <li>Made a video element play through the canvas</li>
+            <li>Made it possible to mess with the position of the colors on the gradient filter</li>
+            <li>The circle beat now moves around the screen when the box is checked</li>
+            <li>Also made it possible for the circle to separate into three separate parts when another box is checked</li>
+          </ul>
+          <br>
+          <h2 class="subtitle has-text-weight-bold mb-0">GRADING</h2>
+          <h3 class="has-text-weight-bold">Requirements Met</h3>
+          <ol>
+            <li>Explained to the user what the Audio Visualizer does</li>
+            <li>Using a game controller as the brand for the page</li>
+            <li>Used a Bulma hero</li>
+            <li>More than 3 different interface controls (Either related to the audio or the canvas drawing)</li>
+            <li>Load in presets from a JSON file (If boxes are checked, adding in distort types and filter types)</li>
+            <li>App page can be interacted with</li>
+            <li>Each thing on the App page is in some way usable</li>
+            <li>Layout of site is easy to understand when someone new uses the site</li>
+            <li>3 Web Components used - (Header, Footer, Navbar)</li>
+            <li>All pages passed HTML & CSS Validation</li>
+            <li>Canvas methods used to draw items to screen</li>
+            <li>ctx.save and ctx.restore wre both used when needed</li>
+            <li>I think I have something around a 90 or higher, I think the work I have done is great, but I believe it is possible for more improvements on the site.</li>
+          </ol>
+          <br>
+          <h2 class="subtitle has-text-weight-bold mb-0">TO DO</h2>
+          <ol>
+            <li>Add an image carousel to the home page</li>
+            <li>Make it possible to have the user load in their own music and video</li>
+            <li>Make a default bar and circle effect for music loaded in</li>
+          </ol>
+          <br>
+        </div>
+      </div>
+      <retro-footer class="box" style="background-color: rgba(45,145,143,255);"></retro-footer>
+    </div>
+  </main>
+</body>
+</html>

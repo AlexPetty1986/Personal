@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retro Audio Visualizer Home</title>
+  <link href="styles/home-styles.css" type="text/css" rel="stylesheet">
+  <link href="styles/default-styles.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script src="./src/component.js" type="module"></script>
+</head>
+<body class="has-background-danger-dark">
+  <main>
+    <!-- product info -->
+    <div class="columns is-vcentered" style="margin-bottom: -20px;">
+      <div class="column">  
+        <div class="hero is-large p-2">
+          <retro-header class="box" style="background-color: rgba(108,190,113,255);"></retro-header>
+          <retro-nav current-page="home" style="margin-bottom: 20px; margin-left: -7.5px; margin-right: -7.5px;"></retro-nav>
+          <div class="hero-head">
+            <p class="title">
+              Retro Audio Visualizer
+            </p>
+            <p class="subtitle">
+              Ever want to listen to some nostalgic songs from an unforgettable era of games?
+              <br>
+              The Retro Audio Visualizer allows you to do just that.
+              <br>
+              Click on the controller to start messing with the Retro Audio Visualizer.
+            </p>
+            <a href="app.html"><img class="p-3" src="https://images.immediate.co.uk/production/volatile/sites/4/2022/05/Retro-games-consoles-a977a72.jpg?quality=90&webp=true&crop=4px,143px,1193px,513px&resize=1200,510" alt="retro"></a>
+          </div>
+          <retro-footer class="box" style="background-color: rgba(45,145,143,255);"></retro-footer>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
