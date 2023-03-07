@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Sine Start</title>
+	<style>canvas{ border: 1px solid black; }</style>
+	<script>
+	"use strict";
+	const canvasWidth = 400, canvasHeight = 300;
+	let ctx;
+    let x = 0, y = 0;
+    let angle = 0;
+    let bounce = false;
+    const fps = 30;
+
+    window.onload = init;
+
+	function init(){
+		ctx = canvas.getContext("2d");
+		canvas.width = canvasWidth;
+		canvas.height = canvasHeight;
+		ctx.fillRect(0,0,canvasWidth,canvasHeight);
+        loop();
+	}
+
+    function loop()
+    {
+        setTimeout(loop, 1000/fps);
+        ctx.save();
+        ctx.fillStyle = "black";
+        ctx.globalAlpha = 1/fps;
+        ctx.fillRect(0,0,canvasWidth,canvasHeight);
+        ctx.restore();
+        angle += 0.3;
+        if(!bounce)
+        {
+            x -= 10;
+            y =  canvasHeight/2 + Math.sin(angle) * 50;
+            drawCircle(ctx,x,y,getRandomInt(2,8),getRandomColor());
+            y = canvasHeight/2 - Math.tan(angle) * 40;
+            drawCircle(ctx,x,y,getRandomInt(2,8),getRandomColor());
+            y =  canvasHeight/2 - Math.sqrt(x%50) * 5;
+            drawCircle(ctx,x,y,getRandomInt(2,8),getRandomColor());
+        }
+        else
+        {
+            x += 10;
+            y =  canvasHeight/2 + Math.cos(angle) * 20;
+            drawCircle(ctx,x,y,getRandomInt(2,8),getRandomColor());
+            y = canvasHeight/2 - Math.tan(angle) * 30;
+            drawCircle(ctx,x,y,getRandomInt(2,8),getRandomColor());
+            y = canvasHeight/2 - Math.abs(Math.E);
+            drawCircle(ctx,x,y,getRandomInt(2,8),getRandomColor());
+        }
+
+        if(x < 0)
+        {
+            bounce = true;
+        }
+        else if(x > canvasWidth)
+        {
+            bounce = false;
+        }
+
+        /*let angle = 0;
+        let increase = Math.PI * 2 / 100;
+        for(let i = 0; i < 1; i += 0.01)
+        {
+            x = i;
+            y = Math.sin(angle) / 2 + 0.5;
+            //console.log(x, y);
+            drawCircle(ctx,x * canvasWidth, canvasHeight/2 + (y * 100),2,"white");
+            angle += increase;
+        }*/
+    }
+
+	// helpers
+	function dtr(degrees){
+		return degrees * (Math.PI/180);
+	}
+
+	function drawCircle(ctx,x,y,radius,color){
+		ctx.save();
+		ctx.fillStyle = color;
+		ctx.beginPath();
+		ctx.arc(x,y,radius,0,Math.PI * 2);
+		ctx.closePath();
+		ctx.fill();
+		ctx.restore();
+	}
+
+    // handy helper functions!
+    function getRandomColor()
+    {
+        function getByte()
+        {
+            return 55 + Math.round(Math.random() * 200);
+        }
+
+        return "rgba(" + getByte() + "," + getByte() + "," + getByte() + ",.8)";
+    }
+
+    function getRandomInt(min, max) 
+    {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+	</script>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+
+</body>
+</html>
