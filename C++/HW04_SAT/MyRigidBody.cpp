@@ -23,6 +23,10 @@ uint MyRigidBody::SAT(MyRigidBody* const a_pOther)
 	localOther.push_back(a_pOther->GetModelMatrix()[1]);
 	localOther.push_back(a_pOther->GetModelMatrix()[2]);
 
+	//get the half width of the 2 objects
+	vector3 halfObj = GetHalfWidth();
+	vector3 halfOther = a_pOther->GetHalfWidth();
+
 	// Compute rotation matrix expressing b in a’s coordinate frame
 	for (int i = 0; i < 3; i++)
 	{
@@ -52,10 +56,10 @@ uint MyRigidBody::SAT(MyRigidBody* const a_pOther)
 	// Test axes L = A0, L = A1, L = A2
 	for (int i = 0; i < 3; i++)
 	{
-		ra = GetHalfWidth()[i];
-		rb = a_pOther->GetHalfWidth()[0] * absR[i][0] 
-			+ a_pOther->GetHalfWidth()[1] * absR[i][1] 
-			+ a_pOther->GetHalfWidth()[2] * absR[i][2];
+		ra = halfObj[i];
+		rb = halfOther[0] * absR[i][0] 
+			+ halfOther[1] * absR[i][1] 
+			+ halfOther[2] * absR[i][2];
 		if (glm::abs(t[i]) > ra + rb)
 		{
 			return 0;
@@ -65,10 +69,10 @@ uint MyRigidBody::SAT(MyRigidBody* const a_pOther)
 	// Test axes L = B0, L = B1, L = B2
 	for (int i = 0; i < 3; i++)
 	{
-		ra = GetHalfWidth()[0] * absR[0][i]
-			+ GetHalfWidth()[1] * absR[1][i]
-			+ GetHalfWidth()[2] * absR[2][i];
-		rb = a_pOther->GetHalfWidth()[i];
+		ra = halfObj[0] * absR[0][i]
+			+ halfObj[1] * absR[1][i]
+			+ halfObj[2] * absR[2][i];
+		rb = halfOther[i];
 
 		if (glm::abs(t[0] * R[0][i] + t[1] * R[1][i] + t[2] * R[2][i]) > ra + rb)
 		{
@@ -77,72 +81,72 @@ uint MyRigidBody::SAT(MyRigidBody* const a_pOther)
 	}
 
 	//Test axis L = A0 * B0
-	ra = GetHalfWidth()[1] * absR[2][0] + GetHalfWidth()[2] * absR[1][0];
-	rb = a_pOther->GetHalfWidth()[1] * absR[0][2] + a_pOther->GetHalfWidth()[2] * absR[0][1];
+	ra = halfObj[1] * absR[2][0] + halfObj[2] * absR[1][0];
+	rb = halfOther[1] * absR[0][2] + halfOther[2] * absR[0][1];
 	if (glm::abs(t[2] * R[1][0] - t[1] * R[2][0]) > ra + rb)
 	{
 		return 0;
 	}
 
 	//Test axis L = A0 * B1
-	ra = GetHalfWidth()[1] * absR[2][1] + GetHalfWidth()[2] * absR[1][1];
-	rb = a_pOther->GetHalfWidth()[0] * absR[0][2] + a_pOther->GetHalfWidth()[2] * absR[0][0];
+	ra = halfObj[1] * absR[2][1] + halfObj[2] * absR[1][1];
+	rb = halfOther[0] * absR[0][2] + halfOther[2] * absR[0][0];
 	if (glm::abs(t[2] * R[1][1] - t[1] * R[2][1]) > ra + rb)
 	{
 		return 0;
 	}
 
 	//Test axis L = A0 * B2
-	ra = GetHalfWidth()[1] * absR[2][2] + GetHalfWidth()[2] * absR[1][2];
-	rb = a_pOther->GetHalfWidth()[0] * absR[0][1] + a_pOther->GetHalfWidth()[1] * absR[0][0];
+	ra = halfObj[1] * absR[2][2] + halfObj[2] * absR[1][2];
+	rb = halfOther[0] * absR[0][1] + halfOther[1] * absR[0][0];
 	if (glm::abs(t[2] * R[1][2] - t[1] * R[2][2]) > ra + rb)
 	{
 		return 0;
 	}
 
 	//Test axis L = A1 * B0
-	ra = GetHalfWidth()[0] * absR[2][0] + GetHalfWidth()[2] * absR[0][0];
-	rb = a_pOther->GetHalfWidth()[1] * absR[1][2] + a_pOther->GetHalfWidth()[2] * absR[1][1];
+	ra = halfObj[0] * absR[2][0] + halfObj[2] * absR[0][0];
+	rb = halfOther[1] * absR[1][2] + halfOther[2] * absR[1][1];
 	if (glm::abs(t[0] * R[2][0] - t[2] * R[0][0]) > ra + rb)
 	{
 		return 0;
 	}
 
 	//Test axis L = A1 * B1
-	ra = GetHalfWidth()[0] * absR[2][1] + GetHalfWidth()[2] * absR[0][1];
-	rb = a_pOther->GetHalfWidth()[0] * absR[1][2] + a_pOther->GetHalfWidth()[2] * absR[1][0];
+	ra = halfObj[0] * absR[2][1] + halfObj[2] * absR[0][1];
+	rb = halfOther[0] * absR[1][2] + halfOther[2] * absR[1][0];
 	if (glm::abs(t[0] * R[2][1] - t[2] * R[0][1]) > ra + rb)
 	{
 		return 0;
 	}
 
 	//Test axis L = A1 * B2
-	ra = GetHalfWidth()[0] * absR[2][2] + GetHalfWidth()[2] * absR[0][2];
-	rb = a_pOther->GetHalfWidth()[0] * absR[1][1] + a_pOther->GetHalfWidth()[1] * absR[1][0];
+	ra = halfObj[0] * absR[2][2] + halfObj[2] * absR[0][2];
+	rb = halfOther[0] * absR[1][1] + halfOther[1] * absR[1][0];
 	if (glm::abs(t[0] * R[2][2] - t[2] * R[0][2]) > ra + rb)
 	{
 		return 0;
 	}
 
 	//Test axis L = A2 * B0
-	ra = GetHalfWidth()[0] * absR[1][0] + GetHalfWidth()[1] * absR[0][0];
-	rb = a_pOther->GetHalfWidth()[1] * absR[2][2] + a_pOther->GetHalfWidth()[2] * absR[2][1];
+	ra = halfObj[0] * absR[1][0] + halfObj[1] * absR[0][0];
+	rb = halfOther[1] * absR[2][2] + halfOther[2] * absR[2][1];
 	if (glm::abs(t[1] * R[0][0] - t[0] * R[1][0]) > ra + rb)
 	{
 		return 0;
 	}
 
 	//Test axis L = A2 * B1
-	ra = GetHalfWidth()[0] * absR[1][1] + GetHalfWidth()[1] * absR[0][1];
-	rb = a_pOther->GetHalfWidth()[0] * absR[2][2] + a_pOther->GetHalfWidth()[2] * absR[2][0];
+	ra = halfObj[0] * absR[1][1] + halfObj[1] * absR[0][1];
+	rb = halfOther[0] * absR[2][2] + halfOther[2] * absR[2][0];
 	if (glm::abs(t[1] * R[0][1] - t[0] * R[1][1]) > ra + rb)
 	{
 		return 0;
 	}
 
 	//Test axis L = A2 * B2
-	ra = GetHalfWidth()[0] * absR[1][2] + GetHalfWidth()[1] * absR[0][2];
-	rb = a_pOther->GetHalfWidth()[0] * absR[2][1] + a_pOther->GetHalfWidth()[1] * absR[2][0];
+	ra = halfObj[0] * absR[1][2] + halfObj[1] * absR[0][2];
+	rb = halfOther[0] * absR[2][1] + halfOther[1] * absR[2][0];
 	if (glm::abs(t[1] * R[0][2] - t[0] * R[1][2]) > ra + rb)
 	{
 		return 0;
