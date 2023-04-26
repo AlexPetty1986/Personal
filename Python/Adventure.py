@@ -17,7 +17,7 @@ room = ["You are in the Main Room! There is a door to the North(N), South(S), Ea
 room_list.append(room)
 
 room = [None,None,None,None,None]
-room = ["You are at the Demon Altar! There is a door to the North(N).",6,None,None,1]
+room = ["You are at the Demon Altar! There is a door to the North(N) and a door to the West(W).",6,None,None,1]
 room_list.append(room)
 
 room = [None,None,None,None,None]
@@ -39,7 +39,7 @@ room_list.append(room)
 while done == False:
     print(room_list[current_room][0])
     print(current_room)
-    direction = raw_input("Which way? ")
+    direction = input("Which way? ")
     direction = direction.upper()
     if direction == "N":
         next_room = room_list[current_room][1]
