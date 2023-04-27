@@ -25,9 +25,10 @@ Octant::Octant(uint a_nMaxLevel, uint a_nIdealEntityCount)
 	//of those children will have children of their own
 	//The following is a made-up size, you need to make sure it is measuring all the object boxes in the world
 	std::vector<vector3> lMinMax;
+	int entCount = m_pEntityMngr->GetEntityCount();
 
 	//for each entity in the manager
-	for (int i = 0; i < m_pEntityMngr->GetEntityCount(); i++)
+	for (int i = 0; i < entCount; i++)
 	{
 		Entity* pEntity = m_pEntityMngr->GetEntity(i);
 		RigidBody* pRigidBody = pEntity->GetRigidBody();
@@ -40,7 +41,7 @@ Octant::Octant(uint a_nMaxLevel, uint a_nIdealEntityCount)
 	//make the rigid body equal the list of global minmax variables
 	RigidBody* pRigidBody = new RigidBody(lMinMax);
 
-	//create a varoable equal to the x coordinate of the half width of the rigid body
+	//create a variable equal to the x coordinate of the half width of the rigid body
 	float fMax = pRigidBody->GetHalfWidth().x;
 	vector3 rigidHalf = pRigidBody->GetHalfWidth();
 
