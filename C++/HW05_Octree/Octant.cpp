@@ -45,8 +45,10 @@ Octant::Octant(uint a_nMaxLevel, uint a_nIdealEntityCount)
 	float fMax = pRigidBody->GetHalfWidth().x;
 	vector3 rigidHalf = pRigidBody->GetHalfWidth();
 
+	//for each coordinate in the rigid body vector
 	for (int j = 0; j < 3; j++)
 	{
+		//if the fmax of x is less than the coordinate of the rigid body
 		if (fMax < rigidHalf[j])
 		{
 			fMax = rigidHalf[j];
