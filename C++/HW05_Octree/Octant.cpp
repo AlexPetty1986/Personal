@@ -84,8 +84,8 @@ bool Octant::IsColliding(uint a_uRBIndex)
 	//current amount of entities
 	int entCount = m_pEntityMngr->GetEntityCount();
 
-	//if the current index becomes greater than the total amount of entities
-	//in the manager
+	//if the current index becomes greater than
+	//the total amount of entities in the manager
 	if (a_uRBIndex >= entCount)
 	{
 		return false;
@@ -99,6 +99,7 @@ bool Octant::IsColliding(uint a_uRBIndex)
 	vector3 entMax = entBody->GetMaxGlobal();
 
 	//ARBB collisions
+	//if there is collision
 	if (m_v3Max.x < entMin.x || m_v3Min.x > entMax.x)
 	{
 		return false;
@@ -114,7 +115,7 @@ bool Octant::IsColliding(uint a_uRBIndex)
 		return false;
 	}
 
-	return true; // for the sake of startup code
+	return true; //if there is no collision
 }
 
 void Octant::Display(uint a_nIndex, vector3 a_v3Color)
@@ -231,7 +232,7 @@ bool Octant::ContainsAtLeast(uint a_nEntities)
 		}
 	}
 
-	return false; //return something for the sake of start up code
+	return false; //return false if it does not exceed the entity count
 }
 
 void Octant::AssignIDtoEntity(void)
