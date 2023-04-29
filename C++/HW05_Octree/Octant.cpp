@@ -25,6 +25,8 @@ Octant::Octant(uint a_nMaxLevel, uint a_nIdealEntityCount)
 	//of those children will have children of their own
 	//The following is a made-up size, you need to make sure it is measuring all the object boxes in the world
 	std::vector<vector3> lMinMax;
+
+	//total number of entities in the manager
 	int entCount = m_pEntityMngr->GetEntityCount();
 
 	//for each entity in the manager
@@ -42,33 +44,38 @@ Octant::Octant(uint a_nMaxLevel, uint a_nIdealEntityCount)
 	RigidBody* pRigidBody = new RigidBody(lMinMax);
 
 	//create a variable equal to the x coordinate of the half width of the rigid body
-	float fMax = pRigidBody->GetHalfWidth().x;
+	float fHalf = pRigidBody->GetHalfWidth().x;
 	vector3 rigidHalf = pRigidBody->GetHalfWidth();
 
 	//for each coordinate in the rigid body vector
 	for (int j = 0; j < 3; j++)
 	{
-		//if the fmax of x is less than the coordinate of the rigid body
-		if (fMax < rigidHalf[j])
+		//if the x of the halfwidth is less than any of the half width vector values
+		//of the rigid body
+		if (fHalf < rigidHalf[j])
 		{
-			fMax = rigidHalf[j];
+			fHalf = rigidHalf[j];
 		}
 	}
 
 	//set center to the local center of the rigid body
 	vector3 v3Center = pRigidBody->GetCenterLocal();
+
+	//clear the minmax list
 	lMinMax.clear();
+
+	//delete rigid body pointer
 	SafeDelete(pRigidBody);
 
-	//calculate the size
-	m_fSize = fMax * 2.0f;
+	//calculate the size using the max
+	m_fSize = fHalf * 2.0f;
 
 	//set center of the octant using the center of the rigid body
 	m_v3Center = v3Center;
 
 	//calculate the min and the max of the octant
-	m_v3Min = m_v3Center - vector3(fMax);
-	m_v3Max = m_v3Center + vector3(fMax);
+	m_v3Min = m_v3Center - vector3(fHalf);
+	m_v3Max = m_v3Center + vector3(fHalf);
 
 	m_uOctantCount++; //When we add an octant we increment the count
 	ConstructTree(m_uMaxLevel); //Construct the children
@@ -96,22 +103,31 @@ bool Octant::IsColliding(uint a_uRBIndex)
 	//create reference to an entity in the manager
 	//using the index variable
 	Entity* entity = m_pEntityMngr->GetEntity(a_uRBIndex);
+
+	//create a reference to the rigid body of the entity
+	//then get the global min and global max
 	RigidBody* entBody = entity->GetRigidBody();
-	vector3 entMin = entBody->GetMinGlobal();
 	vector3 entMax = entBody->GetMaxGlobal();
+	vector3 entMin = entBody->GetMinGlobal();
 
 	//ARBB collisions
 	//if there is collision
+	//if the max x of the octant is less than the min x of the entity or
+	//if the min x of the octant is greater than the max x of the entity
 	if (m_v3Max.x < entMin.x || m_v3Min.x > entMax.x)
 	{
 		return false;
 	}
 
+	//if the max y of the octant is less than the min y of the entity or
+	//if the min y of the octant is greater than the max y of the entity
 	if (m_v3Max.y < entMin.y || m_v3Min.y > entMax.y)
 	{
 		return false;
 	}
 
+	//if the max z of the octant is less than the min z of the entity or
+	//if the min z of the octant is greater than the max z of the entity
 	if (m_v3Max.z < entMin.z || m_v3Min.z > entMax.z)
 	{
 		return false;
@@ -125,7 +141,9 @@ void Octant::Display(uint a_nIndex, vector3 a_v3Color)
 	// Display the specified octant
 	if (m_uID == a_nIndex)
 	{
-		m_pModelMngr->AddWireCubeToRenderList(glm::translate(IDENTITY_M4, m_v3Center) * glm::scale(vector3(m_fSize)), a_v3Color);
+		//draw the wire cube
+		m_pModelMngr->AddWireCubeToRenderList(glm::translate(IDENTITY_M4, m_v3Center) * 
+			glm::scale(vector3(m_fSize)), a_v3Color);
 		return;
 	}
 
@@ -169,30 +187,26 @@ void Octant::Subdivide(void)
 
 	//make center equal to the center point of the octant
 	vector3 center = m_v3Center;
+	//subtract the size of the octant divided by 4 from the center vector
 	center -= m_fSize / 4.0f;
 
 	//Create octants in the child node
 	m_pChild[0] = new Octant(center, width);
 
-	center.y += width;
-	m_pChild[1] = new Octant(center, width);
-
+	//modify the center so that it is different for each octant
 	center.x += width;
+	m_pChild[1] = new Octant(center, width);
+	center.y += width;
 	m_pChild[2] = new Octant(center, width);
-
-	center.y -= width;
+	center.x -= width;
 	m_pChild[3] = new Octant(center, width);
-
 	center.z += width;
 	m_pChild[4] = new Octant(center, width);
-
-	center.y += width;
+	center.x += width;
 	m_pChild[5] = new Octant(center, width);
-
-	center.x -= width;
-	m_pChild[6] = new Octant(center, width);
-
 	center.y -= width;
+	m_pChild[6] = new Octant(center, width);
+	center.x -= width;
 	m_pChild[7] = new Octant(center, width);
 
 	//link the children with the parents
@@ -251,7 +265,7 @@ void Octant::AssignIDtoEntity(void)
 		m_pChild[i]->AssignIDtoEntity();
 	}
 
-	//if the octant contains any children
+	//if the octant does not contain any children
 	if (IsLeaf())
 	{
 		//for each entity in the manager
