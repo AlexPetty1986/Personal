@@ -110,7 +110,7 @@ bool Octant::IsColliding(uint a_uRBIndex)
 	vector3 entMax = entBody->GetMaxGlobal();
 	vector3 entMin = entBody->GetMinGlobal();
 
-	//ARBB collisions
+	//AABB collisions
 	//if there is collision
 	//if the max x of the octant is less than the min x of the entity or
 	//if the min x of the octant is greater than the max x of the entity
@@ -139,6 +139,7 @@ bool Octant::IsColliding(uint a_uRBIndex)
 void Octant::Display(uint a_nIndex, vector3 a_v3Color)
 {
 	// Display the specified octant
+	//if the id of the octant equals the current index
 	if (m_uID == a_nIndex)
 	{
 		//draw the wire cube
@@ -158,15 +159,15 @@ void Octant::Display(vector3 a_v3Color)
 {
 	//this is meant to be a recursive method, in starter code will only display the root
 	//even if other objects are created
+	//draw the wire cube
+	m_pModelMngr->AddWireCubeToRenderList(glm::translate(IDENTITY_M4, m_v3Center) *
+		glm::scale(vector3(m_fSize)), a_v3Color);
+
 	//for each child in the octant
 	for (int i = 0; i < m_uChildren; i++)
 	{
 		m_pChild[i]->Display(a_v3Color);
 	}
-
-	//draw the wire cube
-	m_pModelMngr->AddWireCubeToRenderList(glm::translate(IDENTITY_M4, m_v3Center) *
-		glm::scale(vector3(m_fSize)), a_v3Color);
 }
 
 void Octant::Subdivide(void)
