@@ -5,16 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Portfolio - Alex Petty</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
         <link rel="stylesheet" href="./HTML/project1/css/style.css">
     </head>
 
-    <body>
+    <body id="portPage">
         <header>
             <h1>Alex Petty's Portfolio </h1>
             <h3>Software Developer, C#/C++ Programmer/Game Developer </h3>
         </header>
 
-        <nav>
+        <nav id="navPort" class="fixed-top">
             <div>
                 <a href="index.html">Home</a>
             </div>
@@ -42,28 +43,348 @@
             </div>
 
             <div id="projects">
-                <div id="project1">
-                    <a><img src="https://www.computersciencedegreehub.com/wp-content/uploads/2023/01/shutterstock_2052366317-scaled.jpg" alt="webBased" id="mainImg1" style="width: 30%;"/></a>
-                    <a href="./HTML/portfolioPages/web.html"><h2 style="font-size: 30px;">Web-Based Programs</h2></a>
-                    <p style="font-size: 30px;">Description: This section consists of programs that I have created using web-based programming languages (HTML, Javascript, CSS).  The software I used to make them was Visual Studio Code.
+                <div id="project1" class="carousel slide">
+                    <h1 style="text-align: center;">Web-Based Programs</h1>
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#project1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#project1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#project1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#project1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#project1" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./HTML/project1/media/RandomPhrases.png" alt="RandomPhrases" id="webImg1"/>
+                        <a href="./HTML/randPhrase/random-phrases.html"><h2>Random Phrase Generator</h2></a>
+                        <p style="text-align: center;">
+                            <button class="btn btn-primary web" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo1" aria-expanded="false" aria-controls="webInfo1" onclick="console.log(ariaExpanded)">
+                              Information
+                            </button>
+                        </p>
+                        <div class="collapse" id="webInfo1">
+                            <div class="card card-body" style="color: black; margin: 10px;">
+                                <p>Description: This is one of my homework assignments, a webpage that will print out a random phrase every time the button is pressed or the page is reset.  I decided to choose the video game character Gex from, "Gex," because he has some funny quotes.
+                                <br><br>Technologies used: Query Selector, innerHTML, Slice, on Change, Parent Elements, Javascript
+                                <br><br>Role in Project: My role in this project was getting it work based on the instructions provided, while we were given an example on what the project was supposed to look like, we had to design everything one our own.
+                                <br><br>What I learned: What I learned during this was what Javascript can do.  How much it can change the way a web page works, which was astounding to see after working with it.
+                                <br><br>Challenges: I do think I had any challenges when it came to the coding of this assignment.  I think the most challenge I has is choosing the character for the site.</p>
+                            </div>
+                        </div>
+                        <br><br>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./HTML/project1/media/Project2.png" alt="GifFinder" id="webImg2"/>
+                        <a href="./HTML/project2/project2.html"><h2>Gif Locator</h2></a>
+                        <p style="text-align: center;">
+                            <button class="btn btn-primary web" id="2" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo2" aria-expanded="false" aria-controls="webInfo2" onclick="console.log(ariaExpanded)">
+                              Information
+                            </button>
+                        </p>
+                        <div class="collapse" id="webInfo2">
+                            <div class="card card-body" style="color: black; margin: 10px;">
+                                <p>Description: This was a project that I had worked on for a class.  This was originally a homework assignment but I decided to try and modify it and make it better than it originally was.  Using a GIPHY API key I was able to pull gifs from the GIPHY website and have them display on the webpage.  When a user types in the specified gifs they want to looks up, like a dog or fish.  The search will then be used to search up what you are looking for and then load them up on the web page.  There is an option to load in more or less gifs on the page by pushing the buttons at the bottom.  If you hover over the gifs with your mouse they will get bigger in size, allowing to view them much more easily.  Also, you can copy the gif url to your clipboard by clicking the button right above the image, with the rating and a direct link to the GIPHY page right above it.
+                                <br><br>Technologies used: Copy to Clipboard, Using user input to look something up, saving something to local storage, load in more or less images, Javascript
+                                <br><br>Role in Project: My role in this project was trying to get the Gif FInder to be different form what it had originally looked like.  This meant adding in new stuff, changing the layout and design of certain things like the search bar and the title.  
+                                <br><br>What I learned: I learned during this assignment how much much Javascript can affect a webpage, while it would not be my first time using Javascript, due to having many other assignments before it that relied heavily on Javascript, it still astounds me.
+                                <br><br>Challenges: The main challenges I had was what new things I would add into the Gif FInder to make it different from the original assignment.</p>
+                            </div>
+                        </div>
+                        <br><br>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./HTML/project1/media/Project3.png" alt="AlienDefender!" id="webImg3"/>
+                        <a href="./HTML/project3/game.html"><h2>Alien Defender!</h2></a>
+                        <p style="text-align: center;">
+                            <button class="btn btn-primary web" id="3" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo3" aria-expanded="false" aria-controls="webInfo3" onclick="console.log(ariaExpanded)">
+                              Information
+                            </button>
+                        </p>
+                        <div class="collapse" id="webInfo3">
+                            <div class="card card-body" style="color: black; margin: 10px;">
+                                <p>Description: This was another project I had worked on, an updated version of one of my homework assignments that was known as Circle Blast!  I decided to modify and try to make it different from the source material.  One of the main differences is that you are able to choose between four different ships, each one having a different way of firing.  There are also two new aliens that were not in the original assignment, as well as your high score being stored in local storage.
+                                    <br><br>Technologies used: Classes, pushing objects, Scenes, Howl, PIXI, Sprites, Local Storage, Javascript
+                                    <br><br>Role in Project: My role in this project was getting the game to be as unique as possible, make it as different as possible from the assignment it was based on.
+                                    <br><br>What I learned: What I learned during this assignment was how much I have grown from when I first learned Javascript.  While I definitely still have mroe to learn, I think that my skills with Javascript have grown.
+                                    <br><br>Challenges: The main challenge that I had for this assignment was figuring out how to change the sprite depending on what button you pressed.  For some time, I had been unable to figure that out, with the last sprite loaded in always being the one used.  I was able to solve this issue though by removing the default ship from the game scene, that being the first ship.  I would then use a function to load in a new ship with the new ship sprite.  I also used these same functions to change the firing types of each ship.</p>
+                            </div>
+                        </div>
+                        <br><br>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./HTML/portfolioPages/media/project1.PNG" alt="PokeFinder" id="webImg4"/>
+                        <a href="./HTML/project-1/home.html"><h2>PokéFinder</h2></a>
+                        <p style="text-align: center;">
+                            <button class="btn btn-primary web" id="4" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo4" aria-expanded="false" aria-controls="webInfo4" onclick="console.log(ariaExpanded)">
+                              Information
+                            </button>
+                        </p>
+                        <div class="collapse" id="webInfo4">
+                            <div class="card card-body" style="color: black; margin: 10px;">
+                                <p>Description: This was a project I had worked on during my time learning about Web Applications, a webpage that uses an API to print out cards onto the page.  The particular API I had used was a Pokemon GO API, I had chose this one because it is based around the series that I know well.
+                                <br><br>Technologies used: FireBase, Local Storage, API, Bulma
+                                <br><br>Role in Project: My role for this project was to create a page that produces cards based on the information collected from the API.  We were provided multiple options when it came to the APi we used, each one having different data as well as format style, making it intriguing to figure out how to get that data to print onto the screen correctly.
+                                <br><br>What I learned: During the time I had put into working on this project I had learned a lot on how FireBase works, which was interesting to find out.  I had also learned more on the different ways APIs set up data, with some giving you different sections of data with each one in the form of a JSON, or just a singlular JSON file with all of the information needed.
+                                <br><br>Challenges: The main challenge I had when it came to this project was getting the information form the JSON file stored within the API.</p>
+                            </div>
+                        </div>
+                        <br><br>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./HTML/portfolioPages/media/project2.PNG" alt="RetroAudio" id="webImg5"/>
+                        <a href="./HTML/project-2/home.html"><h2>Retro Audio Visualizer</h2></a>
+                        <p style="text-align: center;">
+                            <button class="btn btn-primary web" id="5" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo5" aria-expanded="false" aria-controls="webInfo5" onclick="console.log(ariaExpanded)">
+                              Information
+                            </button>
+                        </p>
+                        <div class="collapse" id="webInfo5">
+                            <div class="card card-body" style="color: black; margin: 10px;">
+                                <p>Description: This was my final project that I had created for the Web Applications course I had taken, an Audio Visualizer that uses Audio to manipulate the drawing that is present on the canvas.  
+                                <br><br>Technologies used: Canvas, Audio and Video Elements, Manipulating Canvas using Audio
+                                <br><br>Role in Project: I was tasked in creating something using canvas, an HTML element that allows the user to draw graphics onto the web page.  Using one of my past assignments, an audio visualizer, I modified to make it as different as possible to the original assignment.  This includes changing the overall design of the visualizer, changing the music to match with the new aesthetic, to even adding in brand new elements, like having video play through the canvas element.
+                                <br><br>What I learned: During this project I had learned how to make a video element play through a canvas element, mkaing it possible to have the video be affected by the filters created using canvas.
+                                <br><br>Challenges: The main challenge that I had with this project was figuring out how to make it as different to the original assignement as possible.</p>
+                            </div>
+                        </div>
+                        <br><br>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#project1" data-bs-slide="prev" onclick="closeInfo('web');">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#project1" data-bs-slide="next" onclick="closeInfo('web');">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
                 
-                <div id="project2">
-                    <a><img src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2021/04/16114721/iStock-488651322-1.jpg" alt="cPlus" id="mainImg2" style="width: 30%;"/></a>
-                    <a href="./HTML/portfolioPages/cplus.html"><h2 style="font-size: 30px;">C-Plus-Plus</h2></a>
-                    <p style="font-size: 30px;">Description: This section consists of programs that I have created using C++.  For these programs I had primarily used Visual Studio 2019, but some were made using Visual Studio 2022.
+                <div id="project2" class="carousel slide">
+                    <h1 style="text-align: center;">C++ Programs</h1>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#project2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#project2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#project2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="./HTML/portfolioPages/media/plusProj1.png" alt="Register" id="plusImg1"/>
+                        <h2 style="text-align: center; color: black;">Cash Register</h2>
+                        <p style="text-align: center;">
+                            <button class="btn btn-primary plus" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#plusInfo1" aria-expanded="false" aria-controls="plusInfo1">
+                                Information
+                            </button>
+                        </p>
+                        <div class="collapse" id="plusInfo1">
+                            <div class="card card-body" style="color: black; margin: 10px;">
+                                <p>Description: The player is shown a variety of items and their current stock of each.  They will input the number associated with the item and then be asked how many they would like to purchase.  After they chose the item and quantity, the screen will print out the price before tax, the tax and then the sum of the two showing the final price of the purchase.  They will then be asked if they would like to buy another item, yes continues the code while no exits it.
+                                <br><br>Technologies used: While Loops, If Statements, User Input, Objects/Object Arrays
+                                <br><br>Role in Project: My task was setting up an array that took object variables, those being the items and their quantity and prices, then printing them out on the screen.  After this getting user input to determine what item they want to buy and how many they want.
+                                <br><br>What I learned: During this assignment I learned how to create object variables and then store them into an array.
+                                <br><br>Challenges: The primary challenge of this was creating the object variable itself, due to this being the first time I had worked with them.</p>                        
+                            </div>
+                        </div>
+                        <br><br>
+                        </div>
+                        <div class="carousel-item">
+                        <img src="./HTML/portfolioPages/media/plusProj2.jpg" alt="stackQueue" id="plusImg2"/>
+                        <h2 style="text-align: center; color: black;">Stack/Queue</h2>
+                        <p style="text-align: center;">
+                            <button class="btn btn-primary plus" id="2" type="button" data-bs-toggle="collapse" data-bs-target="#plusInfo2" aria-expanded="false" aria-controls="plusInfo2">
+                                Information
+                            </button>
+                        </p>
+                        <div class="collapse" id="plusInfo2">
+                            <div class="card card-body" style="color: black; margin: 10px;">
+                                <p>Description: This is two different programs, the first one replicates how a stack works, where variables are pushed(added) in from the front of the stack and the last variable in the stack is popped(removed).  While the other replicates how a queue works, where variables are queued(added) in to the front of the queue and the variable at the front of the queue is dequeued(removed).  The queue program also sorts the values in the queue from least to greatest.
+                                <br><br>Technologies used: Push/Queue, Pop/Dequeue, Template Classes, Pointers, Arrays
+                                <br><br>Role in Project: My task for both of these programs was to replicate how a stack and a queue function.  That includes being able to add values to the front of the stack/queue and remove from the back of the stack and the front of the queue.
+                                <br><br>What I learned: 
+                                <br><br>Challenges: The primary challenge between the two programs was getting the pop/dequeue methods working, mainly due to having to worry about the program crashing because the size of the array that the items are stored in has become too small.</p>
+                            </div>
+                        </div>
+                        <br><br>
+                        </div>
+                        <div class="carousel-item">
+                        <img src="./HTML/portfolioPages/media/plusProj3.jpg" alt="GravitySnake" id="plusImg3" style="height: 50%; width: 80%;"/>
+                        <h2 style="text-align: center; color: black;">Gravity Snake!</h2>
+                        <p style="text-align: center;">
+                            <button class="btn btn-primary plus" id="3" type="button" data-bs-toggle="collapse" data-bs-target="#plusInfo3" aria-expanded="false" aria-controls="plusInfo3">
+                                Information
+                            </button>
+                        </p>
+                        <div class="collapse" id="plusInfo3">
+                            <div class="card card-body" style="color: black; margin: 10px;">
+                                <p>Description: This is Gravity Snake, a game that has a similar game loop to the game Snake.  The main difference being that you have full control of what way you are going, so you are able to go in any direction you want.  You goal is to collect the five circles in the shortest amount of key-presses possible.
+                                <br><br>Technologies used: Box2D, SFML, Keyboard Input, Random/Time
+                                <br><br>Role in Project: My task was creating a Graphical version of a previous assignment, also know as Gravity Snake.  The original Gravity Snake consisted of only the coordinates of both the target and the snake, all in text in the output window.
+                                <br><br>What I learned: During this I had learned how to work with Box2D, the engine used to create the visuals for the game as well as the physics for the square that the player plays as.
+                                <br><br>Challenges: The challenge working on this was working with Box2D, since this was the first time I had worked with the engine.</p>
+                            </div>
+                        </div>
+                        <br><br>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#project2" data-bs-slide="prev" onclick="closeInfo('plus');">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#project2" data-bs-slide="next" onclick="closeInfo('plus');">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
                 
-                <div id="project3">
-                    <a><img src="https://media.istockphoto.com/id/1373100223/photo/c-sharp-programming-language-source-code-example-on-monitor-c-source-code.jpg?b=1&s=170667a&w=0&k=20&c=dRfdghfIlaJgBFk7iHXykbZbOJJmoGlQnvTxCs2zr2E=" alt="cSharp" id="mainImg3" style="width: 30%;"/></a>
-                    <a href="./HTML/portfolioPages/csharp.html"><h2 style="font-size: 30px;">C-Sharp</h2></a>
-                    <p style="font-size: 30px;">Description: This section consists of programs that I have created using C#.  Visual Studio 2019 is what I used to make a majority of the programs, but had also used Visual Studio 2022 for some of them.
-                </div>
+                <!--<div id="project3" class="carousel slide">
+                    <h1 style="text-align: center;">C# Programs</h1>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#project3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#project3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#project3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="./HTML/portfolioPages/media/" alt="Register" id="plusImg1"/>
+                        <h2 style="text-align: center; color: black;">Cash Register</h2>
+                        <p style="text-align: center;">
+                            <button class="btn btn-primary plus" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#plusInfo1" aria-expanded="false" aria-controls="plusInfo1">
+                                Information
+                            </button>
+                        </p>
+                        <div class="collapse" id="plusInfo1">
+                            <div class="card card-body" style="color: black; margin: 10px;">
+                                <p>Description: The player is shown a variety of items and their current stock of each.  They will input the number associated with the item and then be asked how many they would like to purchase.  After they chose the item and quantity, the screen will print out the price before tax, the tax and then the sum of the two showing the final price of the purchase.  They will then be asked if they would like to buy another item, yes continues the code while no exits it.
+                                <br><br>Technologies used: While Loops, If Statements, User Input, Objects/Object Arrays
+                                <br><br>Role in Project: My task was setting up an array that took object variables, those being the items and their quantity and prices, then printing them out on the screen.  After this getting user input to determine what item they want to buy and how many they want.
+                                <br><br>What I learned: During this assignment I learned how to create object variables and then store them into an array.
+                                <br><br>Challenges: The primary challenge of this was creating the object variable itself, due to this being the first time I had worked with them.</p>                        
+                            </div>
+                        </div>
+                        <br><br>
+                        </div>
+                        <div class="carousel-item">
+                        <img src="./HTML/portfolioPages/media/plusProj2.jpg" alt="stackQueue" id="plusImg2"/>
+                        <a href="./HTML/project2/project2.html"><h2>Stack/Queue</h2></a>
+                        <p style="text-align: center;">
+                            <button class="btn btn-primary plus" id="2" type="button" data-bs-toggle="collapse" data-bs-target="#plusInfo2" aria-expanded="false" aria-controls="plusInfo2">
+                                Information
+                            </button>
+                        </p>
+                        <div class="collapse" id="plusInfo2">
+                            <div class="card card-body" style="color: black; margin: 10px;">
+                                <p>Description: This is two different programs, the first one replicates how a stack works, where variables are pushed(added) in from the front of the stack and the last variable in the stack is popped(removed).  While the other replicates how a queue works, where variables are queued(added) in to the front of the queue and the variable at the front of the queue is dequeued(removed).  The queue program also sorts the values in the queue from least to greatest.
+                                <br><br>Technologies used: Push/Queue, Pop/Dequeue, Template Classes, Pointers, Arrays
+                                <br><br>Role in Project: My task for both of these programs was to replicate how a stack and a queue function.  That includes being able to add values to the front of the stack/queue and remove from the back of the stack and the front of the queue.
+                                <br><br>What I learned: 
+                                <br><br>Challenges: The primary challenge between the two programs was getting the pop/dequeue methods working, mainly due to having to worry about the program crashing because the size of the array that the items are stored in has become too small.</p>
+                            </div>
+                        </div>
+                        <br><br>
+                        </div>
+                        <div class="carousel-item">
+                        <img src="./HTML/portfolioPages/media/plusProj3.jpg" alt="GravitySnake" id="plusImg3" style="height: 50%; width: 80%;"/>
+                        <a href="./HTML/project3/game.html"><h2>Gravity Snake!</h2></a>
+                        <p style="text-align: center;">
+                            <button class="btn btn-primary plus" id="3" type="button" data-bs-toggle="collapse" data-bs-target="#plusInfo3" aria-expanded="false" aria-controls="plusInfo3">
+                                Information
+                            </button>
+                        </p>
+                        <div class="collapse" id="plusInfo3">
+                            <div class="card card-body" style="color: black; margin: 10px;">
+                                <p>Description: This is Gravity Snake, a game that has a similar game loop to the game Snake.  The main difference being that you have full control of what way you are going, so you are able to go in any direction you want.  You goal is to collect the five circles in the shortest amount of key-presses possible.
+                                <br><br>Technologies used: Box2D, SFML, Keyboard Input, Random/Time
+                                <br><br>Role in Project: My task was creating a Graphical version of a previous assignment, also know as Gravity Snake.  The original Gravity Snake consisted of only the coordinates of both the target and the snake, all in text in the output window.
+                                <br><br>What I learned: During this I had learned how to work with Box2D, the engine used to create the visuals for the game as well as the physics for the square that the player plays as.
+                                <br><br>Challenges: The challenge working on this was working with Box2D, since this was the first time I had worked with the engine.</p>
+                            </div>
+                        </div>
+                        <br><br>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#project2" data-bs-slide="prev" onclick="closeInfo('plus');">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#project2" data-bs-slide="next" onclick="closeInfo('plus');">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>-->
 
-                <div id="project4">
-                    <a><img src="https://assets.website-files.com/6239c24c282f5581285fbbb3/6239c24c282f551ffa5fbe86_Setting-up-Python-coding-challenges-for-interviews.jpg" alt="python" id="mainImg4" style="width: 30%;"/></a>
-                    <a href="./HTML/portfolioPages/python.html"><h2 style="font-size: 30px;">Python</h2></a>
-                    <p style="font-size: 30px;">Description: This section consists of programs that I have created using Python.  While working on all of the programs I had made I was using Python IDLE to edit and test them.
+                <div id="project4" class="carousel slide">
+                    <h1 style="text-align: center;">Python Programs</h1>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#project4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#project4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#project4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="./HTML/portfolioPages/media/pythonProj1.PNG" alt="Adventure" id="pythonImg1"/>
+                        <h2 style="text-align: center; color: black;">Mansion Adventure</h2>
+                        <p style="text-align: center;">
+                            <button class="btn btn-primary python" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#pythonInfo1" aria-expanded="false" aria-controls="pythonInfo1">
+                                Information
+                            </button>
+                        </p>
+                        <div class="collapse" id="pythonInfo1">
+                            <div class="card card-body" style="color: black; margin: 10px;">
+                                <p>Description: A python program/game using arrays and while loops to simulate a text based game where you are exploring different rooms of a mansion.  Typing in a letter representing one of the cardinal directions allows you to keep exploring, or run into a wall.
+                                    <br><br>Technologies used: Arrays, Append, While Loops, User Input
+                                    <br><br>Role in Assignment: My role was to make it possible to change rooms based on the users current location.  If they were in one room, they would only be able to enter rooms that are adjacent to them.
+                                    <br><br>What I learned: I learned how to use while loops, as well as see how helpful they are in keeping a program in motion and not having it stop.
+                                    <br><br>Challenges: The primary challenge when working on this was figuring out how to change what rooms you are able to enter based on your current location.</p>                                   
+                            </div>
+                        </div>
+                        <br><br>
+                        </div>
+                        <div class="carousel-item">
+                        <img src="./HTML/portfolioPages/media/pythonProj2.PNG" alt="Camel" id="pythonImg2"/>
+                        <h2 style="text-align: center; color: black;">Legend of Zelda: Dungeon Crawler</h2>
+                        <p style="text-align: center;">
+                            <button class="btn btn-primary python" id="2" type="button" data-bs-toggle="collapse" data-bs-target="#pythonInfo2" aria-expanded="false" aria-controls="pythonInfo2">
+                                Information
+                            </button>
+                        </p>
+                        <div class="collapse" id="pythonInfo2">
+                            <div class="card card-body" style="color: black; margin: 10px;">
+                                <p>Description: A python program/game that plays like a Camel Game, where you must reach the end before you are either caught by whatever is chasing you or from exhaustion or dehydration.  The spin on this one is that is based on the Legend of Zelda series, with you playing as Link while you are being chased through a dungeon by Dark Link.
+                                <br><br>Technologies used: While Loops, If/Else If Statements, Random, Boolean Values
+                                <br><br>Role in Assignment: My role while working on this was to create a game that plays similarily, while also adding to it seem different.
+                                <br><br>What I learned: I learned how to expand my usage of user input, making it possible to ask for different kinds of inputs, especially ones that would not affect what the user is doing. 
+                                <br><br>Challenges: The challenges that I had with this was balancing the game.  I don't want the player to die of dehydration or exhaustion after just a couple of turns.  I also don't want Dark Link to reach the player after a certain amount of time either.</p>                
+                            </div>
+                        </div>
+                        <br><br>
+                        </div>
+                        <div class="carousel-item">
+                        <img src="./HTML/portfolioPages/media/pythonProj3.PNG" alt="QuizShow" id="pythonImg3"/>
+                        <h2 style="text-align: center; color: black;">Video Game Quiz Show</h2>
+                        <p style="text-align: center;">
+                            <button class="btn btn-primary python" id="3" type="button" data-bs-toggle="collapse" data-bs-target="#pythonInfo3" aria-expanded="false" aria-controls="pythonInfo3">
+                                Information
+                            </button>
+                        </p>
+                        <div class="collapse" id="pythonInfo3">
+                            <div class="card card-body" style="color: black; margin: 10px;">
+                                <p>Description: A python program that quizzes the user on their video game knowledge.  Each answer they get right will reward them with points, getting it wrong results in losing points.
+                                <br><br>Technologies used: If/Else If Statements, User Input
+                                <br><br>Role in Assignment: My role was to create a program that takes in user input and is used in if statements, while also being fun at the same time.
+                                <br><br>What I learned: I was able to understand how to use user input to affect if statements.
+                                <br><br>Challenges: The primary challenge was figuring out what kinds of questions I wanted to ask.</p>
+                            </div>
+                        </div>
+                        <br><br>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#project4" data-bs-slide="prev" onclick="closeInfo('python');">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#project4" data-bs-slide="next" onclick="closeInfo('python');">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
 
                 <div id="project5">
@@ -80,5 +401,17 @@
             <br><a href="https://www.linkedin.com/in/alexander-petty-288921219/">Linkedin</a>
             <br><a href="https://github.com/AlexPetty1986/Personal">GitHub</a></p>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     </body>
+    <script>
+        function closeInfo(type)
+        {
+            buttonType = document.getElementsByClassName(type)[0];
+            console.log(buttonType)
+            if(buttonType.ariaExpanded == true && buttonType.ariaExpanded != false)
+            {
+                buttonType.click();
+            }
+        }
+    </script>
 </html>
