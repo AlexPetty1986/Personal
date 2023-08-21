@@ -11,7 +11,7 @@
 
     <body id="portPage">
         <header>
-            <h1>Alexander Petty's Portfolio </h1>
+            <h1>Alex Petty's Portfolio </h1>
             <h3>Software Developer, C#/C++ Programmer/Game Developer </h3>
         </header>
 
@@ -57,7 +57,7 @@
                         <img src="./HTML/project1/media/RandomPhrases.png" alt="RandomPhrases" id="webImg1"/>
                         <a href="./HTML/randPhrase/random-phrases.html"><h2>Random Phrase Generator</h2></a>
                         <p style="text-align: center;">
-                            <button class="btn btn-primary web" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo1" aria-expanded="false" aria-controls="webInfo1" onclick="console.log(ariaExpanded)">
+                            <button class="btn btn-primary web" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo1" aria-expanded="false" aria-controls="webInfo1">
                               Information
                             </button>
                         </p>
@@ -76,7 +76,7 @@
                         <img src="./HTML/project1/media/Project2.png" alt="GifFinder" id="webImg2"/>
                         <a href="./HTML/project2/project2.html"><h2>Gif Locator</h2></a>
                         <p style="text-align: center;">
-                            <button class="btn btn-primary web" id="2" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo2" aria-expanded="false" aria-controls="webInfo2" onclick="console.log(ariaExpanded)">
+                            <button class="btn btn-primary web" id="2" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo2" aria-expanded="false" aria-controls="webInfo2">
                               Information
                             </button>
                         </p>
@@ -95,7 +95,7 @@
                         <img src="./HTML/project1/media/Project3.png" alt="AlienDefender!" id="webImg3"/>
                         <a href="./HTML/project3/game.html"><h2>Alien Defender!</h2></a>
                         <p style="text-align: center;">
-                            <button class="btn btn-primary web" id="3" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo3" aria-expanded="false" aria-controls="webInfo3" onclick="console.log(ariaExpanded)">
+                            <button class="btn btn-primary web" id="3" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo3" aria-expanded="false" aria-controls="webInfo3">
                               Information
                             </button>
                         </p>
@@ -114,7 +114,7 @@
                         <img src="./HTML/portfolioPages/media/project1.PNG" alt="PokeFinder" id="webImg4"/>
                         <a href="./HTML/project-1/home.html"><h2>PokéFinder</h2></a>
                         <p style="text-align: center;">
-                            <button class="btn btn-primary web" id="4" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo4" aria-expanded="false" aria-controls="webInfo4" onclick="console.log(ariaExpanded)">
+                            <button class="btn btn-primary web" id="4" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo4" aria-expanded="false" aria-controls="webInfo4">
                               Information
                             </button>
                         </p>
@@ -133,7 +133,7 @@
                         <img src="./HTML/portfolioPages/media/project2.PNG" alt="RetroAudio" id="webImg5"/>
                         <a href="./HTML/project-2/home.html"><h2>Retro Audio Visualizer</h2></a>
                         <p style="text-align: center;">
-                            <button class="btn btn-primary web" id="5" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo5" aria-expanded="false" aria-controls="webInfo5" onclick="console.log(ariaExpanded)">
+                            <button class="btn btn-primary web" id="5" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo5" aria-expanded="false" aria-controls="webInfo5">
                               Information
                             </button>
                         </p>
@@ -406,11 +406,15 @@
     <script>
         function closeInfo(type)
         {
-            buttonType = document.getElementsByClassName(type)[0];
-            console.log(buttonType)
-            if(buttonType.ariaExpanded == true && buttonType.ariaExpanded != false)
+            buttonType = document.getElementsByClassName(type);
+            console.log(buttonType.length)
+            for(let i = 0; i < buttonType.length; i++)
             {
-                buttonType.click();
+                if(buttonType[i].ariaExpanded == "true")
+                {
+                    buttonType[i].click();
+                    console.log("button clicked");
+                }
             }
         }
     </script>
