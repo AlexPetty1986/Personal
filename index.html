@@ -6,12 +6,13 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Portfolio - Alex Petty</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-        <link rel="stylesheet" href="./HTML/project1/css/style.css">
+        <link rel="stylesheet" href="./HTML/portfolioPages/css/style.css">
+        <script type="text/javascript" src="./HTML/portfolioPages/js/python.js"></script>
     </head>
 
     <body id="portPage">
         <header>
-            <h1>Alex Petty's Portfolio </h1>
+            <h1>Alex Petty's Portfolio</h1>
             <h3>Software Developer, C#/C++ Programmer/Game Developer </h3>
         </header>
 
@@ -54,7 +55,7 @@
                     </div>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img src="./HTML/project1/media/RandomPhrases.png" alt="RandomPhrases" id="webImg1"/>
+                        <img src="./HTML/portfolioPages/media/webProj1.png" alt="RandomPhrases" id="webImg1"/>
                         <a href="./HTML/randPhrase/random-phrases.html"><h2>Random Phrase Generator</h2></a>
                         <p style="text-align: center;">
                             <button class="btn btn-primary web" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo1" aria-expanded="false" aria-controls="webInfo1">
@@ -73,7 +74,7 @@
                         <br><br>
                       </div>
                       <div class="carousel-item">
-                        <img src="./HTML/project1/media/Project2.png" alt="GifFinder" id="webImg2"/>
+                        <img src="./HTML/portfolioPages/media/webProj2.png" alt="GifFinder" id="webImg2"/>
                         <a href="./HTML/project2/project2.html"><h2>Gif Locator</h2></a>
                         <p style="text-align: center;">
                             <button class="btn btn-primary web" id="2" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo2" aria-expanded="false" aria-controls="webInfo2">
@@ -92,7 +93,7 @@
                         <br><br>
                       </div>
                       <div class="carousel-item">
-                        <img src="./HTML/project1/media/Project3.png" alt="AlienDefender!" id="webImg3"/>
+                        <img src="./HTML/portfolioPages/media/webProj3.png" alt="AlienDefender!" id="webImg3"/>
                         <a href="./HTML/project3/game.html"><h2>Alien Defender!</h2></a>
                         <p style="text-align: center;">
                             <button class="btn btn-primary web" id="3" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo3" aria-expanded="false" aria-controls="webInfo3">
@@ -111,7 +112,7 @@
                         <br><br>
                       </div>
                       <div class="carousel-item">
-                        <img src="./HTML/portfolioPages/media/project1.PNG" alt="PokeFinder" id="webImg4"/>
+                        <img src="./HTML/portfolioPages/media/webProj4.PNG" alt="PokeFinder" id="webImg4"/>
                         <a href="./HTML/project-1/home.html"><h2>PokéFinder</h2></a>
                         <p style="text-align: center;">
                             <button class="btn btn-primary web" id="4" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo4" aria-expanded="false" aria-controls="webInfo4">
@@ -130,7 +131,7 @@
                         <br><br>
                       </div>
                       <div class="carousel-item">
-                        <img src="./HTML/portfolioPages/media/project2.PNG" alt="RetroAudio" id="webImg5"/>
+                        <img src="./HTML/portfolioPages/media/webProj5.PNG" alt="RetroAudio" id="webImg5"/>
                         <a href="./HTML/project-2/home.html"><h2>Retro Audio Visualizer</h2></a>
                         <p style="text-align: center;">
                             <button class="btn btn-primary web" id="5" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo5" aria-expanded="false" aria-controls="webInfo5">
@@ -199,7 +200,7 @@
                                 <p>Description: This is two different programs, the first one replicates how a stack works, where variables are pushed(added) in from the front of the stack and the last variable in the stack is popped(removed).  While the other replicates how a queue works, where variables are queued(added) in to the front of the queue and the variable at the front of the queue is dequeued(removed).  The queue program also sorts the values in the queue from least to greatest.
                                 <br><br>Technologies used: Push/Queue, Pop/Dequeue, Template Classes, Pointers, Arrays
                                 <br><br>Role in Project: My task for both of these programs was to replicate how a stack and a queue function.  That includes being able to add values to the front of the stack/queue and remove from the back of the stack and the front of the queue.
-                                <br><br>What I learned: 
+                                <br><br>What I learned: I learned the inner machinations of both a stack and a queue.
                                 <br><br>Challenges: The primary challenge between the two programs was getting the pop/dequeue methods working, mainly due to having to worry about the program crashing because the size of the array that the items are stored in has become too small.</p>
                             </div>
                         </div>
@@ -235,81 +236,61 @@
                     </button>
                 </div>
                 
-                <!--<div id="project3" class="carousel slide">
+                <div id="project3" class="carousel slide">
                     <h1 style="text-align: center;">C# Programs</h1>
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#project3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#project3" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#project3" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                        <img src="./HTML/portfolioPages/media/" alt="Register" id="plusImg1"/>
-                        <h2 style="text-align: center; color: black;">Cash Register</h2>
+                        <center><video src="./HTML/portfolioPages/media/sharpImg1.mp4" id="sharpImg1" width="40%" autoplay loop></video></center>
+                        <h2 style="text-align: center; color: black;">LiveWire</h2>
                         <p style="text-align: center;">
-                            <button class="btn btn-primary plus" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#plusInfo1" aria-expanded="false" aria-controls="plusInfo1">
+                            <button class="btn btn-primary plus" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#sharpInfo1" aria-expanded="false" aria-controls="sharpInfo1">
                                 Information
                             </button>
                         </p>
-                        <div class="collapse" id="plusInfo1">
+                        <div class="collapse" id="sharpInfo1">
                             <div class="card card-body" style="color: black; margin: 10px;">
-                                <p>Description: The player is shown a variety of items and their current stock of each.  They will input the number associated with the item and then be asked how many they would like to purchase.  After they chose the item and quantity, the screen will print out the price before tax, the tax and then the sum of the two showing the final price of the purchase.  They will then be asked if they would like to buy another item, yes continues the code while no exits it.
-                                <br><br>Technologies used: While Loops, If Statements, User Input, Objects/Object Arrays
-                                <br><br>Role in Project: My task was setting up an array that took object variables, those being the items and their quantity and prices, then printing them out on the screen.  After this getting user input to determine what item they want to buy and how many they want.
-                                <br><br>What I learned: During this assignment I learned how to create object variables and then store them into an array.
-                                <br><br>Challenges: The primary challenge of this was creating the object variable itself, due to this being the first time I had worked with them.</p>                        
+                                <p>Description: You play as a tiny little robot, whose task is to lgiht the world back up after it has gone dark.  Get to the end of the level while using your trusty wire to power generators to create platforms and remove obstacles to help you advance.  Play through six levels to test your skill in platforming and if you want to test your skill, try and beat the extra level that playtesters struggled to beat.
+                                <br><br>Technologies used: Enumerations, Player Input, Abstract Classes, File IO, MonoGame, Parent/Child Classes, Finite State Machine, SortedList, Vector2, Coyote Frames
+                                <br><br>Role in Project: My task in this project was designing the levels using the sprite sheets we created.  I did this by creatign the level layouts in text files that would be sent into the program and choose the correct sprites based on that.  I also was in charge of debugging and lcoating any issues that arose in the code.
+                                <br><br>What I learned: During this project I leanred what it was like to work on a program/game in a team environment as well as how to coordinate between members so that work would be done efficiently.
+                                <br><br>Challenges: The primary challenge when working on this project was figuring out how some things would work, like the wire that the robot carries around as well as the generators that would activate or deactivate the platforms.</p>                        
                             </div>
                         </div>
                         <br><br>
                         </div>
                         <div class="carousel-item">
-                        <img src="./HTML/portfolioPages/media/plusProj2.jpg" alt="stackQueue" id="plusImg2"/>
-                        <a href="./HTML/project2/project2.html"><h2>Stack/Queue</h2></a>
+                        <img src="./HTML/portfolioPages/media/sharpProj2.png" alt="" id="sharpInfo2"/>
+                        <h2 style="text-align: center; color: black;">Player Battle</h2>
                         <p style="text-align: center;">
-                            <button class="btn btn-primary plus" id="2" type="button" data-bs-toggle="collapse" data-bs-target="#plusInfo2" aria-expanded="false" aria-controls="plusInfo2">
+                            <button class="btn btn-primary plus" id="2" type="button" data-bs-toggle="collapse" data-bs-target="#sharpInfo2" aria-expanded="false" aria-controls="sharpInfo2">
                                 Information
                             </button>
                         </p>
-                        <div class="collapse" id="plusInfo2">
+                        <div class="collapse" id="sharpInfo2">
                             <div class="card card-body" style="color: black; margin: 10px;">
-                                <p>Description: This is two different programs, the first one replicates how a stack works, where variables are pushed(added) in from the front of the stack and the last variable in the stack is popped(removed).  While the other replicates how a queue works, where variables are queued(added) in to the front of the queue and the variable at the front of the queue is dequeued(removed).  The queue program also sorts the values in the queue from least to greatest.
-                                <br><br>Technologies used: Push/Queue, Pop/Dequeue, Template Classes, Pointers, Arrays
-                                <br><br>Role in Project: My task for both of these programs was to replicate how a stack and a queue function.  That includes being able to add values to the front of the stack/queue and remove from the back of the stack and the front of the queue.
-                                <br><br>What I learned: 
-                                <br><br>Challenges: The primary challenge between the two programs was getting the pop/dequeue methods working, mainly due to having to worry about the program crashing because the size of the array that the items are stored in has become too small.</p>
-                            </div>
-                        </div>
-                        <br><br>
-                        </div>
-                        <div class="carousel-item">
-                        <img src="./HTML/portfolioPages/media/plusProj3.jpg" alt="GravitySnake" id="plusImg3" style="height: 50%; width: 80%;"/>
-                        <a href="./HTML/project3/game.html"><h2>Gravity Snake!</h2></a>
-                        <p style="text-align: center;">
-                            <button class="btn btn-primary plus" id="3" type="button" data-bs-toggle="collapse" data-bs-target="#plusInfo3" aria-expanded="false" aria-controls="plusInfo3">
-                                Information
-                            </button>
-                        </p>
-                        <div class="collapse" id="plusInfo3">
-                            <div class="card card-body" style="color: black; margin: 10px;">
-                                <p>Description: This is Gravity Snake, a game that has a similar game loop to the game Snake.  The main difference being that you have full control of what way you are going, so you are able to go in any direction you want.  You goal is to collect the five circles in the shortest amount of key-presses possible.
-                                <br><br>Technologies used: Box2D, SFML, Keyboard Input, Random/Time
-                                <br><br>Role in Project: My task was creating a Graphical version of a previous assignment, also know as Gravity Snake.  The original Gravity Snake consisted of only the coordinates of both the target and the snake, all in text in the output window.
-                                <br><br>What I learned: During this I had learned how to work with Box2D, the engine used to create the visuals for the game as well as the physics for the square that the player plays as.
-                                <br><br>Challenges: The challenge working on this was working with Box2D, since this was the first time I had worked with the engine.</p>
+                                <p>Description: This program is a simulation of a battle between four different character with two having the class of swordsmans while the other two had the class of archer.  The four characters would fight each other in a round based format, with the winner being the last one standing.
+                                <br><br>Technologies used: Classes, Inheritance, Override Methods, While Loops
+                                <br><br>Role in Project: My task for this assignment was to create another class besides the original one I made, that being the swordsman.  I then needed to set it up so that they would fight each other till there was only one left.
+                                <br><br>What I learned: During this assignment I learned more about how class inheritance works in C# and how multiple classes can inherit from the same one.
+                                <br><br>Challenges: The primary challenge was getting the four characters hit random targets and not themselves,  I also had to come up with ideas on how to make the two classes balanced so one wasn;t better than the other.</p>
                             </div>
                         </div>
                         <br><br>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#project2" data-bs-slide="prev" onclick="closeInfo('plus');">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#project3" data-bs-slide="prev" onclick="closeInfo('plus');">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#project2" data-bs-slide="next" onclick="closeInfo('plus');">
+                    <button class="carousel-control-next" type="button" data-bs-target="#project3" data-bs-slide="next" onclick="closeInfo('plus');">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
-                </div>-->
+                </div>
 
                 <div id="project4" class="carousel slide">
                     <h1 style="text-align: center;">Python Programs</h1>
@@ -320,7 +301,8 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                        <img src="./HTML/portfolioPages/media/pythonProj1.PNG" alt="Adventure" id="pythonImg1"/>
+                        <center><img src="./HTML/portfolioPages/media/pythonProj1.PNG" alt="Adventure" style="display: block;"><section id="adventureWindow">You are in the Front Yard! There is a door to the North(N).<br>0</section><br>
+                        <button onclick="Adventure(adventInput.value), adventInput.value=''">Confirm Input</button><input id="adventInput" type="text" placeholder="What Direction?"></center>
                         <h2 style="text-align: center; color: black;">Mansion Adventure</h2>
                         <p style="text-align: center;">
                             <button class="btn btn-primary python" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#pythonInfo1" aria-expanded="false" aria-controls="pythonInfo1">
@@ -339,7 +321,19 @@
                         <br><br>
                         </div>
                         <div class="carousel-item">
-                        <img src="./HTML/portfolioPages/media/pythonProj2.PNG" alt="Camel" id="pythonImg2"/>
+                        <center><img src="./HTML/portfolioPages/media/pythonProj2.PNG" alt="Adventure" style="display: block;"><div id="camelWindow">Welcome to Legend of Zelda: Dungeon Crawler!
+                        You are Link.
+                        You've just found a dungeon that is said to have a rare treasure.
+                        But after walking into the dungeon you're trapped inside.
+                        While being confronted by your mirror self Dark Link.
+                        You must find a way to escape without Dark Link killing you.
+                        <br>(a) Walk
+                        <br>(b) Run
+                        <br>(c) Hide
+                        <br>(d) Status
+                        <br>(e) Drink
+                        <br>(q) Quit</div><br>
+                            <button onclick="Camel(camelInput.value), camelInput.value=''">Confirm Input</button><input id="camelInput" type="text" placeholder="What will you do?"></center>
                         <h2 style="text-align: center; color: black;">Legend of Zelda: Dungeon Crawler</h2>
                         <p style="text-align: center;">
                             <button class="btn btn-primary python" id="2" type="button" data-bs-toggle="collapse" data-bs-target="#pythonInfo2" aria-expanded="false" aria-controls="pythonInfo2">
@@ -387,10 +381,80 @@
                     </button>
                 </div>
 
-                <div id="project5">
-                    <a><img src="https://media.istockphoto.com/id/1337596630/photo/assembly-code.jpg?s=612x612&w=0&k=20&c=w_A6a5DSULsId4UYF64CILAZECuoFvxPmXuHnt0WVs8=" alt="assemblyLanguage" id="mainImg5" style="width: 30%;"/></a>
-                    <a href="./HTML/portfolioPages/assembly.html"><h2 style="font-size: 30px;">Assembly Language</h2></a>
-                    <p style="font-size: 30px;">Description: This section consists of programs that I have created using Assembly Language.  I had relied on QTSpim to run the code for the programs.
+                <div id="project5" class="carousel slide">
+                    <h1 style="text-align: center;">Assembly Language Programs</h1>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#project5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#project5" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#project5" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="./HTML/portfolioPages/media/aslangProj1.png" alt="Register" id="langImg1"/>
+                        <h2 style="text-align: center; color: black;">Add Count</h2>
+                        <p style="text-align: center;">
+                            <button class="btn btn-primary assembly" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#langInfo1" aria-expanded="false" aria-controls="langInfo1">
+                                Information
+                            </button>
+                        </p>
+                        <div class="collapse" id="langInfo1">
+                            <div class="card card-body" style="color: black; margin: 10px;">
+                                <p>Description: This program will continuously add numbers inputted by the user until -1 is typed in.  It will print the total sum of all numbers used as well as how many numbers were used in total, not including the variable the user uses to quit the program.
+                                <br><br>Technologies used: While Loops, User Input, Addition, Printing to Screen, Storing Values in Variables
+                                <br><br>Role in Assignment: My role in this assignment was to get the integers to add up, not including the integer the user will put in to quit the program.
+                                <br><br>What I learned: I learned during my work on this assignment how to constantly change the user input and add it to the final count by using a while loop to keep prompting the user for values.
+                                <br><br>Challenges: The primary challenges when working on this assignment was figuring out how assembly language works sinc eit was my first time using it.</p>                       
+                            </div>
+                        </div>
+                        <br><br>
+                        </div>
+                        <div class="carousel-item">
+                        <img src="./HTML/portfolioPages/media/aslangProj2.png" alt="stackQueue" id="plusImg2"/>
+                        <h2 style="text-align: center; color: black;">Find Largest</h2>
+                        <p style="text-align: center;">
+                            <button class="btn btn-primary assembly" id="2" type="button" data-bs-toggle="collapse" data-bs-target="#langInfo2" aria-expanded="false" aria-controls="langInfo2">
+                                Information
+                            </button>
+                        </p>
+                        <div class="collapse" id="langInfo2">
+                            <div class="card card-body" style="color: black; margin: 10px;">
+                                <p>Description: The program will prompt the user for three numbers, once that is done it will determine which of the 3 is the largest number.  It will then prompt the user asking them if they want to keep going or quit.
+                                <br><br>Technologies used: User Input, If Statements, While Loops, Storing Values in Variables
+                                <br><br>Role in Assignment: My role in this assignment was getting the code to compare three different integers to see which of the three is the largest.
+                                <br><br>What I learned: I figured out how to compare different variables using if statements, then modify another variables using the statement itself.
+                                <br><br>Challenges: The challenge was comparing the three values the user was inputting.  There would be times where after the first value compared itself with the second value it would not compare with the final value.</p>
+                            </div>
+                        </div>
+                        <br><br>
+                        </div>
+                        <div class="carousel-item">
+                        <img src="./HTML/portfolioPages/media/aslangProj3.png" alt="GravitySnake" id="plusImg3" style="height: 50%; width: 80%;"/>
+                        <h2 style="text-align: center; color: black;">Sum & Average</h2>
+                        <p style="text-align: center;">
+                            <button class="btn btn-primary assembly" id="3" type="button" data-bs-toggle="collapse" data-bs-target="#langInfo3" aria-expanded="false" aria-controls="langInfo3">
+                                Information
+                            </button>
+                        </p>
+                        <div class="collapse" id="langInfo3">
+                            <div class="card card-body" style="color: black; margin: 10px;">
+                                <p>Description: The user will be prompted to input three different integer values.  Once they have inputted them, the program will print out the total sum as well as the average of the sum rounded to the nearest integer.
+                                <br><br>Technologies used: User Input, Addition, Division, Storing Values in Variables
+                                <br><br>Role in Assignment: I was tasked with getting the total sum and rounded average of the three numbers inputted by the user.
+                                <br><br>What I learned: This assignment I learned how to modify a variable using other variables, these ones being the ones inputted by the user themselves.
+                                <br><br>Challenges: The primary challenge was getting the average to figure out whether to round up or down depending on the actual total.</p>
+                            </div>
+                        </div>
+                        <br><br>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#project5" data-bs-slide="prev" onclick="closeInfo('assembly');">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#project5" data-bs-slide="next" onclick="closeInfo('assembly');">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </main>
