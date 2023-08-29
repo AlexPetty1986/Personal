@@ -1,2 +1,2 @@
 # Personal
-This repository contains all of the code that I have worked on over the years.  All of them were either for in class assignments or were homework assignments.  I will soon add in personal projects.
+This repository contains all of the code that I have worked on over the years.  The code present includes assignments I did for school as well as personal projects.
