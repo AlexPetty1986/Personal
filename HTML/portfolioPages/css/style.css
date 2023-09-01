@@ -88,6 +88,15 @@ section{
     align-self: center;
 }
 
+#sectionChange{
+    background-color: #660802;
+}
+
+#sectionChange button{
+    font-size: larger;
+    margin: 10px;
+}
+
 #projects{
     display: flex;
     flex-flow: column;
