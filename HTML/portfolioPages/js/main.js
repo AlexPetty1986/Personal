@@ -445,23 +445,23 @@ function changeSection(type)
     }
     else if(type == 'unity')
     {
-        projSection.innerHTML = `<div id="project4" class="carousel slide">
+        projSection.innerHTML = `<div id="project6" class="carousel slide">
         <h1 style="text-align: center;">Unity Creations</h1>
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#project4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#project4" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#project4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#project6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#project6" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#project6" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <img src="./HTML/portfolioPages/media/pythonProj1.PNG" alt="Agents" style="display: block;">
+            <img src="./HTML/portfolioPages/media/unityProj1.PNG" alt="Agents" style="display: block;">
             <a href="./Unity/docs/builds/project_2/index.html"><h2>Invasion of the Demon King</h2></a>
             <p style="text-align: center;">
-                <button class="btn btn-warning python" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#pythonInfo1" aria-expanded="false" aria-controls="pythonInfo1">
+                <button class="btn btn-warning unity" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#unityInfo1" aria-expanded="false" aria-controls="pythonInfo1">
                     Information
                 </button>
             </p>
-            <div class="collapse" id="pythonInfo1">
+            <div class="collapse" id="unityInfo1">
                 <div class="card card-body" style="color: black; margin: 10px;">
                     <p>Description: A python program/game using arrays and while loops to simulate a text based game where you are exploring different rooms of a mansion.  Typing in a letter representing one of the cardinal directions allows you to keep exploring, or run into a wall.
                         <br><br>Technologies used: Arrays, Append, While Loops, User Input
@@ -473,26 +473,14 @@ function changeSection(type)
             <br><br>
             </div>
             <div class="carousel-item">
-            <center><img src="./HTML/portfolioPages/media/pythonProj2.PNG" alt="Adventure" style="display: block;"><div id="camelWindow">Welcome to Legend of Zelda: Dungeon Crawler!
-            You are Link.
-            You've just found a dungeon that is said to have a rare treasure.
-            But after walking into the dungeon you're trapped inside.
-            While being confronted by your mirror self Dark Link.
-            You must find a way to escape without Dark Link killing you.
-            <br>(a) Walk
-            <br>(b) Run
-            <br>(c) Hide
-            <br>(d) Status
-            <br>(e) Drink
-            <br>(q) Quit</div><br>
-                <button onclick="Camel(camelInput.value), camelInput.value=''">Confirm Input</button><input id="camelInput" type="text" placeholder="What will you do?"></center>
-            <h2 style="text-align: center; color: black;">Legend of Zelda: Dungeon Crawler</h2>
+            <img src="./HTML/portfolioPages/media/unityProj1.PNG" alt="Agents" style="display: block;">
+            <a href="./Unity/docs/builds/project_2/index.html"><h2>Invasion of the Demon King</h2></a>
             <p style="text-align: center;">
-                <button class="btn btn-warning python" id="2" type="button" data-bs-toggle="collapse" data-bs-target="#pythonInfo2" aria-expanded="false" aria-controls="pythonInfo2">
+                <button class="btn btn-warning unity" id="2" type="button" data-bs-toggle="collapse" data-bs-target="#unityInfo2" aria-expanded="false" aria-controls="unityInfo2">
                     Information
                 </button>
             </p>
-            <div class="collapse" id="pythonInfo2">
+            <div class="collapse" id="unityInfo2">
                 <div class="card card-body" style="color: black; margin: 10px;">
                     <p>Description: A python program/game that plays like a Camel Game, where you must reach the end before you are either caught by whatever is chasing you or from exhaustion or dehydration.  The spin on this one is that is based on the Legend of Zelda series, with you playing as Link while you are being chased through a dungeon by Dark Link.
                     <br><br>Technologies used: While Loops, If/Else If Statements, Random, Boolean Values
@@ -504,14 +492,14 @@ function changeSection(type)
             <br><br>
             </div>
             <div class="carousel-item">
-            <img src="./HTML/portfolioPages/media/pythonProj3.PNG" alt="QuizShow" id="pythonImg3"/>
+            <img src="./HTML/portfolioPages/media/unityProj3.PNG" alt="QuizShow" id="unityImg3"/>
             <h2 style="text-align: center; color: black;">Video Game Quiz Show</h2>
             <p style="text-align: center;">
-                <button class="btn btn-warning python" id="3" type="button" data-bs-toggle="collapse" data-bs-target="#pythonInfo3" aria-expanded="false" aria-controls="pythonInfo3">
+                <button class="btn btn-warning unity" id="3" type="button" data-bs-toggle="collapse" data-bs-target="#unityInfo3" aria-expanded="false" aria-controls="unityInfo3">
                     Information
                 </button>
             </p>
-            <div class="collapse" id="pythonInfo3">
+            <div class="collapse" id="unityInfo3">
                 <div class="card card-body" style="color: black; margin: 10px;">
                     <p>Description: A python program that quizzes the user on their video game knowledge.  Each answer they get right will reward them with points, getting it wrong results in losing points.
                     <br><br>Technologies used: If/Else If Statements, User Input
@@ -523,11 +511,11 @@ function changeSection(type)
             <br><br>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#project4" data-bs-slide="prev" onclick="closeInfo('python');">
+        <button class="carousel-control-prev" type="button" data-bs-target="#project6" data-bs-slide="prev" onclick="closeInfo('unity');">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#project4" data-bs-slide="next" onclick="closeInfo('python');">
+        <button class="carousel-control-next" type="button" data-bs-target="#project6" data-bs-slide="next" onclick="closeInfo('unity');">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
