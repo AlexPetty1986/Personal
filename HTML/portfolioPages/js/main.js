@@ -454,9 +454,8 @@ function changeSection(type)
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <center><img src="./HTML/portfolioPages/media/pythonProj1.PNG" alt="Adventure" style="display: block;"><section id="adventureWindow">You are in the Front Yard! There is a door to the North(N).<br>0</section><br>
-            <button onclick="Adventure(adventInput.value), adventInput.value=''">Confirm Input</button><input id="adventInput" type="text" placeholder="What Direction?"></center>
-            <h2 style="text-align: center; color: black;">Mansion Adventure</h2>
+            <img src="./HTML/portfolioPages/media/pythonProj1.PNG" alt="Agents" style="display: block;">
+            <a href="./Unity/docs/builds/project_2/index.html"><h2>Invasion of the Demon King</h2></a>
             <p style="text-align: center;">
                 <button class="btn btn-warning python" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#pythonInfo1" aria-expanded="false" aria-controls="pythonInfo1">
                     Information
