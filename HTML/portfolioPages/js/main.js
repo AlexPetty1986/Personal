@@ -299,7 +299,7 @@ function changeSection(type)
                         <br><br>Technologies used: Arrays, Append, While Loops, User Input
                         <br><br>Role in Assignment: My role was to make it possible to change rooms based on the users current location.  If they were in one room, they would only be able to enter rooms that are adjacent to them.
                         <br><br>What I learned: I learned how to use while loops, as well as see how helpful they are in keeping a program in motion and not having it stop.
-                        <br><br>Challenges: The warning challenge when working on this was figuring out how to change what rooms you are able to enter based on your current location.</p>                                   
+                        <br><br>Challenges: The challenge when working on this was figuring out how to change what rooms you are able to enter based on your current location.</p>                                   
                 </div>
             </div>
             <br><br>
@@ -454,7 +454,7 @@ function changeSection(type)
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <img src="./HTML/portfolioPages/media/unityProj1.PNG" alt="Agents" style="display: block;">
+            <img src="./HTML/portfolioPages/media/unityProj1.png" alt="Agents" style="display: block;">
             <a href="./Unity/docs/builds/project_2/index.html"><h2>Invasion of the Demon King</h2></a>
             <p style="text-align: center;">
                 <button class="btn btn-warning unity" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#unityInfo1" aria-expanded="false" aria-controls="pythonInfo1">
@@ -463,17 +463,17 @@ function changeSection(type)
             </p>
             <div class="collapse" id="unityInfo1">
                 <div class="card card-body" style="color: black; margin: 10px;">
-                    <p>Description: A python program/game using arrays and while loops to simulate a text based game where you are exploring different rooms of a mansion.  Typing in a letter representing one of the cardinal directions allows you to keep exploring, or run into a wall.
-                        <br><br>Technologies used: Arrays, Append, While Loops, User Input
-                        <br><br>Role in Assignment: My role was to make it possible to change rooms based on the users current location.  If they were in one room, they would only be able to enter rooms that are adjacent to them.
-                        <br><br>What I learned: I learned how to use while loops, as well as see how helpful they are in keeping a program in motion and not having it stop.
-                        <br><br>Challenges: The warning challenge when working on this was figuring out how to change what rooms you are able to enter based on your current location.</p>                                   
+                    <p>Description: A Unity Program where you watch members of the Demon King's Army attack and convert residents of the Kingdom into their ranks.  Interact with the game by pressing the buttons found at the top of the screen to spawn in more characters, delete them all from the environment as well as randomize the boulders that act as obstacles.  But that is not the only thing you can do, you can also click on the present characters to either cure them or curse them, changing what side they are aligned with.
+                        <br><br>Technologies used: Class Inheritance, Buttons, Arrays, Agents, Arrays, Sprites,
+                        <br><br>Role in Assignment: My role was to create a simulation or game using the classes we had created, that being the Agent classes, which give the characters their traits like chasing and hiding from certain characters, and expand on it.
+                        <br><br>What I learned: I learned more about how Agents work in Unity as well as how to modify them so that their behavior changes based on key criteria in the code.
+                        <br><br>Challenges: The main challenge for this was when it came to implementing the new Agent classes and how they would work, as well as figuring out how to get the Agents to be interactible with a mouse.</p>                                   
                 </div>
             </div>
             <br><br>
             </div>
             <div class="carousel-item">
-            <img src="./HTML/portfolioPages/media/unityProj1.PNG" alt="Agents" style="display: block;">
+            <img src="./HTML/portfolioPages/media/unityProj1.png" alt="Agents" style="display: block;">
             <a href="./Unity/docs/builds/project_2/index.html"><h2>Invasion of the Demon King</h2></a>
             <p style="text-align: center;">
                 <button class="btn btn-warning unity" id="2" type="button" data-bs-toggle="collapse" data-bs-target="#unityInfo2" aria-expanded="false" aria-controls="unityInfo2">
@@ -492,7 +492,7 @@ function changeSection(type)
             <br><br>
             </div>
             <div class="carousel-item">
-            <img src="./HTML/portfolioPages/media/unityProj3.PNG" alt="QuizShow" id="unityImg3"/>
+            <img src="./HTML/portfolioPages/media/unityProj1.png" alt="QuizShow" id="unityImg3"/>
             <h2 style="text-align: center; color: black;">Video Game Quiz Show</h2>
             <p style="text-align: center;">
                 <button class="btn btn-warning unity" id="3" type="button" data-bs-toggle="collapse" data-bs-target="#unityInfo3" aria-expanded="false" aria-controls="unityInfo3">
