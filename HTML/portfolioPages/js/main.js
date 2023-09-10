@@ -226,7 +226,7 @@ function changeSection(type)
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <center><video src="./HTML/portfolioPages/media/sharpImg1.mp4" id="sharpImg1" width="40%" autoplay loop></video></center>
+            <center><video src="./HTML/portfolioPages/media/sharpImg1.webm" id="sharpImg1" width="40%" autoplay loop></video></center>
             <h2 style="text-align: center; color: black;">LiveWire</h2>
             <p style="text-align: center;">
                 <button class="btn btn-warning plus" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#sharpInfo1" aria-expanded="false" aria-controls="sharpInfo1">
