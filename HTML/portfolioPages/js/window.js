@@ -310,7 +310,7 @@ window.onload = () =>{
                 </p>
                 <div class="collapse" id="pythonInfo1">
                     <div class="card card-body" style="color: black; margin: 10px;">
-                        <p>Description: A python program/game using arrays and while loops to simulate a text based game where you are exploring different rooms of a mansion.  Typing in a letter representing one of the cardinal directions allows you to keep exploring, or run into a wall.
+                        <p>Description: A python program/game using arrays and while loops to simulate a text based game where you are exploring different rooms of a mansion.  Typing in a letter representing one of the cardinal directions allows you to keep exploring, or run into a wall.  Type anything else and you might be ridiculed.
                             <br><br>Technologies used: Arrays, Append, While Loops, User Input
                             <br><br>Role in Assignment: My role was to make it possible to change rooms based on the users current location.  If they were in one room, they would only be able to enter rooms that are adjacent to them.
                             <br><br>What I learned: I learned how to use while loops, as well as see how helpful they are in keeping a program in motion and not having it stop.

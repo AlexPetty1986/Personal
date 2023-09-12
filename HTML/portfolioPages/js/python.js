@@ -112,9 +112,10 @@ let gamePlay = true;
 
 function Camel(userChoice)
 {
+    let choice = userChoice;
+
     if(gamePlay == true)
     {
-        let choice = userChoice;
         camWindow = document.getElementById("camelWindow");
 
         choice = choice.toLowerCase();
@@ -222,5 +223,30 @@ function Camel(userChoice)
             camWindow.innerHTML += "<br>=============================================================<br>You found a cauldron full of potion and decide to refill all of your bottles.<br>============================================================="
         }
     }
-    
+
+    if(choice != 'r' && gamePlay == false)
+    {
+        camWindow.innerHTML += "<br>=============================================================<br>Enter R to play again.<br>============================================================="
+    }
+    else if(choice == 'r' && gamePlay == false)
+    {
+        camWindow.innerHTML = `Welcome to Legend of Zelda: Dungeon Crawler!
+        You are Link.
+        You've just found a dungeon that is said to have a rare treasure.
+        But after walking into the dungeon you're trapped inside.
+        While being confronted by your mirror self Dark Link.
+        You must find a way to escape without Dark Link killing you.
+        <br>(a) Walk
+        <br>(b) Run
+        <br>(c) Hide
+        <br>(d) Status
+        <br>(e) Drink
+        <br>(q) Quit`
+        disFromExit = 250;
+        stamina = 25;
+        distFromDarkLink = -30;
+        thirst = 0;
+        potionBottle = 5;
+        gamePlay = true;
+    }
 }
