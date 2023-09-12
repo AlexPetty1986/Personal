@@ -88,21 +88,14 @@ section{
     align-self: center;
 }
 
-#sectionChange{
-    background-color: #660802;
-}
-
-#sectionChange button{
-    font-size: larger;
-    margin: 10px;
-}
-
 #projects{
-    display: flex;
-    flex-flow: column;
-    justify-content: space-around;
     align-items: center;
-    background-color: brown;
+    box-sizing: border-box;
+    background-color: #af1313;
+}
+
+#projects #title{
+    margin-left: 10px;
 }
 
 #projects a{
@@ -131,12 +124,23 @@ section{
     flex-direction: column-reverse;
 }
 
+.accordion-button{
+    background-color: #660802;
+    color: white;
+    font-size: 40px;
+}
+
+.accordion-item{
+    background-color: #660802;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 #project1, #project2, #project3, #project4, #project5, #project6{
     margin: 10px;
     width: auto;
     max-width: 2000px;
     height: auto;
-    border: 3px solid rgb(85, 31, 31);
 }
 
 #project1 p, #project2 p, #project3 p, #project4 p, #project5 p, #project6 p{
@@ -147,6 +151,7 @@ section{
 
 #contact{
     padding: 10px;
+    margin-top: 10px;
 }
 
 #contact h2{
@@ -175,6 +180,10 @@ a:hover{
 
 a:active{
     color: darkgoldenrod;
+}
+
+.accordion-button:hover{
+    background-color: #af1313;
 }
 
 @media (max-width: 700px){

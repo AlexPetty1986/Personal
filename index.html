@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="./HTML/portfolioPages/css/style.css">
         <script type="text/javascript" src="./HTML/portfolioPages/js/python.js"></script>
         <script type="text/javascript" src="./HTML/portfolioPages/js/main.js"></script>
+        <script type="text/javascript" src="./HTML/portfolioPages/js/window.js"></script>
     </head>
 
     <body id="portPage">
@@ -40,19 +41,11 @@
                 <div id="description">
                     <img src="./HTML/portfolioPages/media/alexp.jpg" alt="myself">  
                     <h1>About Me:</h1>
-                    <p>Alex is a GDD student at Rochester Institute of Technology, currently working on his Game Design & Development Major.  He currently knows how to code in Python, Java, C++, C#, HTML, Javascript & Assembly Language.  Alex hopes to work in the game industry, and work on a game he can be proud of.  Alex enjoys to play videogames, whether on his own or with friends, as well as hiking and orienteering.</p>
+                    <p>Alex is a Game Design & Development student at Rochester Institute of Technology, currently working on his Game Design & Development Major.  He currently knows how to code in Python, Java, C++, C#, HTML, Javascript & Assembly Language.  Alex hopes to work in the game industry, and work on a game he can be proud of.  Alex enjoys to play videogames, whether on his own or with friends, as well as hiking and orienteering.</p>
                 </div>
             </div>
-            <div id="sectionChange" style="margin-left: auto; margin-right: auto; text-align: center;">
-                <button class="btn btn-warning btn-lg" onclick="changeSection('web')">HTML</button>
-                <button class="btn btn-warning btn-lg" onclick="changeSection('plus')">C++</button>
-                <button class="btn btn-warning btn-lg" onclick="changeSection('sharp')">C#</button>
-                <button class="btn btn-warning btn-lg" onclick="changeSection('python')">Python</button>
-                <button class="btn btn-warning btn-lg" onclick="changeSection('assembly')">Assembly Language</button>
-                <button class="btn btn-warning btn-lg" onclick="changeSection('unity')">Unity</button>
-                <button class="btn btn-warning btn-lg" onclick="changeSection('level')">Level Design</button>
-            </div>
-            <div id="projects">
+            <div id="projects" class="accordion">
+                <h1 id="title">Projects:</h1>
             </div>
         </main>
         <footer id="contact">
