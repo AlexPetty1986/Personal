@@ -109,7 +109,7 @@ section{
     height: 50%;
 }
 
-#adventureWindow, #camelWindow{
+#adventureWindow, #camelWindow, #quizWindow{
     background-color: black; 
     color: white;
     width: 670px; 

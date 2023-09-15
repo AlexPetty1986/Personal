@@ -292,7 +292,7 @@ window.onload = () =>{
         </h1>
         <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#projects">
             <div class="accordion-body">
-            <strong><div id="project4" class="carousel slide">
+            <strong><h3 style="text-align: center; color: white;">Code recreated in Javascript</h3><div id="project4" class="carousel slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#project4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#project4" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -351,7 +351,9 @@ window.onload = () =>{
                 <br><br>
                 </div>
                 <div class="carousel-item">
-                <img src="./HTML/portfolioPages/media/pythonProj3.PNG" alt="QuizShow" id="pythonImg3"/>
+                <center><section id="quizWindow">True or False:<br>
+                The Yato from Fire Emblem: Fates has the most forms in the series.<br>(a) True<br>(b) False</section><br>
+                <button onclick="Quiz(quizInput.value), quizInput.value=''">Confirm Input</button><input id="quizInput" type="text" placeholder="Your Choice?"></center>
                 <h2 style="text-align: center; color: black;">Video Game Quiz Show</h2>
                 <p style="text-align: center;">
                     <button class="btn btn-warning python" id="3" type="button" data-bs-toggle="collapse" data-bs-target="#pythonInfo3" aria-expanded="false" aria-controls="pythonInfo3">

@@ -250,3 +250,69 @@ function Camel(userChoice)
         gamePlay = true;
     }
 }
+
+//variables for Quiz Code
+let score = 0;
+let quizGame = true;
+let currentQuestion = -1;
+let quizWindow;
+let quizQuestion = [`<br>Which of these Limit Breaks is only usable by Cloud?
+<br>(a) Final Heaven
+<br>(b) Death Gigas
+<br>(c) Meteorain
+<br>(d) Lunatic High`, `<br>What year did The Legend of Zelda: The Wind Waker come out in the US?`, `<br>Name the character who says this quote: "Your range is one fist short."`, `<br>What is the strongest summon in Golden Sun: Lost Age
+and Golden Sun: Dark Dawn?`, `<br>Which of these Legend of Zelda games
+did not have the Master Sword?
+<br>(a) Phantom Hourglass
+<br>(b) Link to the Past
+<br>(c) Twilight Princess
+<br>(d) Skyward Sword`, `<br>What is the name of the first Limit Break that Squall has in Final Fantasy VIII?`, `<br>Mario's original name was Luigi.
+<br>(a) True
+<br>(b) False`, `<br>Name this quote said by a character:
+<br>"You answered the call of battle.
+<br>So I'll give you fight you'll never forget!"`];
+let quizAnswer = [['a', `<br>Correct!
+<br>Birthright: Noble Yato and Blazing Yato
+<br>Conquest: Grim Yato and Shadow Yato
+<br>Revelation: Alpha Yato and Omega Yato`], ['c', `<br>Correct!
+<br>Final Heaven is used by Tifa, Death Gigas is used by Vincent and Lunatic High is used by Red XIII`], [2003, `<br>Correct!
+<br>The Wind Waker would then get a HD remake in 2013
+on the Wii U.`], ["ryu", `<br>Correct!
+<br>Ryu says this victory taunt in Street Fighter III: Third Strike as well as Super Smash Bros. for the 3DS/Wii U & Ultimate.`] ,["iris", `<br>Correct!
+<br>Iris will do massive damage at the cost of
+9 Mars and 4 Mercury Djinn. As well has heal the entire party.`], ['a', `<br>Correct!
+<br>In Phantom Hourglass Link uses the Phantom Sword to defeat Bellum.`], ["renzokuken", `<br>Correct!
+<br>After using the Renzokuken Squall will use one of the four
+finishing moves that he knows.`], ['b', `<br>Correct!
+<br>Mario's original name was Jump Man.  Luigi is the name of his brother.`], ["ike", `<br>Correct!
+<br>Ike will say this after initiating combat with him
+in Fire Emblem Fates.`]];
+
+function Quiz(quizChoice)
+{
+    if(quizGame == true)
+    {
+        quizWindow = document.getElementById("quizWindow");
+        if(quizChoice.toLowerCase() == quizAnswer[currentQuestion + 1][0])
+        {
+            quizWindow.innerHTML += quizAnswer[currentQuestion + 1][1] + `<br>=============================================================`;
+            score += 10;
+        }
+        else
+        {
+            quizWindow.innerHTML += "<br>Incorrect!<br>=============================================================";
+            score -= 10;
+        }
+        currentQuestion++;
+        if(currentQuestion < quizQuestion.length)
+        {
+            quizWindow.innerHTML += quizQuestion[currentQuestion]
+        }
+        else
+        {
+            quizGame == false;
+            quizWindow.innerHTML += `<br>Final Score: ` + score + `<br>=============================================================`
+        }
+    }
+
+}
