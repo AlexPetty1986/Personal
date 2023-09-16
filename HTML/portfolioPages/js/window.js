@@ -11,7 +11,7 @@ window.onload = () =>{
         </h1>
         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#projects">
             <div class="accordion-body">
-            <strong><div id="project1" class="carousel slide">
+            <strong><h3 style="text-align: center; color: white;">Click the project title to test it out</h3><div id="project1" class="carousel slide">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#project1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#project1" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -22,7 +22,7 @@ window.onload = () =>{
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="./HTML/portfolioPages/media/webProj1.png" alt="RandomPhrases" id="webImg1"/>
-                <a href="./HTML/randPhrase/random-phrases.html"><h2>Random Phrase Generator</h2></a>
+                <a href="./HTML/randPhrase/random-phrases.html" target="_blank" rel="noopener noreferrer"><h2>Random Phrase Generator</h2></a>
                 <p style="text-align: center;">
                     <button class="btn btn-warning web" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo1" aria-expanded="false" aria-controls="webInfo1">
                       Information
@@ -41,7 +41,7 @@ window.onload = () =>{
               </div>
               <div class="carousel-item">
                 <img src="./HTML/portfolioPages/media/webProj2.png" alt="GifFinder" id="webImg2"/>
-                <a href="./HTML/project2/project2.html"><h2>Gif Locator</h2></a>
+                <a href="./HTML/project2/project2.html" target="_blank" rel="noopener noreferrer"><h2>Gif Locator</h2></a>
                 <p style="text-align: center;">
                     <button class="btn btn-warning web" id="2" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo2" aria-expanded="false" aria-controls="webInfo2">
                       Information
@@ -60,7 +60,7 @@ window.onload = () =>{
               </div>
               <div class="carousel-item">
                 <img src="./HTML/portfolioPages/media/webProj3.png" alt="AlienDefender!" id="webImg3"/>
-                <a href="./HTML/project3/game.html"><h2>Alien Defender!</h2></a>
+                <a href="./HTML/project3/game.html" target="_blank" rel="noopener noreferrer"><h2>Alien Defender!</h2></a>
                 <p style="text-align: center;">
                     <button class="btn btn-warning web" id="3" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo3" aria-expanded="false" aria-controls="webInfo3">
                       Information
@@ -79,7 +79,7 @@ window.onload = () =>{
               </div>
               <div class="carousel-item">
                 <img src="./HTML/portfolioPages/media/webProj4.PNG" alt="PokeFinder" id="webImg4"/>
-                <a href="./HTML/project-1/home.html"><h2>PokéFinder</h2></a>
+                <a href="./HTML/project-1/home.html" target="_blank" rel="noopener noreferrer"><h2>PokéFinder</h2></a>
                 <p style="text-align: center;">
                     <button class="btn btn-warning web" id="4" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo4" aria-expanded="false" aria-controls="webInfo4">
                       Information
@@ -98,7 +98,7 @@ window.onload = () =>{
               </div>
               <div class="carousel-item">
                 <img src="./HTML/portfolioPages/media/webProj5.PNG" alt="RetroAudio" id="webImg5"/>
-                <a href="./HTML/project-2/home.html"><h2>Retro Audio Visualizer</h2></a>
+                <a href="./HTML/project-2/home.html" target="_blank" rel="noopener noreferrer"><h2>Retro Audio Visualizer</h2></a>
                 <p style="text-align: center;">
                     <button class="btn btn-warning web" id="5" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo5" aria-expanded="false" aria-controls="webInfo5">
                       Information
@@ -416,7 +416,7 @@ window.onload = () =>{
                         <br><br>Technologies used: While Loops, User Input, Addition, Printing to Screen, Storing Values in Variables
                         <br><br>Role in Assignment: My role in this assignment was to get the integers to add up, not including the integer the user will put in to quit the program.
                         <br><br>What I learned: I learned during my work on this assignment how to constantly change the user input and add it to the final count by using a while loop to keep prompting the user for values.
-                        <br><br>Challenges: The warning challenges when working on this assignment was figuring out how assembly language works sinc eit was my first time using it.</p>                       
+                        <br><br>Challenges: The primary challenge when working on this assignment was figuring out how assembly language works since it was my first time using it.</p>                       
                     </div>
                 </div>
                 <br><br>
@@ -570,63 +570,63 @@ window.onload = () =>{
         </h1>
         <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#projects">
             <div class="accordion-body">
-            <strong><div id="project5" class="carousel slide">
+            <strong><div id="project7" class="carousel slide">
             <h1 style="text-align: center;">Level Design</h1>
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#project5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#project5" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#project5" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#project7" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#project7" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#project7" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                <img src="./HTML/portfolioPages/media/aslangProj1.png" alt="AddCount" id="langImg1"/>
-                <h2 style="text-align: center; color: black;">Add Count</h2>
+                <img src="./HTML/portfolioPages/media/levelProj1.jpg" alt="reversePyramid" id="levelImg1"/>
+                <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2948309685" target="_blank" rel="noopener noreferrer"><h2>Reverse Pyramid</h2></a>
                 <p style="text-align: center;">
-                    <button class="btn btn-warning assembly" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#langInfo1" aria-expanded="false" aria-controls="langInfo1">
+                    <button class="btn btn-warning level" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#levelInfo1" aria-expanded="false" aria-controls="levelInfo1">
                         Information
                     </button>
                 </p>
-                <div class="collapse" id="langInfo1">
+                <div class="collapse" id="levelInfo1">
                     <div class="card card-body" style="color: black; margin: 10px;">
-                        <p>Description: This program will continuously add numbers inputted by the user until -1 is typed in.  It will print the total sum of all numbers used as well as how many numbers were used in total, not including the variable the user uses to quit the program.
-                        <br><br>Technologies used: While Loops, User Input, Addition, Printing to Screen, Storing Values in Variables
-                        <br><br>Role in Assignment: My role in this assignment was to get the integers to add up, not including the integer the user will put in to quit the program.
-                        <br><br>What I learned: I learned during my work on this assignment how to constantly change the user input and add it to the final count by using a while loop to keep prompting the user for values.
-                        <br><br>Challenges: The warning challenges when working on this assignment was figuring out how assembly language works sinc eit was my first time using it.</p>                       
+                        <p>Description: Uh-oh, looks like Wheatley got a hold of a book about Ancient Egypt and was fascinated by the pyramids. Sadly, he read the whole book upside-down, built it the wrong way. Reach the top(bottom?) of the pyramid and escape.
+                        <br><br>Technologies used: Button, Pedestal Button, Faith Plate, Light Bridge, Laser Field, Fizzler, Cube Button, Goo, Angled Panel, Glass Panel, Tractor Beam, Turret, Laser Emitter, Reflector Cube, Reflector Cube Dropper, Stairs, Glass, Speed Gel, Conversion Gel, Bounce Gel, Piston Platform, Sphere Button, Edgeless Safety Cube, Edgeless Safety Cube Dropper, Laser Relay
+                        <br><br>Role in Assignment: My role was to create a puzzle level in a 3D environment, that environment being the game, "Portal 2".  I wanted to create something that had challenge to it, but not be too difficult that players found it frustrating to play.  That is when I came up with the idea of the level, have the level start out small, then get bigger and a little more challenging as you progressed through the pyramid.
+                        <br><br>What I learned: During this project I learned what it was like to work on a level in 3D.  Compered to levels created in a 2D environment, levels created in 3D have a lot more work needed to be put into it due to the new perspective as well as the addition of the z-axis.  This also ended up with the napkin sketch being a lot more important.
+                        <br><br>Challenges: The challenge when it came to working on this was figuring out how to make sure that the segments of the level were increasing in difficulty while still being fair.  This took a lot of trial and error as well as relying on feedback I received during playtests.</p>                       
                     </div>
                 </div>
                 <br><br>
                 </div>
                 <div class="carousel-item">
-                <img src="./HTML/portfolioPages/media/aslangProj2.png" alt="Largest" id="langImg2"/>
-                <h2 style="text-align: center; color: black;">Find Largest</h2>
+                <img src="./HTML/portfolioPages/media/levelProj2.png" alt="yourChoice" id="levelImg2"/>
+                <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2930262886" target="_blank" rel="noopener noreferrer"><h2>Your Choice</h2></a>
                 <p style="text-align: center;">
-                    <button class="btn btn-warning assembly" id="2" type="button" data-bs-toggle="collapse" data-bs-target="#langInfo2" aria-expanded="false" aria-controls="langInfo2">
+                    <button class="btn btn-warning level" id="2" type="button" data-bs-toggle="collapse" data-bs-target="#levelInfo2" aria-expanded="false" aria-controls="levelInfo2">
                         Information
                     </button>
                 </p>
-                <div class="collapse" id="langInfo2">
+                <div class="collapse" id="levelInfo2">
                     <div class="card card-body" style="color: black; margin: 10px;">
-                        <p>Description: The program will prompt the user for three numbers, once that is done it will determine which of the 3 is the largest number.  It will then prompt the user asking them if they want to keep going or quit.
-                        <br><br>Technologies used: User Input, If Statements, While Loops, Storing Values in Variables
-                        <br><br>Role in Assignment: My role in this assignment was getting the code to compare three different integers to see which of the three is the largest.
-                        <br><br>What I learned: I figured out how to compare different variables using if statements, then modify another variables using the statement itself.
-                        <br><br>Challenges: The challenge was comparing the three values the user was inputting.  There would be times where after the first value compared itself with the second value it would not compare with the final value.</p>
+                        <p>Description: Seems the cats have decided to mix up the level, this time letting you pick what path you take to continue forward. Have they decided to go easy on you, or are they just looking for a more twisted form of entertainment?
+                        <br><br>Technologies used: Classic Maps, Sticky Blocks, Lasers, Moving Platforms, Springs, Collectibles, Goal Post, Lava, Ice Blocks, Pushing Blocks, Light Platforms, Saw Blades, Exploding Platforms
+                        <br><br>Role in Assignment: My role was I had to create a 2D platformer level in the game, "BattleBlock Theater," making it possible for me to get used to creating levels.  I wanted to create a level that allowed the player to choose how they progressed, this is how I ended up coming up with the idea of the splitting paths.  I wanted to add another set of split paths but did not have enough room to put them in, so I stuck with two and added a final jump challenge at the end.
+                        <br><br>What I learned: What I learned during this assignment was how to create a level, this being the first one I created for the class.  I also learned the work that goes into creating a level, from the rough sketch of the level I wanted to create to the restrictions that appear once you start working on the level to the final product.
+                        <br><br>Challenges: The primary challenge was adjusting the level so that it would fit into the max level size the game allows.  My original sketch was too big for the game so I had to downsize it, makingme choose what parts of the original design I wanted to keep and what ones I wanted to remove.</p>
                     </div>
                 </div>
                 <br><br>
                 </div>
                 <div class="carousel-item">
-                <img src="./HTML/portfolioPages/media/aslangProj3.png" alt="SumAvg" id="langImg3" style="height: 50%; width: 80%;"/>
-                <h2 style="text-align: center; color: black;">Sum & Average</h2>
+                <img src="./HTML/portfolioPages/media/levelProj3.png" alt="antigenPrison" id="levelImg3" style="height: 50%; width: 80%;"/>
+                <h2 style="text-align: center; color: black;">Antigen Prison</h2>
                 <p style="text-align: center;">
-                    <button class="btn btn-warning assembly" id="3" type="button" data-bs-toggle="collapse" data-bs-target="#langInfo3" aria-expanded="false" aria-controls="langInfo3">
+                    <button class="btn btn-warning level" id="3" type="button" data-bs-toggle="collapse" data-bs-target="#levelInfo3" aria-expanded="false" aria-controls="levelInfo3">
                         Information
                     </button>
                 </p>
-                <div class="collapse" id="langInfo3">
+                <div class="collapse" id="levelInfo3">
                     <div class="card card-body" style="color: black; margin: 10px;">
-                        <p>Description: The user will be prompted to input three different integer values.  Once they have inputted them, the program will print out the total sum as well as the average of the sum rounded to the nearest integer.
+                        <p>Description: elcome to Antigen Prison, one of the most secure prisons in hell.  You have been captured by demons, hoping to torture you for the rest of eternity.  While in your cell, someone drops you an axe and shotgun, then your cell door opens.  Determined to make your way out fo the prison, you get ready to fight the hordes of demons that guard the prison.
                         <br><br>Technologies used: User Input, Addition, Division, Storing Values in Variables
                         <br><br>Role in Assignment: I was tasked with getting the total sum and rounded average of the three numbers inputted by the user.
                         <br><br>What I learned: This assignment I learned how to modify a variable using other variables, these ones being the ones inputted by the user themselves.
@@ -636,16 +636,16 @@ window.onload = () =>{
                 <br><br>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#project5" data-bs-slide="prev" onclick="closeInfo('assembly');">
+            <button class="carousel-control-prev" type="button" data-bs-target="#project7" data-bs-slide="prev" onclick="closeInfo('level');">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#project5" data-bs-slide="next" onclick="closeInfo('assembly');">
+            <button class="carousel-control-next" type="button" data-bs-target="#project7" data-bs-slide="next" onclick="closeInfo('level');">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
             </div>
         </div>
-    </div><br>`
+    </div>`
 }
