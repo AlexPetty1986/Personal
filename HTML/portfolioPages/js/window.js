@@ -11,7 +11,7 @@ window.onload = () =>{
         </h1>
         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#projects">
             <div class="accordion-body">
-            <strong><h3 style="text-align: center; color: white;">Click the project title to test it out</h3><div id="project1" class="carousel slide">
+            <strong><h3 style="text-align: center; color: white;">Click the Project Title to Test it Out</h3><div id="project1" class="carousel slide">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#project1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#project1" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -483,7 +483,6 @@ window.onload = () =>{
         <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#projects">
             <div class="accordion-body">
             <strong><div id="project6" class="carousel slide">
-            <h1 style="text-align: center;">Unity Creations</h1>
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#project6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#project6" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -513,36 +512,36 @@ window.onload = () =>{
                 <img src="./HTML/portfolioPages/media/unityProj1.png" alt="Agents" style="display: block;">
                 <a href="./Unity/docs/builds/project_2/index.html"><h2>Invasion of the Demon King</h2></a>
                 <p style="text-align: center;">
-                    <button class="btn btn-warning unity" id="2" type="button" data-bs-toggle="collapse" data-bs-target="#unityInfo2" aria-expanded="false" aria-controls="unityInfo2">
+                    <button class="btn btn-warning unity" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#unityInfo1" aria-expanded="false" aria-controls="pythonInfo1">
                         Information
                     </button>
                 </p>
-                <div class="collapse" id="unityInfo2">
+                <div class="collapse" id="unityInfo1">
                     <div class="card card-body" style="color: black; margin: 10px;">
-                        <p>Description: A python program/game that plays like a Camel Game, where you must reach the end before you are either caught by whatever is chasing you or from exhaustion or dehydration.  The spin on this one is that is based on the Legend of Zelda series, with you playing as Link while you are being chased through a dungeon by Dark Link.
-                        <br><br>Technologies used: While Loops, If/Else If Statements, Random, Boolean Values
-                        <br><br>Role in Assignment: My role while working on this was to create a game that plays similarily, while also adding to it seem different.
-                        <br><br>What I learned: I learned how to expand my usage of user input, making it possible to ask for different kinds of inputs, especially ones that would not affect what the user is doing. 
-                        <br><br>Challenges: The challenges that I had with this was balancing the game.  I don't want the player to die of dehydration or exhaustion after just a couple of turns.  I also don't want Dark Link to reach the player after a certain amount of time either.</p>                
+                        <p>Description: A Unity Program where you watch members of the Demon King's Army attack and convert residents of the Kingdom into their ranks.  Interact with the game by pressing the buttons found at the top of the screen to spawn in more characters, delete them all from the environment as well as randomize the boulders that act as obstacles.  But that is not the only thing you can do, you can also click on the present characters to either cure them or curse them, changing what side they are aligned with.
+                            <br><br>Technologies used: Class Inheritance, Buttons, Arrays, Agents, Arrays, Sprites,
+                            <br><br>Role in Assignment: My role was to create a simulation or game using the classes we had created, that being the Agent classes, which give the characters their traits like chasing and hiding from certain characters, and expand on it.
+                            <br><br>What I learned: I learned more about how Agents work in Unity as well as how to modify them so that their behavior changes based on key criteria in the code.
+                            <br><br>Challenges: The main challenge for this was when it came to implementing the new Agent classes and how they would work, as well as figuring out how to get the Agents to be interactible with a mouse.</p>                                   
                     </div>
                 </div>
                 <br><br>
                 </div>
                 <div class="carousel-item">
-                <img src="./HTML/portfolioPages/media/unityProj1.png" alt="QuizShow" id="unityImg3"/>
-                <h2 style="text-align: center; color: black;">Video Game Quiz Show</h2>
+                <img src="./HTML/portfolioPages/media/unityProj1.png" alt="Agents" style="display: block;">
+                <a href="./Unity/docs/builds/project_2/index.html"><h2>Invasion of the Demon King</h2></a>
                 <p style="text-align: center;">
-                    <button class="btn btn-warning unity" id="3" type="button" data-bs-toggle="collapse" data-bs-target="#unityInfo3" aria-expanded="false" aria-controls="unityInfo3">
+                    <button class="btn btn-warning unity" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#unityInfo1" aria-expanded="false" aria-controls="pythonInfo1">
                         Information
                     </button>
                 </p>
-                <div class="collapse" id="unityInfo3">
+                <div class="collapse" id="unityInfo1">
                     <div class="card card-body" style="color: black; margin: 10px;">
-                        <p>Description: A python program that quizzes the user on their video game knowledge.  Each answer they get right will reward them with points, getting it wrong results in losing points.
-                        <br><br>Technologies used: If/Else If Statements, User Input
-                        <br><br>Role in Assignment: My role was to create a program that takes in user input and is used in if statements, while also being fun at the same time.
-                        <br><br>What I learned: I was able to understand how to use user input to affect if statements.
-                        <br><br>Challenges: The warning challenge was figuring out what kinds of questions I wanted to ask.</p>
+                        <p>Description: A Unity Program where you watch members of the Demon King's Army attack and convert residents of the Kingdom into their ranks.  Interact with the game by pressing the buttons found at the top of the screen to spawn in more characters, delete them all from the environment as well as randomize the boulders that act as obstacles.  But that is not the only thing you can do, you can also click on the present characters to either cure them or curse them, changing what side they are aligned with.
+                            <br><br>Technologies used: Class Inheritance, Buttons, Arrays, Agents, Arrays, Sprites,
+                            <br><br>Role in Assignment: My role was to create a simulation or game using the classes we had created, that being the Agent classes, which give the characters their traits like chasing and hiding from certain characters, and expand on it.
+                            <br><br>What I learned: I learned more about how Agents work in Unity as well as how to modify them so that their behavior changes based on key criteria in the code.
+                            <br><br>Challenges: The main challenge for this was when it came to implementing the new Agent classes and how they would work, as well as figuring out how to get the Agents to be interactible with a mouse.</p>                                   
                     </div>
                 </div>
                 <br><br>
@@ -571,7 +570,6 @@ window.onload = () =>{
         <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#projects">
             <div class="accordion-body">
             <strong><div id="project7" class="carousel slide">
-            <h1 style="text-align: center;">Level Design</h1>
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#project7" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#project7" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -617,8 +615,8 @@ window.onload = () =>{
                 <br><br>
                 </div>
                 <div class="carousel-item">
-                <img src="./HTML/portfolioPages/media/levelProj3.png" alt="antigenPrison" id="levelImg3" style="height: 50%; width: 80%;"/>
-                <h2 style="text-align: center; color: black;">Antigen Prison</h2>
+                <img src="./HTML/portfolioPages/media/levelProj2.png" alt="yourChoice" id="levelImg3"/>
+                <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2930262886" target="_blank" rel="noopener noreferrer"><h2>Your Choice</h2></a>
                 <p style="text-align: center;">
                     <button class="btn btn-warning level" id="3" type="button" data-bs-toggle="collapse" data-bs-target="#levelInfo3" aria-expanded="false" aria-controls="levelInfo3">
                         Information
@@ -626,11 +624,11 @@ window.onload = () =>{
                 </p>
                 <div class="collapse" id="levelInfo3">
                     <div class="card card-body" style="color: black; margin: 10px;">
-                        <p>Description: elcome to Antigen Prison, one of the most secure prisons in hell.  You have been captured by demons, hoping to torture you for the rest of eternity.  While in your cell, someone drops you an axe and shotgun, then your cell door opens.  Determined to make your way out fo the prison, you get ready to fight the hordes of demons that guard the prison.
-                        <br><br>Technologies used: User Input, Addition, Division, Storing Values in Variables
-                        <br><br>Role in Assignment: I was tasked with getting the total sum and rounded average of the three numbers inputted by the user.
-                        <br><br>What I learned: This assignment I learned how to modify a variable using other variables, these ones being the ones inputted by the user themselves.
-                        <br><br>Challenges: The warning challenge was getting the average to figure out whether to round up or down depending on the actual total.</p>
+                        <p>Description: Seems the cats have decided to mix up the level, this time letting you pick what path you take to continue forward. Have they decided to go easy on you, or are they just looking for a more twisted form of entertainment?
+                        <br><br>Technologies used: Classic Maps, Sticky Blocks, Lasers, Moving Platforms, Springs, Collectibles, Goal Post, Lava, Ice Blocks, Pushing Blocks, Light Platforms, Saw Blades, Exploding Platforms
+                        <br><br>Role in Assignment: My role was I had to create a 2D platformer level in the game, "BattleBlock Theater," making it possible for me to get used to creating levels.  I wanted to create a level that allowed the player to choose how they progressed, this is how I ended up coming up with the idea of the splitting paths.  I wanted to add another set of split paths but did not have enough room to put them in, so I stuck with two and added a final jump challenge at the end.
+                        <br><br>What I learned: What I learned during this assignment was how to create a level, this being the first one I created for the class.  I also learned the work that goes into creating a level, from the rough sketch of the level I wanted to create to the restrictions that appear once you start working on the level to the final product.
+                        <br><br>Challenges: The primary challenge was adjusting the level so that it would fit into the max level size the game allows.  My original sketch was too big for the game so I had to downsize it, makingme choose what parts of the original design I wanted to keep and what ones I wanted to remove.</p>
                     </div>
                 </div>
                 <br><br>
@@ -647,5 +645,5 @@ window.onload = () =>{
         </div>
             </div>
         </div>
-    </div>`
+    </div><br>`
 }
