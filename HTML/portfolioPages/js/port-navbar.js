@@ -12,10 +12,18 @@ template.innerHTML = `
         z-index: 10px;
     }
     
-    .navbar a{
-        color: rgb(165, 46, 46);
+    .navbar .navbar-item{
         margin: 10px;
         font-size: 20px;
+    }
+
+    .navbar-item{
+      display: flex;
+      letter-spacing: 2px;
+    }
+
+    .navbar a{
+      color: rgb(165, 46, 46);
     }
 </style>
 <nav class="navbar fixed-top">
@@ -28,30 +36,28 @@ template.innerHTML = `
         <span></span>
         <span></span>
         <span></span>
-        <span></span>
-        <span></span>
       </a>
     </div>
 
     <div class="navbar-menu" id="nav-links">
       <div class="navbar-start">
-        <a class="navbar-item is-hoverable" id="home" href="index.html">
+        <a class="navbar-item is-hoverable fas fa-home" id="home" href="index.html">
           Home
         </a>
       
-        <a class="navbar-item is-hoverable" id="about" href="#about">
+        <a class="navbar-item is-hoverable fas fa-book" id="about" href="#about">
           About
         </a>
       
-        <a class="navbar-item is-hoverable" id="project" href="#projects">
+        <a class="navbar-item is-hoverable fas fa-laptop" id="project" href="#projects">
           Projects
         </a>
 
-        <a class="navbar-item is-hoverable" id="contact" href="#contact">
+        <a class="navbar-item is-hoverable fas fa-phone" id="contact" href="#contact">
           Contact
         </a>
 
-        <a class="navbar-item is-hoverable" id="resume" href="./HTML/portfolioPages/media/AlexanderPettyResume.pdf" target="_blank" rel="noopener noreferrer">
+        <a class="navbar-item is-hoverable fas fa-file" id="resume" href="./HTML/portfolioPages/media/AlexanderPettyResume.pdf" target="_blank" rel="noopener noreferrer">
           Resume
         </a>
       </div> <!-- end navbar-start -->
