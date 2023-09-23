@@ -11,7 +11,7 @@ window.onload = () =>{
         </h1>
         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#projects">
             <div class="accordion-body">
-            <strong><h3 style="text-align: center; color: white;">Click the Project Title to Test it Out</h3><div id="project1" class="carousel slide">
+            <strong><h3 style="text-align: center; color: white;">Click the Project Title to Test it Out</h3><div id="project1" class="carousel carousel-dark slide">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#project1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#project1" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -138,7 +138,7 @@ window.onload = () =>{
         </h1>
         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#projects">
             <div class="accordion-body">
-            <strong><div id="project2" class="carousel slide">
+            <strong><div id="project2" class="carousel carousel-dark slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#project2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#project2" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -225,7 +225,7 @@ window.onload = () =>{
         </h1>
         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#projects">
             <div class="accordion-body">
-            <strong><div id="project3" class="carousel slide">
+            <strong><div id="project3" class="carousel carousel-dark slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#project3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#project3" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -292,7 +292,7 @@ window.onload = () =>{
         </h1>
         <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#projects">
             <div class="accordion-body">
-            <strong><h3 style="text-align: center; color: white;">Code recreated in Javascript</h3><div id="project4" class="carousel slide">
+            <strong><h3 style="text-align: center; color: white;">Code recreated in Javascript</h3><div id="project4" class="carousel carousel-dark slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#project4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#project4" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -394,7 +394,7 @@ window.onload = () =>{
         </h1>
         <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#projects">
             <div class="accordion-body">
-            <strong><div id="project5" class="carousel slide">
+            <strong><div id="project5" class="carousel carousel-dark slide">
             <h1 style="text-align: center;">Assembly Language Programs</h1>
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#project5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -482,7 +482,7 @@ window.onload = () =>{
         </h1>
         <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#projects">
             <div class="accordion-body">
-            <strong><div id="project6" class="carousel slide">
+            <strong><div id="project6" class="carousel carousel-dark slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#project6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#project6" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -569,7 +569,7 @@ window.onload = () =>{
         </h1>
         <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#projects">
             <div class="accordion-body">
-            <strong><div id="project7" class="carousel slide">
+            <strong><div id="project7" class="carousel carousel-dark slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#project7" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#project7" data-bs-slide-to="1" aria-label="Slide 2"></button>
