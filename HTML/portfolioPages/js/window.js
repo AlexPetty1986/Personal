@@ -120,11 +120,11 @@ window.onload = () =>{
                 <img src="./HTML/portfolioPages/media/webProj6.png" alt="HerosQuest" id="webImg6"/>
                 <a href="./HTML/HeroQuest/HerosQuest.html" target="_blank" rel="noopener noreferrer"><h2>Hero's Quest</h2></a>
                 <p style="text-align: center;">
-                    <button class="btn btn-warning web" id="2" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo2" aria-expanded="false" aria-controls="webInfo2">
+                    <button class="btn btn-warning web" id="2" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo6" aria-expanded="false" aria-controls="webInfo6">
                       Information
                     </button>
                 </p>
-                <div class="collapse" id="webInfo2">
+                <div class="collapse" id="webInfo6">
                     <div class="card card-body" style="color: black; margin: 10px;">
                         <p>Description: Journey through the castle of the Demon Lord to save the land you call home.  Find secrets, uncover clues and discover the truth behid it all.  Do your best to unlock all of the endings. 
                         <br><br>Technologies used: Javascript, Twine, If Statements, CSS, HTML, Audio Elements, User Input, Branching Paths
