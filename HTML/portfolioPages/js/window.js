@@ -18,6 +18,7 @@ window.onload = () =>{
               <button type="button" data-bs-target="#project1" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 <button type="button" data-bs-target="#project1" data-bs-slide-to="3" aria-label="Slide 4"></button>
                     <button type="button" data-bs-target="#project1" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#project1" data-bs-slide-to="5" aria-label="Slide 6"></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -111,6 +112,25 @@ window.onload = () =>{
                         <br><br>Role in Project: I was tasked in creating something using canvas, an HTML element that allows the user to draw graphics onto the web page.  Using one of my past assignments, an audio visualizer, I modified to make it as different as possible to the original assignment.  This includes changing the overall design of the visualizer, changing the music to match with the new aesthetic, to even adding in brand new elements, like having video play through the canvas element.
                         <br><br>What I learned: During this project I had learned how to make a video element play through a canvas element, mkaing it possible to have the video be affected by the filters created using canvas.
                         <br><br>Challenges: The main challenge that I had with this project was figuring out how to make it as different to the original assignement as possible.</p>
+                    </div>
+                </div>
+                <br><br>
+              </div>
+              <div class="carousel-item">
+                <img src="./HTML/portfolioPages/media/webProj6.png" alt="HerosQuest" id="webImg6"/>
+                <a href="./HTML/HeroQuest/HerosQuest.html" target="_blank" rel="noopener noreferrer"><h2>Hero's Quest</h2></a>
+                <p style="text-align: center;">
+                    <button class="btn btn-warning web" id="2" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo2" aria-expanded="false" aria-controls="webInfo2">
+                      Information
+                    </button>
+                </p>
+                <div class="collapse" id="webInfo2">
+                    <div class="card card-body" style="color: black; margin: 10px;">
+                        <p>Description: Journey through the castle of the Demon Lord to save the land you call home.  Find secrets, uncover clues and discover the truth behid it all.  Do your best to unlock all of the endings. 
+                        <br><br>Technologies used: Javascript, Twine, If Statements, CSS, HTML, Audio Elements, User Input, Branching Paths
+                        <br><br>Role in Project: The purpose of this project was to create a text-based game where the player gets to choose what there choices.  
+                        <br><br>What I learned: Throughout the course of this project I learned more about how Twine works and how I could use it to create stories in the way I wanted to.
+                        <br><br>Challenges: The main challenges came with figuring out what the story will be and how I would like it progress and then end.  This also includes the mechanics I wanted to add to make it even more interesting.</p>
                     </div>
                 </div>
                 <br><br>
