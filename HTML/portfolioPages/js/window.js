@@ -252,7 +252,7 @@ window.onload = () =>{
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                <center><video src="./HTML/portfolioPages/media/sharpImg1.webm" id="sharpImg1" width="40%" autoplay loop muted></video></center>
+                <center><video src="./HTML/portfolioPages/media/sharpProj1.webm" id="sharpImg1" width="40%" autoplay loop muted></video></center>
                 <h2 style="text-align: center; color: black;">LiveWire</h2>
                 <p style="text-align: center;">
                     <button class="btn btn-warning plus" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#sharpInfo1" aria-expanded="false" aria-controls="sharpInfo1">
@@ -635,8 +635,9 @@ window.onload = () =>{
                 <br><br>
                 </div>
                 <div class="carousel-item">
-                <img src="./HTML/portfolioPages/media/levelProj2.png" alt="yourChoice" id="levelImg3"/>
-                <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2930262886" target="_blank" rel="noopener noreferrer"><h2>Your Choice</h2></a>
+                <center><iframe width="1058" height="595" src="https://www.youtube.com/embed/t8RlMCYCS8g" title="Antigen - Quake 1 Level" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+                <h6 style="text-align: center; color:white;">Click the level name to download the WAD file of the map!</h6>
+                <a href="./HTML/portfolioPages/media/antigen.zip" target="_blank" rel="noopener noreferrer"><h2>Antigen</h2></a>
                 <p style="text-align: center;">
                     <button class="btn btn-warning level" id="3" type="button" data-bs-toggle="collapse" data-bs-target="#levelInfo3" aria-expanded="false" aria-controls="levelInfo3">
                         Information
@@ -644,11 +645,11 @@ window.onload = () =>{
                 </p>
                 <div class="collapse" id="levelInfo3">
                     <div class="card card-body" style="color: black; margin: 10px;">
-                        <p>Description: Seems the cats have decided to mix up the level, this time letting you pick what path you take to continue forward. Have they decided to go easy on you, or are they just looking for a more twisted form of entertainment?
-                        <br><br>Technologies used: Classic Maps, Sticky Blocks, Lasers, Moving Platforms, Springs, Collectibles, Goal Post, Lava, Ice Blocks, Pushing Blocks, Light Platforms, Saw Blades, Exploding Platforms
-                        <br><br>Role in Assignment: My role was I had to create a 2D platformer level in the game, "BattleBlock Theater," making it possible for me to get used to creating levels.  I wanted to create a level that allowed the player to choose how they progressed, this is how I ended up coming up with the idea of the splitting paths.  I wanted to add another set of split paths but did not have enough room to put them in, so I stuck with two and added a final jump challenge at the end.
-                        <br><br>What I learned: What I learned during this assignment was how to create a level, this being the first one I created for the class.  I also learned the work that goes into creating a level, from the rough sketch of the level I wanted to create to the restrictions that appear once you start working on the level to the final product.
-                        <br><br>Challenges: The primary challenge was adjusting the level so that it would fit into the max level size the game allows.  My original sketch was too big for the game so I had to downsize it, makingme choose what parts of the original design I wanted to keep and what ones I wanted to remove.</p>
+                        <p>Description: Welcome to Antigen Prison, one of the most secure prisons in hell.  You have been captured by demons, hoping to torture you for the rest of eternity.  While in your cell, someone drops you an axe and shotgun, then your cell door opens.  Determined to make your way out fo the prison, you get ready to fight the hordes of demons that guard the prison.
+                        <br><br>Technologies used: Quake Engine, Enemy/Enemy Placement, Locked Doors/Keys, Secrets, Powerups, Weapons, Ammo/Health/Armor, Start/End Positions
+                        <br><br>Role in Assignment: My role for this assignment was to create a level for an FPS game of my choice.  While we were recommended to use Half-Life 2 due to it being one of the easier games to work with as well as gain some knowledge on the Hammer Engine, I wanted to work on Quake and learn more about the Quake Engine.
+                        <br><br>What I learned: During the time I worked on my level I learned more about the Quake Engine and how it works.  I feel if I were to go back and try and create another level, I would have a much easier time.
+                        <br><br>Challenges: The primary challenge was trying to learn how Quake Engine works.  Since I had no experience working with it before, it was a long task to learn the functions of the engine before I could start on my level.</p>
                     </div>
                 </div>
                 <br><br>
