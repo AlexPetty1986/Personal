@@ -22,7 +22,7 @@ window.onload = () =>{
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="./HTML/portfolioPages/media/webProj1.png" alt="RandomPhrases" id="webImg1"/>
+                <img src="./HTML/portfolioPages/media/webProj1.webp" alt="RandomPhrases" id="webImg1"/>
                 <a href="./HTML/randPhrase/random-phrases.html" target="_blank" rel="noopener noreferrer"><h2>Random Phrase Generator</h2></a>
                 <p style="text-align: center;">
                     <button class="btn btn-warning web" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo1" aria-expanded="false" aria-controls="webInfo1">
@@ -41,7 +41,7 @@ window.onload = () =>{
                 <br><br>
               </div>
               <div class="carousel-item">
-                <img src="./HTML/portfolioPages/media/webProj2.png" alt="GifFinder" id="webImg2"/>
+                <img src="./HTML/portfolioPages/media/webProj2.webp" alt="GifFinder" id="webImg2"/>
                 <a href="./HTML/project2/project2.html" target="_blank" rel="noopener noreferrer"><h2>Gif Locator</h2></a>
                 <p style="text-align: center;">
                     <button class="btn btn-warning web" id="2" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo2" aria-expanded="false" aria-controls="webInfo2">
@@ -60,7 +60,7 @@ window.onload = () =>{
                 <br><br>
               </div>
               <div class="carousel-item">
-                <img src="./HTML/portfolioPages/media/webProj3.png" alt="AlienDefender!" id="webImg3"/>
+                <img src="./HTML/portfolioPages/media/webProj3.webp" alt="AlienDefender!" id="webImg3"/>
                 <a href="./HTML/project3/game.html" target="_blank" rel="noopener noreferrer"><h2>Alien Defender!</h2></a>
                 <p style="text-align: center;">
                     <button class="btn btn-warning web" id="3" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo3" aria-expanded="false" aria-controls="webInfo3">
@@ -79,7 +79,7 @@ window.onload = () =>{
                 <br><br>
               </div>
               <div class="carousel-item">
-                <img src="./HTML/portfolioPages/media/webProj4.PNG" alt="PokeFinder" id="webImg4"/>
+                <img src="./HTML/portfolioPages/media/webProj4.webp" alt="PokeFinder" id="webImg4"/>
                 <a href="./HTML/project-1/home.html" target="_blank" rel="noopener noreferrer"><h2>PokéFinder</h2></a>
                 <p style="text-align: center;">
                     <button class="btn btn-warning web" id="4" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo4" aria-expanded="false" aria-controls="webInfo4">
@@ -98,7 +98,7 @@ window.onload = () =>{
                 <br><br>
               </div>
               <div class="carousel-item">
-                <img src="./HTML/portfolioPages/media/webProj5.PNG" alt="RetroAudio" id="webImg5"/>
+                <img src="./HTML/portfolioPages/media/webProj5.webp" alt="RetroAudio" id="webImg5"/>
                 <a href="./HTML/project-2/home.html" target="_blank" rel="noopener noreferrer"><h2>Retro Audio Visualizer</h2></a>
                 <p style="text-align: center;">
                     <button class="btn btn-warning web" id="5" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo5" aria-expanded="false" aria-controls="webInfo5">
@@ -117,7 +117,7 @@ window.onload = () =>{
                 <br><br>
               </div>
               <div class="carousel-item">
-                <img src="./HTML/portfolioPages/media/webProj6.png" alt="HerosQuest" id="webImg6"/>
+                <img src="./HTML/portfolioPages/media/webProj6.webp" alt="HerosQuest" id="webImg6"/>
                 <a href="./HTML/HeroQuest/HerosQuest.html" target="_blank" rel="noopener noreferrer"><h2>Hero's Quest</h2></a>
                 <p style="text-align: center;">
                     <button class="btn btn-warning web" id="2" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo6" aria-expanded="false" aria-controls="webInfo6">
@@ -166,7 +166,7 @@ window.onload = () =>{
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                <img src="./HTML/portfolioPages/media/plusProj1.png" alt="Register" id="plusImg1"/>
+                <img src="./HTML/portfolioPages/media/plusProj1.webp" alt="Register" id="plusImg1"/>
                 <h2 style="text-align: center; color: black;">Cash Register</h2>
                 <p style="text-align: center;">
                     <button class="btn btn-warning plus" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#plusInfo1" aria-expanded="false" aria-controls="plusInfo1">
@@ -185,7 +185,7 @@ window.onload = () =>{
                 <br><br>
                 </div>
                 <div class="carousel-item">
-                <img src="./HTML/portfolioPages/media/plusProj2.jpg" alt="stackQueue" id="plusImg2"/>
+                <img src="./HTML/portfolioPages/media/plusProj2.webp" alt="stackQueue" id="plusImg2"/>
                 <h2 style="text-align: center; color: black;">Stack/Queue</h2>
                 <p style="text-align: center;">
                     <button class="btn btn-warning plus" id="2" type="button" data-bs-toggle="collapse" data-bs-target="#plusInfo2" aria-expanded="false" aria-controls="plusInfo2">
@@ -204,7 +204,7 @@ window.onload = () =>{
                 <br><br>
                 </div>
                 <div class="carousel-item">
-                <img src="./HTML/portfolioPages/media/plusProj3.jpg" alt="GravitySnake" id="plusImg3" style="height: 50%; width: 80%;"/>
+                <img src="./HTML/portfolioPages/media/plusProj3.webp" alt="GravitySnake" id="plusImg3" style="height: 50%; width: 80%;"/>
                 <h2 style="text-align: center; color: black;">Gravity Snake!</h2>
                 <p style="text-align: center;">
                     <button class="btn btn-warning plus" id="3" type="button" data-bs-toggle="collapse" data-bs-target="#plusInfo3" aria-expanded="false" aria-controls="plusInfo3">
@@ -271,7 +271,7 @@ window.onload = () =>{
                 <br><br>
                 </div>
                 <div class="carousel-item">
-                <img src="./HTML/portfolioPages/media/sharpProj2.png" alt="" id="sharpInfo2"/>
+                <img src="./HTML/portfolioPages/media/sharpProj2.webp" alt="" id="sharpInfo2"/>
                 <h2 style="text-align: center; color: black;">Player Battle</h2>
                 <p style="text-align: center;">
                     <button class="btn btn-warning plus" id="2" type="button" data-bs-toggle="collapse" data-bs-target="#sharpInfo2" aria-expanded="false" aria-controls="sharpInfo2">
@@ -423,7 +423,7 @@ window.onload = () =>{
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                <img src="./HTML/portfolioPages/media/aslangProj1.png" alt="AddCount" id="langImg1"/>
+                <img src="./HTML/portfolioPages/media/aslangProj1.webp" alt="AddCount" id="langImg1"/>
                 <h2 style="text-align: center; color: black;">Add Count</h2>
                 <p style="text-align: center;">
                     <button class="btn btn-warning assembly" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#langInfo1" aria-expanded="false" aria-controls="langInfo1">
@@ -442,7 +442,7 @@ window.onload = () =>{
                 <br><br>
                 </div>
                 <div class="carousel-item">
-                <img src="./HTML/portfolioPages/media/aslangProj2.png" alt="Largest" id="langImg2"/>
+                <img src="./HTML/portfolioPages/media/aslangProj2.webp" alt="Largest" id="langImg2"/>
                 <h2 style="text-align: center; color: black;">Find Largest</h2>
                 <p style="text-align: center;">
                     <button class="btn btn-warning assembly" id="2" type="button" data-bs-toggle="collapse" data-bs-target="#langInfo2" aria-expanded="false" aria-controls="langInfo2">
@@ -461,7 +461,7 @@ window.onload = () =>{
                 <br><br>
                 </div>
                 <div class="carousel-item">
-                <img src="./HTML/portfolioPages/media/aslangProj3.png" alt="SumAvg" id="langImg3" style="height: 50%; width: 80%;"/>
+                <img src="./HTML/portfolioPages/media/aslangProj3.webp" alt="SumAvg" id="langImg3" style="height: 50%; width: 80%;"/>
                 <h2 style="text-align: center; color: black;">Sum & Average</h2>
                 <p style="text-align: center;">
                     <button class="btn btn-warning assembly" id="3" type="button" data-bs-toggle="collapse" data-bs-target="#langInfo3" aria-expanded="false" aria-controls="langInfo3">
@@ -510,7 +510,7 @@ window.onload = () =>{
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                <img src="./HTML/portfolioPages/media/unityProj1.png" alt="Agents" style="display: block;">
+                <img src="./HTML/portfolioPages/media/unityProj1.webp" alt="Agents" style="display: block;">
                 <a href="./Unity/docs/builds/project_2/index.html"><h2>Invasion of the Demon King</h2></a>
                 <p style="text-align: center;">
                     <button class="btn btn-warning unity" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#unityInfo1" aria-expanded="false" aria-controls="pythonInfo1">
@@ -529,7 +529,7 @@ window.onload = () =>{
                 <br><br>
                 </div>
                 <div class="carousel-item">
-                <img src="./HTML/portfolioPages/media/unityProj1.png" alt="Agents" style="display: block;">
+                <img src="./HTML/portfolioPages/media/unityProj1.webp" alt="Agents" style="display: block;">
                 <a href="./Unity/docs/builds/project_2/index.html"><h2>Invasion of the Demon King</h2></a>
                 <p style="text-align: center;">
                     <button class="btn btn-warning unity" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#unityInfo1" aria-expanded="false" aria-controls="pythonInfo1">
@@ -548,7 +548,7 @@ window.onload = () =>{
                 <br><br>
                 </div>
                 <div class="carousel-item">
-                <img src="./HTML/portfolioPages/media/unityProj1.png" alt="Agents" style="display: block;">
+                <img src="./HTML/portfolioPages/media/unityProj1.webp" alt="Agents" style="display: block;">
                 <a href="./Unity/docs/builds/project_2/index.html"><h2>Invasion of the Demon King</h2></a>
                 <p style="text-align: center;">
                     <button class="btn btn-warning unity" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#unityInfo1" aria-expanded="false" aria-controls="pythonInfo1">
@@ -597,7 +597,7 @@ window.onload = () =>{
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                <img src="./HTML/portfolioPages/media/levelProj1.jpg" alt="reversePyramid" id="levelImg1"/>
+                <img src="./HTML/portfolioPages/media/levelProj1.webp" alt="reversePyramid" id="levelImg1"/>
                 <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2948309685" target="_blank" rel="noopener noreferrer"><h2>Reverse Pyramid</h2></a>
                 <p style="text-align: center;">
                     <button class="btn btn-warning level" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#levelInfo1" aria-expanded="false" aria-controls="levelInfo1">
@@ -616,7 +616,7 @@ window.onload = () =>{
                 <br><br>
                 </div>
                 <div class="carousel-item">
-                <img src="./HTML/portfolioPages/media/levelProj2.png" alt="yourChoice" id="levelImg2"/>
+                <img src="./HTML/portfolioPages/media/levelProj2.webp" alt="yourChoice" id="levelImg2"/>
                 <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2930262886" target="_blank" rel="noopener noreferrer"><h2>Your Choice</h2></a>
                 <p style="text-align: center;">
                     <button class="btn btn-warning level" id="2" type="button" data-bs-toggle="collapse" data-bs-target="#levelInfo2" aria-expanded="false" aria-controls="levelInfo2">
