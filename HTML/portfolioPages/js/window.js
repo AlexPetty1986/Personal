@@ -502,25 +502,24 @@ window.onload = () =>{
         </h1>
         <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#projects">
             <div class="accordion-body">
-            <strong><div id="project6" class="carousel carousel-dark slide">
+            <strong><h3 style="text-align: center; color: white;">Click the Project Title to Test it Out</h3><div id="project6" class="carousel carousel-dark slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#project6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#project6" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#project6" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                 <img src="./HTML/portfolioPages/media/unityProj1.webp" alt="Agents" style="display: block;">
-                <a href="./Unity/docs/builds/project_2/index.html"><h2>Invasion of the Demon King</h2></a>
+                <a href="./Unity/docs/builds/project_2/index.html" target="_blank" rel="noopener noreferrer"><h2>Invasion of the Demon King</h2></a>
                 <p style="text-align: center;">
-                    <button class="btn btn-warning unity" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#unityInfo1" aria-expanded="false" aria-controls="pythonInfo1">
+                    <button class="btn btn-warning unity" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#unityInfo1" aria-expanded="false" aria-controls="unityInfo1">
                         Information
                     </button>
                 </p>
                 <div class="collapse" id="unityInfo1">
                     <div class="card card-body" style="color: black; margin: 10px;">
                         <p>Description: A Unity Program where you watch members of the Demon King's Army attack and convert residents of the Kingdom into their ranks.  Interact with the game by pressing the buttons found at the top of the screen to spawn in more characters, delete them all from the environment as well as randomize the boulders that act as obstacles.  But that is not the only thing you can do, you can also click on the present characters to either cure them or curse them, changing what side they are aligned with.
-                            <br><br>Technologies used: Class Inheritance, Buttons, Arrays, Agents, Arrays, Sprites,
+                            <br><br>Technologies used: Class Inheritance, Buttons, Arrays, Agents, Arrays, Sprites
                             <br><br>Role in Assignment: My role was to create a simulation or game using the classes we had created, that being the Agent classes, which give the characters their traits like chasing and hiding from certain characters, and expand on it.
                             <br><br>What I learned: I learned more about how Agents work in Unity as well as how to modify them so that their behavior changes based on key criteria in the code.
                             <br><br>Challenges: The main challenge for this was when it came to implementing the new Agent classes and how they would work, as well as figuring out how to get the Agents to be interactible with a mouse.</p>                                   
@@ -529,39 +528,20 @@ window.onload = () =>{
                 <br><br>
                 </div>
                 <div class="carousel-item">
-                <img src="./HTML/portfolioPages/media/unityProj1.webp" alt="Agents" style="display: block;">
-                <a href="./Unity/docs/builds/project_2/index.html"><h2>Invasion of the Demon King</h2></a>
+                <img src="./HTML/portfolioPages/media/unityProj2.webp" alt="Dresden" style="display: block;">
+                <a href="https://haw2048.itch.io/dresdens-chase" target="_blank" rel="noopener noreferrer"><h2>Dresden's Chase</h2></a>
                 <p style="text-align: center;">
-                    <button class="btn btn-warning unity" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#unityInfo1" aria-expanded="false" aria-controls="pythonInfo1">
+                    <button class="btn btn-warning unity" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#unityInfo2" aria-expanded="false" aria-controls="unityInfo2">
                         Information
                     </button>
                 </p>
-                <div class="collapse" id="unityInfo1">
+                <div class="collapse" id="unityInfo2">
                     <div class="card card-body" style="color: black; margin: 10px;">
-                        <p>Description: A Unity Program where you watch members of the Demon King's Army attack and convert residents of the Kingdom into their ranks.  Interact with the game by pressing the buttons found at the top of the screen to spawn in more characters, delete them all from the environment as well as randomize the boulders that act as obstacles.  But that is not the only thing you can do, you can also click on the present characters to either cure them or curse them, changing what side they are aligned with.
-                            <br><br>Technologies used: Class Inheritance, Buttons, Arrays, Agents, Arrays, Sprites,
-                            <br><br>Role in Assignment: My role was to create a simulation or game using the classes we had created, that being the Agent classes, which give the characters their traits like chasing and hiding from certain characters, and expand on it.
-                            <br><br>What I learned: I learned more about how Agents work in Unity as well as how to modify them so that their behavior changes based on key criteria in the code.
-                            <br><br>Challenges: The main challenge for this was when it came to implementing the new Agent classes and how they would work, as well as figuring out how to get the Agents to be interactible with a mouse.</p>                                   
-                    </div>
-                </div>
-                <br><br>
-                </div>
-                <div class="carousel-item">
-                <img src="./HTML/portfolioPages/media/unityProj1.webp" alt="Agents" style="display: block;">
-                <a href="./Unity/docs/builds/project_2/index.html"><h2>Invasion of the Demon King</h2></a>
-                <p style="text-align: center;">
-                    <button class="btn btn-warning unity" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#unityInfo1" aria-expanded="false" aria-controls="pythonInfo1">
-                        Information
-                    </button>
-                </p>
-                <div class="collapse" id="unityInfo1">
-                    <div class="card card-body" style="color: black; margin: 10px;">
-                        <p>Description: A Unity Program where you watch members of the Demon King's Army attack and convert residents of the Kingdom into their ranks.  Interact with the game by pressing the buttons found at the top of the screen to spawn in more characters, delete them all from the environment as well as randomize the boulders that act as obstacles.  But that is not the only thing you can do, you can also click on the present characters to either cure them or curse them, changing what side they are aligned with.
-                            <br><br>Technologies used: Class Inheritance, Buttons, Arrays, Agents, Arrays, Sprites,
-                            <br><br>Role in Assignment: My role was to create a simulation or game using the classes we had created, that being the Agent classes, which give the characters their traits like chasing and hiding from certain characters, and expand on it.
-                            <br><br>What I learned: I learned more about how Agents work in Unity as well as how to modify them so that their behavior changes based on key criteria in the code.
-                            <br><br>Challenges: The main challenge for this was when it came to implementing the new Agent classes and how they would work, as well as figuring out how to get the Agents to be interactible with a mouse.</p>                                   
+                        <p>Description: Play as the private investigator with a hand for magic Harry Dresden.  A string of murders have occurred in a slew of apartments in Chicago and Harry believes that there is something off about this case.  Find clues found across the crime scenes and uncover the truth behind this case.
+                            <br><br>Technologies used: Sprites, Boss Fights, Puzzles, Level Design, Unity Grid System
+                            <br><br>Role in Assignment: For this project we were tasked with making a game based off of the book series by Jim Butcher, "The Dresden Files", my group decided on doing a top-down puzzle game.  I was in charge of the level design, I used free sprite sheets to design the levels.  I also was helping with the puzzles of the game, those being the breakable wall as well as a pressure plate.
+                            <br><br>What I learned: I learned a lot more about Unity during this project, specifically Unity's grid system for placing sprites in the world.
+                            <br><br>Challenges: The main challenges for this project was the deadline, since we only had a month to make the game.  The end of the semester was approaching as well so we were all busy with final projects.</p>                                   
                     </div>
                 </div>
                 <br><br>
