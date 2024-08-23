@@ -27,6 +27,11 @@ img{
     width: 100%;
 }
 
+iframe{
+    display: block;
+    margin: auto;
+}
+
 section{
     display: block;
     margin: auto;
@@ -70,6 +75,16 @@ section{
     align-self: center;
 }
 
+#description iframe{
+    width: 30%;
+    height: auto;
+    max-height: 500px;
+    max-width: 300px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    align-self: center;
+}
+
 #projects{
     align-items: center;
     box-sizing: border-box;
@@ -80,9 +95,14 @@ section{
     margin-left: 10px;
 }
 
-#projects a{
+#projects a, #projects h2{
     justify-content: center;
     text-align: center;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    top: 50%;
+    bottom: 50%;
 }
 
 #projects img{
@@ -140,6 +160,7 @@ section{
     line-height: 20px;
 }
 
+
 a{
     text-decoration: none;
 }
@@ -178,6 +199,11 @@ a:active{
     }
 
     #projects img{
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    #projects iframe{
         width: 80%;
         margin-top: 10px;
     }

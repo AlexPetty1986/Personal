@@ -1,15 +1,80 @@
 //Load up projects section on loadup of page
 window.onload = () =>{
     projectLoad = document.querySelector("#projects");
+    //Game Projects
+    projectLoad.innerHTML += `
+    <div class="accordion-item">
+        <h1 class="accordion-header" id="headingNine">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+            Created Games
+            </button>
+        </h1>
+        <div id="collapseNine" class="accordion-collapse collapse show" aria-labelledby="headingNine" data-bs-parent="#projects">
+            <div class="accordion-body">
+            <strong><div id="project9" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#project9" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#project9" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="https://img.itch.zone/aW1hZ2UvMjUxMzYxMi8xNDk0MTkwNC5wbmc=/794x1000/CU0drC.png" alt="snack" id="gameImg1"/>
+                <h2><a href="https://arcturus86.itch.io/snackwars" target="_blank" rel="noopener noreferrer">Snack Wars</a></h2>
+                <p style="text-align: center;">
+                    <button class="btn btn-warning game" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#gameInfo1" aria-expanded="false" aria-controls="gameInfo1">
+                        Information
+                    </button>
+                </p>
+                <div class="collapse" id="gameInfo1">
+                    <div class="card card-body" style="color: black; margin: 10px;">
+                        <p>Job Description: Participate in the most popular competition in school.  Face off against different opponents and show them what it takes to be the Snack King! Choose from a selection of snacks that you are willing to bet against your opponent, then face off in arm wrestling to see who will be the one to win the spoils.
+                        <br><br>Technologies used: GameMaker Studio, GameMaker Language (GML), Game Design, Team Work, Figma
+                        <br><br>What I learned: This was the first game I made since leaving school, it was made for the <a href="https://itch.io/jam/boss-rush-jam-2024">BOSS RUSH JAM 2024</a>, with  the goal being to make a boss rush with a theme around exchange.  I learned a lot, from figuring out how ot plan things out based on a short time limit to even figuring out how to axe things when not enough time is left.  I even worked alongside a <a href="https://x.com/PheonixMetal" target="_blank">friend<a/>, which made things more fun since it let me bounce opinions back and force on what will work and what won't.
+                        <br><br>Challenges: Main challenge was of course the time limit, we only had a month to work on the game and submit it.  Combine that with both of us having jobs we needed to go to our time to work on it was limited.  We also had the challenge of learning a new engine, while my friend had already been using the engine we used, I had little to no experience with it, so it was also a learning experience to figure out how GameMaker Studio worked.
+                    </div>
+                </div>
+                <br><br>
+                </div>
+                <div class="carousel-item">
+                <iframe frameborder="0" src="https://itch.io/embed-upload/11173617?color=333333" allowfullscreen="" width="640" height="380"><a href="https://arcturus86.itch.io/flowers-maze">Play Flower's Maze on itch.io</a></iframe>
+                <h2><a href="https://arcturus86.itch.io/flowers-maze" target="_blank" rel="noopener noreferrer">Flower's Maze</a></h2>
+                <p style="text-align: center;">
+                    <button class="btn btn-warning game" id="2" type="button" data-bs-toggle="collapse" data-bs-target="#gameInfo2" aria-expanded="false" aria-controls="gameInfo2">
+                        Information
+                    </button>
+                </p>
+                <div class="collapse" id="gameInfo2">
+                    <div class="card card-body" style="color: black; margin: 10px;">
+                    <p>Job Description: Play as a flower trying to bring back nature in a dying maze.  Bring life back to the maze as you move through it to reach the purple flowers at the end.  Unlock checkpoints to make it easier to backtrack and check another path. Try and beat your best scores, both tile count and time.
+                    <br><br>Technologies used: Lua, Pico-8, Game Design, Solo Game Dev, Time Management
+                    <br><br>What I learned: This would be my first solo game dev project that I worked on, it was an exciting experience.  This game was made for the <a href="https://itch.io/jam/lowrezjam-2024">LOWREZJAM 2024</a>, which involves making a game with a 64x64 screen size.
+                    <br><br>Challenges: Like most Game Jams, the main challenge is time, I only had a couple of weeks to finish this game before the deadline so there were some things that were planned that had to be scrapped.  The other challenge was learning the new engine, since I had never used Pico-8 until now.
+                    </div>
+                </div>
+                <br><br>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#project9" data-bs-slide="prev" onclick="closeInfo('game');">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#project9" data-bs-slide="next" onclick="closeInfo('game');">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+            </div>
+        </div>
+    </div>`
     //Web Based Programs
     projectLoad.innerHTML += `
     <div class="accordion-item">
         <h1 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
             Web-Based Programs
             </button>
         </h1>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#projects">
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#projects">
             <div class="accordion-body">
             <strong><h3 style="text-align: center; color: white;">Click the Project Title to Test it Out</h3><div id="project1" class="carousel carousel-dark slide">
             <div class="carousel-indicators">
@@ -23,7 +88,7 @@ window.onload = () =>{
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="./HTML/portfolioPages/media/webProj1.webp" alt="RandomPhrases" id="webImg1"/>
-                <a href="./HTML/randPhrase/random-phrases.html" target="_blank" rel="noopener noreferrer"><h2>Random Phrase Generator</h2></a>
+                <h2><a href="./HTML/randPhrase/random-phrases.html" target="_blank" rel="noopener noreferrer">Random Phrase Generator</a></h2>
                 <p style="text-align: center;">
                     <button class="btn btn-warning web" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo1" aria-expanded="false" aria-controls="webInfo1">
                       Information
@@ -42,7 +107,7 @@ window.onload = () =>{
               </div>
               <div class="carousel-item">
                 <img src="./HTML/portfolioPages/media/webProj2.webp" alt="GifFinder" id="webImg2"/>
-                <a href="./HTML/project2/project2.html" target="_blank" rel="noopener noreferrer"><h2>Gif Locator</h2></a>
+                <h2><a href="./HTML/project2/project2.html" target="_blank" rel="noopener noreferrer">Gif Locator</a></h2>
                 <p style="text-align: center;">
                     <button class="btn btn-warning web" id="2" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo2" aria-expanded="false" aria-controls="webInfo2">
                       Information
@@ -61,7 +126,7 @@ window.onload = () =>{
               </div>
               <div class="carousel-item">
                 <img src="./HTML/portfolioPages/media/webProj3.webp" alt="AlienDefender!" id="webImg3"/>
-                <a href="./HTML/project3/game.html" target="_blank" rel="noopener noreferrer"><h2>Alien Defender!</h2></a>
+                <h2><a href="./HTML/project3/game.html" target="_blank" rel="noopener noreferrer">Alien Defender!</a></h2>
                 <p style="text-align: center;">
                     <button class="btn btn-warning web" id="3" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo3" aria-expanded="false" aria-controls="webInfo3">
                       Information
@@ -80,7 +145,7 @@ window.onload = () =>{
               </div>
               <div class="carousel-item">
                 <img src="./HTML/portfolioPages/media/webProj4.webp" alt="PokeFinder" id="webImg4"/>
-                <a href="./HTML/project-1/home.html" target="_blank" rel="noopener noreferrer"><h2>PokéFinder</h2></a>
+                <h2><a href="./HTML/project-1/home.html" target="_blank" rel="noopener noreferrer">PokéFinder</a></h2>
                 <p style="text-align: center;">
                     <button class="btn btn-warning web" id="4" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo4" aria-expanded="false" aria-controls="webInfo4">
                       Information
@@ -99,7 +164,7 @@ window.onload = () =>{
               </div>
               <div class="carousel-item">
                 <img src="./HTML/portfolioPages/media/webProj5.webp" alt="RetroAudio" id="webImg5"/>
-                <a href="./HTML/project-2/home.html" target="_blank" rel="noopener noreferrer"><h2>Retro Audio Visualizer</h2></a>
+                <h2><a href="./HTML/project-2/home.html" target="_blank" rel="noopener noreferrer">Retro Audio Visualizer</a></h2>
                 <p style="text-align: center;">
                     <button class="btn btn-warning web" id="5" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo5" aria-expanded="false" aria-controls="webInfo5">
                       Information
@@ -118,7 +183,7 @@ window.onload = () =>{
               </div>
               <div class="carousel-item">
                 <img src="./HTML/portfolioPages/media/webProj6.webp" alt="HerosQuest" id="webImg6"/>
-                <a href="./HTML/HeroQuest/HerosQuest.html" target="_blank" rel="noopener noreferrer"><h2>Hero's Quest</h2></a>
+                <h2><a href="./HTML/HeroQuest/HerosQuest.html" target="_blank" rel="noopener noreferrer">Hero's Quest</a></h2>
                 <p style="text-align: center;">
                     <button class="btn btn-warning web" id="2" type="button" data-bs-toggle="collapse" data-bs-target="#webInfo6" aria-expanded="false" aria-controls="webInfo6">
                       Information
@@ -510,7 +575,7 @@ window.onload = () =>{
             <div class="carousel-inner">
                 <div class="carousel-item active">
                 <img src="./HTML/portfolioPages/media/unityProj1.webp" alt="Agents" style="display: block;">
-                <a href="./Unity/docs/builds/project_2/index.html" target="_blank" rel="noopener noreferrer"><h2>Invasion of the Demon King</h2></a>
+                <h2><a href="./Unity/docs/builds/project_2/index.html" target="_blank" rel="noopener noreferrer">Invasion of the Demon King</a></h2>
                 <p style="text-align: center;">
                     <button class="btn btn-warning unity" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#unityInfo1" aria-expanded="false" aria-controls="unityInfo1">
                         Information
@@ -529,7 +594,7 @@ window.onload = () =>{
                 </div>
                 <div class="carousel-item">
                 <img src="./HTML/portfolioPages/media/unityProj2.webp" alt="Dresden" style="display: block;">
-                <a href="https://haw2048.itch.io/dresdens-chase" target="_blank" rel="noopener noreferrer"><h2>Dresden's Chase</h2></a>
+                <h2><a href="https://haw2048.itch.io/dresdens-chase" target="_blank" rel="noopener noreferrer">Dresden's Chase</a></h2>
                 <p style="text-align: center;">
                     <button class="btn btn-warning unity" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#unityInfo2" aria-expanded="false" aria-controls="unityInfo2">
                         Information
@@ -578,7 +643,7 @@ window.onload = () =>{
             <div class="carousel-inner">
                 <div class="carousel-item active">
                 <img src="./HTML/portfolioPages/media/levelProj1.webp" alt="reversePyramid" id="levelImg1"/>
-                <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2948309685" target="_blank" rel="noopener noreferrer"><h2>Reverse Pyramid</h2></a>
+                <h2><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2948309685" target="_blank" rel="noopener noreferrer">Reverse Pyramid</a></h2>
                 <p style="text-align: center;">
                     <button class="btn btn-warning level" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#levelInfo1" aria-expanded="false" aria-controls="levelInfo1">
                         Information
@@ -597,7 +662,7 @@ window.onload = () =>{
                 </div>
                 <div class="carousel-item">
                 <img src="./HTML/portfolioPages/media/levelProj2.webp" alt="yourChoice" id="levelImg2"/>
-                <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2930262886" target="_blank" rel="noopener noreferrer"><h2>Your Choice</h2></a>
+                <h2><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2930262886" target="_blank" rel="noopener noreferrer">Your Choice</a></h2>
                 <p style="text-align: center;">
                     <button class="btn btn-warning level" id="2" type="button" data-bs-toggle="collapse" data-bs-target="#levelInfo2" aria-expanded="false" aria-controls="levelInfo2">
                         Information
@@ -617,7 +682,7 @@ window.onload = () =>{
                 <div class="carousel-item">
                 <center><iframe width="1058" height="595" src="https://www.youtube.com/embed/t8RlMCYCS8g" title="Antigen - Quake 1 Level" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
                 <h6 style="text-align: center; color:white;">Click the level name to download the WAD file of the map!</h6>
-                <a href="./HTML/portfolioPages/media/antigen.zip" target="_blank" rel="noopener noreferrer"><h2>Antigen</h2></a>
+                <h2><a href="./HTML/portfolioPages/media/antigen.zip" target="_blank" rel="noopener noreferrer">Antigen</a></h2>
                 <p style="text-align: center;">
                     <button class="btn btn-warning level" id="3" type="button" data-bs-toggle="collapse" data-bs-target="#levelInfo3" aria-expanded="false" aria-controls="levelInfo3">
                         Information
@@ -664,8 +729,8 @@ window.onload = () =>{
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                <img src="./HTML/portfolioPages/media/internProj1.webp" alt="reversePyramid" id="internImg1"/>
-                <a href="https://www.arkheproject.org/" target="_blank" rel="noopener noreferrer"><h2>Arkhé</h2></a>
+                <img src="./HTML/portfolioPages/media/internProj1.webp" alt="arkhe" id="internImg1"/>
+                <h2><a href="https://www.arkheproject.org/" target="_blank" rel="noopener noreferrer">Arkhé</a></h2>
                 <p style="text-align: center;">
                     <button class="btn btn-warning intern" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#internInfo1" aria-expanded="false" aria-controls="internInfo1">
                         Information
@@ -683,8 +748,8 @@ window.onload = () =>{
                 <br><br>
                 </div>
                 <div class="carousel-item">
-                <img src="./HTML/portfolioPages/media/internProj2.webp" alt="yourChoice" id="internImg2"/>
-                <a href="https://www.changelingvr.com/" target="_blank" rel="noopener noreferrer"><h2>Changeling VR</h2></a>
+                <img src="./HTML/portfolioPages/media/internProj2.webp" alt="changeling" id="internImg2"/>
+                <h2><a href="https://www.changelingvr.com/" target="_blank" rel="noopener noreferrer">Changeling VR</a></h2>
                 <p style="text-align: center;">
                     <button class="btn btn-warning intern" id="2" type="button" data-bs-toggle="collapse" data-bs-target="#internInfo2" aria-expanded="false" aria-controls="internInfo2">
                         Information
