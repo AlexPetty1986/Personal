@@ -66,6 +66,73 @@ window.onload = () =>{
             </div>
         </div>
     </div>`
+    //Internships
+    projectLoad.innerHTML += `
+    <div class="accordion-item">
+        <h1 class="accordion-header" id="headingEight">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+            Internships
+            </button>
+        </h1>
+        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#projects">
+            <div class="accordion-body">
+            <strong><div id="project8" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#project8" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#project8" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="./HTML/portfolioPages/media/internProj1.webp" alt="arkhe" id="internImg1"/>
+                <h2><a href="https://www.arkheproject.org/" target="_blank" rel="noopener noreferrer">Arkhé</a></h2>
+                <p style="text-align: center;">
+                    <button class="btn btn-warning intern" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#internInfo1" aria-expanded="false" aria-controls="internInfo1">
+                        Information
+                    </button>
+                </p>
+                <div class="collapse" id="internInfo1">
+                    <div class="card card-body" style="color: black; margin: 10px;">
+                        <p>Job Description: Help create an experiment with tangible digital interactions for participants in the form of the typical American living room using a variety of embedded sensors, computer vision, and functional programming.
+                        <br><br>Job Title: Debug Technician
+                        <br><br>Technologies used: Python, OpenCV, Redis, Heroku, Teamwork, Software Development, Debugging
+                        <br><br>What I learned: I ended up learning a lot more about Python and what you could do with it, like OpenCV.  I also learned how to set up stuff like Heroku, a cloud platform for websites and apps and Redis, a program that lets you modify code in real time and see the changes.  I also was able to improve my skills in debugging code.
+                        <br><br>Challenges: The primary challenges that came up when working during the internship was figuring out how to get certain things working.  The team I was a part of came up with multiple ideas but had a hard time coming up with the best option.  After a while though we were able to settle on an idea and was able to continue our progress on the assignment we were given.                
+                    </div>
+                </div>
+                <br><br>
+                </div>
+                <div class="carousel-item">
+                <img src="./HTML/portfolioPages/media/internProj2.webp" alt="changeling" id="internImg2"/>
+                <h2><a href="https://www.changelingvr.com/" target="_blank" rel="noopener noreferrer">Changeling VR</a></h2>
+                <p style="text-align: center;">
+                    <button class="btn btn-warning intern" id="2" type="button" data-bs-toggle="collapse" data-bs-target="#internInfo2" aria-expanded="false" aria-controls="internInfo2">
+                        Information
+                    </button>
+                </p>
+                <div class="collapse" id="internInfo2">
+                    <div class="card card-body" style="color: black; margin: 10px;">
+                    <p>Job Description: Continue to work on the ongoing development of a VR mystery game in Unreal Engine titled Changeling VR, Virtual Reality (VR) narrative mystery game for an independent studio.
+                    <br><br>Job Title: Game Developer/Level Designer
+                    <br><br>Technologies used: Unreal Engine 4, Unreal Engine Blueprints, Game Design, Level Design, 3D Models, Perforce
+                    <br><br>What I learned: Before the internship my knowledge on Unreal Engine was very limited due to only using it for a singular course.  I now have a much better understanding of how it works.
+                    <br><br>Challenges: The main challenge that came up during the internship was fixing any issues that I found.  Since multiple different groups of people have worked on it over the years, there will always be something that might have been missed or they could not fix it.  Since I had limited skill in Unreal Engine at the start of the internship it was challenging.  But over time I had a better understanding of Unreal Engine and was able to fix all of the issues I came across. 
+                    </div>
+                </div>
+                <br><br>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#project8" data-bs-slide="prev" onclick="closeInfo('intern');">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#project8" data-bs-slide="next" onclick="closeInfo('intern');">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+            </div>
+        </div>
+    </div>`
     //Web Based Programs
     projectLoad.innerHTML += `
     <div class="accordion-item">
@@ -705,73 +772,6 @@ window.onload = () =>{
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#project7" data-bs-slide="next" onclick="closeInfo('level');">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-            </div>
-        </div>
-    </div>`
-    //Internships
-    projectLoad.innerHTML += `
-    <div class="accordion-item">
-        <h1 class="accordion-header" id="headingEight">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-            Internships
-            </button>
-        </h1>
-        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#projects">
-            <div class="accordion-body">
-            <strong><div id="project8" class="carousel carousel-dark slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#project8" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#project8" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                <img src="./HTML/portfolioPages/media/internProj1.webp" alt="arkhe" id="internImg1"/>
-                <h2><a href="https://www.arkheproject.org/" target="_blank" rel="noopener noreferrer">Arkhé</a></h2>
-                <p style="text-align: center;">
-                    <button class="btn btn-warning intern" id="1" type="button" data-bs-toggle="collapse" data-bs-target="#internInfo1" aria-expanded="false" aria-controls="internInfo1">
-                        Information
-                    </button>
-                </p>
-                <div class="collapse" id="internInfo1">
-                    <div class="card card-body" style="color: black; margin: 10px;">
-                        <p>Job Description: Help create an experiment with tangible digital interactions for participants in the form of the typical American living room using a variety of embedded sensors, computer vision, and functional programming.
-                        <br><br>Job Title: Debug Technician
-                        <br><br>Technologies used: Python, OpenCV, Redis, Heroku, Teamwork, Software Development, Debugging
-                        <br><br>What I learned: I ended up learning a lot more about Python and what you could do with it, like OpenCV.  I also learned how to set up stuff like Heroku, a cloud platform for websites and apps and Redis, a program that lets you modify code in real time and see the changes.  I also was able to improve my skills in debugging code.
-                        <br><br>Challenges: The primary challenges that came up when working during the internship was figuring out how to get certain things working.  The team I was a part of came up with multiple ideas but had a hard time coming up with the best option.  After a while though we were able to settle on an idea and was able to continue our progress on the assignment we were given.                
-                    </div>
-                </div>
-                <br><br>
-                </div>
-                <div class="carousel-item">
-                <img src="./HTML/portfolioPages/media/internProj2.webp" alt="changeling" id="internImg2"/>
-                <h2><a href="https://www.changelingvr.com/" target="_blank" rel="noopener noreferrer">Changeling VR</a></h2>
-                <p style="text-align: center;">
-                    <button class="btn btn-warning intern" id="2" type="button" data-bs-toggle="collapse" data-bs-target="#internInfo2" aria-expanded="false" aria-controls="internInfo2">
-                        Information
-                    </button>
-                </p>
-                <div class="collapse" id="internInfo2">
-                    <div class="card card-body" style="color: black; margin: 10px;">
-                    <p>Job Description: Continue to work on the ongoing development of a VR mystery game in Unreal Engine titled Changeling VR, Virtual Reality (VR) narrative mystery game for an independent studio.
-                    <br><br>Job Title: Game Developer/Level Designer
-                    <br><br>Technologies used: Unreal Engine 4, Unreal Engine Blueprints, Game Design, Level Design, 3D Models, Perforce
-                    <br><br>What I learned: Before the internship my knowledge on Unreal Engine was very limited due to only using it for a singular course.  I now have a much better understanding of how it works.
-                    <br><br>Challenges: The main challenge that came up during the internship was fixing any issues that I found.  Since multiple different groups of people have worked on it over the years, there will always be something that might have been missed or they could not fix it.  Since I had limited skill in Unreal Engine at the start of the internship it was challenging.  But over time I had a better understanding of Unreal Engine and was able to fix all of the issues I came across. 
-                    </div>
-                </div>
-                <br><br>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#project8" data-bs-slide="prev" onclick="closeInfo('intern');">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#project8" data-bs-slide="next" onclick="closeInfo('intern');">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>

@@ -1,0 +1,3 @@
+﻿  ifstate.cpp
+C:\Users\awpet\source\repos\Personal\C\ifstate\ifstate.cpp(17,28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  ifstate.vcxproj -> C:\Users\awpet\source\repos\Personal\C\ifstate\x64\Debug\ifstate.exe
